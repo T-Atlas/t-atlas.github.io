@@ -1,80 +1,80 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# 学术页面
+**学术页面是一个基于GitHub Pages的模板，适用于个人和专业作品集导向的网站。**
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+![学术页面模板示例](images/homepage.png "学术页面模板示例")
 
-# Getting Started
+# 入门指南
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+1. 如果没有GitHub账户，请先注册并确认电子邮件（必需！）
+1. 点击右上角的"使用此模板"按钮。
+1. 在"新建仓库"页面，将仓库名称设置为"[你的GitHub用户名].github.io"，这将是你的网站URL。
+1. 进行全站配置并添加你的内容。
+1. 将任何文件（如PDF、.zip文件等）上传到`files/`目录。它们将出现在https://[你的GitHub用户名].github.io/files/example.pdf。
+1. 在仓库设置的"GitHub Pages"部分查看状态。
+1. （可选）使用`markdown_generator`文件夹中的Jupyter notebooks或python脚本从TSV文件生成出版物和演讲的markdown文件。
 
-See more info at https://academicpages.github.io/
+更多信息请访问 https://academicpages.github.io/
 
-## Running locally
+## 本地运行
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+在最初开发网站时，能够在推送到GitHub之前在本地预览更改非常有用。要在本地工作，你需要：
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
+1. 克隆仓库并按照上述步骤进行更新。
+1. 确保已安装ruby-dev、bundler和nodejs
     
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
+    在大多数Linux发行版和[Windows子系统Linux](https://learn.microsoft.com/zh-cn/windows/wsl/about)上，命令是：
     ```bash
     sudo apt install ruby-dev ruby-bundler nodejs
     ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
+    如果看到错误`无法定位包ruby-bundler`、`无法定位包nodejs`，请运行以下命令：
     ```bash
     sudo apt update && sudo apt upgrade -y
     ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+    然后再次尝试运行`sudo apt install ruby-dev ruby-bundler nodejs`。
 
-    On MacOS the commands are:
+    在MacOS上的命令是：
     ```bash
     brew install ruby
     brew install node
     gem install bundler
     ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+1. 运行`bundle install`安装ruby依赖项。如果遇到错误，删除Gemfile.lock并重试。
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
+    如果看到文件权限错误，如`Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.`或`Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
+    本地安装Gems（推荐）：
     ```bash
     bundle config set --local path 'vendor/bundle'
     ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and open `.gitignore` then add `vendor` inside it.
+    然后再次尝试运行`bundle install`。如果成功，你应该会看到一个名为`vendor`的文件夹，打开`.gitignore`并将`vendor`添加进去。
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+1. 运行`jekyll serve -l -H localhost`生成HTML并从`localhost:4000`提供服务，本地服务器会在更改时自动重建并刷新页面。
+    你也可以尝试`bundle exec jekyll serve -l -H localhost`，以确保jekyll使用你本地机器上的特定依赖项。
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+如果你在Linux上运行，可能需要先安装一些额外的依赖项才能本地运行：`sudo apt install build-essential gcc make`
 
-## Using Docker
+## 使用Docker
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+在不同的操作系统上工作，或者只是想避免安装依赖项？如果你已经安装了[Docker](https://www.docker.com/)，你可以使用提供的`Dockerfile`构建一个容器来为你运行网站。
 
-You can build and execute the container by running the following command in the repository:
+你可以通过在仓库中运行以下命令来构建和执行容器：
 
 ```bash
 docker compose up
 ```
 
-You should now be able to access the website from `localhost:4000`.
+现在你应该能够从`localhost:4000`访问网站了。
 
-# Maintenance
+# 维护
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+模板的错误报告和功能请求应[通过GitHub提交](https://github.com/academicpages/academicpages.github.io/issues/new/choose)。关于如何设置模板样式的问题，请随时在GitHub上[发起新讨论](https://github.com/academicpages/academicpages.github.io/discussions)。
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+该仓库由[Stuart Geiger](https://github.com/staeiou)从[Minimal Mistakes Jekyll主题](https://mmistakes.github.io/minimal-mistakes/)fork（然后分离），该主题© 2016 Michael Rose，并在MIT许可证下发布（见LICENSE.md）。目前由[Robert Zupko](https://github.com/rjzupkoii)维护，欢迎更多维护者加入。
 
-## Bugfixes and enhancements
+## 错误修复和增强
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+如果你有想要作为pull request提交的错误修复和增强，你需要[fork](https://docs.github.com/zh-cn/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)该仓库，而不是将其作为模板使用。这也允许你将模板的副本[同步](https://docs.github.com/zh-cn/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)到你的fork。
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+不幸的是，像学术页面这样的模板主题存在一个后勤问题，这使得获取核心主题的错误修复和更新变得有点棘手。如果你使用此模板并自定义它，在尝试同步时可能会遇到合并冲突。如果你想保存你的各种.yml配置文件和markdown文件，你可以删除仓库并重新fork。或者你可以手动打补丁。
 
 ---
 <div align="center">

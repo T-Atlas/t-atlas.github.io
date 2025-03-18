@@ -6,6 +6,13 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+# 欢迎使用 Jekyll！
+#
+# 此配置文件用于设置影响整个站点的值，
+# 这些值通常只需设置一次，之后很少需要编辑。
+# 由于技术原因，当您使用 `jekyll serve -l -H localhost` 时，
+# 此文件不会自动重新加载。如果更改了此文件，请重新启动服务器进程。
+
 # Basic Site Settings
 locale                   : "en-CN"
 site_theme               : "default"
@@ -20,24 +27,28 @@ repository               : "T-Atlas/t-atlas.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
+
+# 站点作者 - 以下设置控制侧边栏中显示的作者内容。
+#               如果某个字段为空，则相应的图标和链接不会显示；否则将会显示。
+#               可以通过编辑 /_includes/author-profile.html 进行额外自定义。
 author:
   # Biographic information
-  name             : "THEATLAS"
-  avatar           : "wx-img.jpg"
-  location         : "Beijing , China"
-  pronouns         : "he/him"  
+  name             : "Junhong Lian"
+  avatar           : "mybio.jpg"
+  location         : "Beijing, China"
+  pronouns         : "T-Atlas · he/him"  
   bio              : "Short biography for the left-hand sidebar"
-  employer         : "Red Brick University"
+  employer         : "Institute of Computing Technology, Chinese Academy of Sciences"
   uri              : # URL
   email            : "junhong.lian@outlook.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-2922-1216"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -45,12 +56,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "T-Atlas"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -78,9 +89,9 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: 'Books'
+    title: # 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: # 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
 
