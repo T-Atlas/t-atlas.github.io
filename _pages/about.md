@@ -8,15 +8,15 @@ redirect_from:
 ---
 ## About Me {#about-me}
 
-I am currently a second-year Master's student at the Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS), under the supervision of Prof. [Xiang Ao](https://aoxaustin.github.io/index.html) and co-supervised with Dr. Xinyu Liu. My research interests include natural language processing (NLP), personalized generation in large language models (LLMs), and applications of NLP in the financial domain.
+I am currently a second-year Master's student at the Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS), under the supervision of Prof. [Xiang Ao](https://aoxaustin.github.io/index.html) and co-supervised with Dr. [Xinyu Liu](https://ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496680.html). My research interests include natural language processing (NLP), personalized generation in large language models (LLMs), and applications of NLP in the financial domain.
 
 <span style="color:green">If you have any questions regarding my work or are interested in collaborating with me, please contact me via email. </span>
 
 ## 🔥 Recent News {#news}
 
 * **[2025-03]** Welcome to my website! I am currently a second-year Master's student at ICT, CAS.
-* **[2025-01]** 🎉 One paper "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation" is accepted by WWW2025.
-* **[2023-09]** 🎉 One paper "Fact-Preserved Personalized News Headline Generation" is accepted by ICDM2023.
+* **[2025-01]** 🎉 One paper "[Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)" is accepted by WWW2025.
+* **[2023-09]** 🎉 One paper "[Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)" is accepted by ICDM2023.
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
