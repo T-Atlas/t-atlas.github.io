@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## About Me
+## About Me {#about-me}
 
 I am currently a second-year Master's student at the Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS), under the supervision of Prof. [Xiang Ao](https://aoxaustin.github.io/index.html) and co-supervised with Dr. Xinyu Liu. My research interests include natural language processing (NLP), personalized generation in large language models (LLMs), and applications of NLP in the financial domain.
 
