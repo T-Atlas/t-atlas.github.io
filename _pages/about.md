@@ -12,6 +12,11 @@ I am currently a second-year Master's student at the Institute of Computing Tech
 
 <span style="color:green">If you have any questions regarding my work or are interested in collaborating with me, please contact me via email. </span>
 
+## 🔥 Recent News {#news}
+
+* **[2025-03]** Welcome to my website! I am currently a second-year Master's student at ICT, CAS.
+* **[2025-01]** One paper "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation" is accepted by WWW2025.
+* **[2023-09]** One paper "Fact-Preserved Personalized News Headline Generation" is accepted by ICDM2023.
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
