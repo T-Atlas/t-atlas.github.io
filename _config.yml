@@ -44,7 +44,7 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=nvRqvMMAAAAJ"
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-2922-1216"
   semantic         : "https://www.semanticscholar.org/author/Junhong-Lian/2283060100"
@@ -95,26 +95,26 @@ publication_category:
   conferences:
     title: 'Conference Papers'
 
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+# 站点设置
+teaser                   :  # 预告图片备用图像的文件名，放置在 /images/ 目录下，例如 "500x300.png"
+breadcrumbs              : false # true, false (默认值)
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+read_more                : "disabled" # 如果启用 enabled，会在摘要中添加“阅读更多”链接
+talkmap_link             : false      # 将其更改为 true 以在演讲页面添加 talkmap 链接
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # false (默认值), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 ，例如: meta.discourse.org
   facebook:
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : # 5 (默认值)
+    colorscheme          : # "light" (默认值), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
+  branch                 : "gh-pages" # "master" 或 "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -127,15 +127,15 @@ staticman:
     date:
       type               : "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "iso8601" # "iso8601" (默认值), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+  hide                   : false     # 将其更改为 true 以隐藏页脚中的 RSS 订阅
+  path                   : # 留空 (默认) 使用 feed.xml
 
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
+google_site_verification : I9ijbBCFCo8qXa44Ck7eljx6j6fbWK8F41CGQImefik
+bing_site_verification   : 15F2BF865A3BF986698AE66D639DF320
 alexa_site_verification  :
 yandex_site_verification :
 
