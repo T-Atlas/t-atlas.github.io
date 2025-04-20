@@ -225,22 +225,23 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
   news:
     output: true
     permalink: /:collection/:path/
+  
 
-
+# 这些设置控制页面和集合如何被包含在站点中
 # These settings control how pages and collections are included in the site
 defaults:
   # _posts
@@ -338,14 +339,12 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
+# 归档
+# 类型
+#  - 使用 Liquid 构建的 GitHub Pages 兼容归档页面 ~> type: liquid (默认)
+#  - Jekyll Archives 插件归档页面 ~> type: jekyll-archives
+#  路径 (示例)
+#  - 当使用 Liquid 方法时，归档页面应存在于指定路径，否则可能出现损坏链接（尤其是当面包屑启用时）
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
@@ -355,7 +354,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
+# https://github.com/jekyll/jekyll-archives Jekyll Archives 的 GitHub 仓库
 # jekyll-archives:
 #   enabled:
 #     - categories
@@ -367,9 +366,8 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
-# HTML Compression
-# - http://jch.penibelst.de/
+# HTML 压缩
+# - http://jch.penibelst.de/ HTML 压缩工具
 compress_html:
   clippings: all
   ignore:

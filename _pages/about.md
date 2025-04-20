@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Junhong Lian Homepage"
+title: "Junhong Lian's Homepage"
 author_profile: true
 redirect_from: 
   - /about/
