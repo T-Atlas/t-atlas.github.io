@@ -99,11 +99,11 @@ publication_category:
 teaser                   :  # 预告图片备用图像的文件名，放置在 /images/ 目录下，例如 "500x300.png"
 breadcrumbs              : false # true, false (默认值)
 words_per_minute         : 160
-future                   : true
+future                   : true # This post will show up by default. To disable scheduling of future posts, set to false.
 read_more                : "disabled" # 如果启用 enabled，会在摘要中添加“阅读更多”链接
 talkmap_link             : false      # 将其更改为 true 以在演讲页面添加 talkmap 链接
 comments:
-  provider               : # false (默认值), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : staticman # false (默认值), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
@@ -250,10 +250,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
@@ -268,8 +268,8 @@ defaults:
       type: teaching
     values:
       layout: single
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
       comments: true
   # _publications
   - scope:
@@ -277,8 +277,8 @@ defaults:
       type: publications
     values:
       layout: single
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
       comments: true
   # _portfolio
   - scope:
@@ -286,8 +286,8 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
       comment: true
   # _talks
   - scope:
@@ -295,16 +295,16 @@ defaults:
       type: talks
     values:
       layout: talk
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
   # _news
   - scope:
       path: ""
       type: news
     values:
       layout: single
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
       comments: true
 
 
