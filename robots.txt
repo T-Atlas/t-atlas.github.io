@@ -1,0 +1,22 @@
+# 允许以下 AI 爬虫访问 llms.txt 和 llms-full.txt
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: CCbot
+User-agent: FacebookBot
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: PiplBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# 允许 bot 访问全站，仅排除 /nobot/
+# 禁止其他所有爬虫访问 llms.txt 和 llms-full.txt
+User-agent: *
+Disallow: /nobot/
+Disallow: /llms.txt
+Disallow: /llms-full.txt
+Allow: /
+
+# 指定站点地图
+Sitemap: https://t-atlas.github.io/sitemap.xml
+Sitemap: https://t-atlas.github.io/sitemaps.xml
