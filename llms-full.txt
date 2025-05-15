@@ -1,0 +1,1911 @@
+# https://t-atlas.github.io/ llms-full.txt
+
+## NLP Researcher Profile
+## About Me
+
+I am currently a second-year Master’s student at the Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS), under the supervision of Prof. [Xiang Ao](https://aoxaustin.github.io/index.html) and co-supervised with Dr. [Xinyu Liu](https://ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496680.html). My research interests include natural language processing (NLP), personalized generation in large language models (LLMs), and applications of NLP in the financial domain.
+
+If you have any questions regarding my work or are interested in collaborating with me, please contact me via email.
+
+## 🔥 Recent News
+
+- **\[2025-03\]** Welcome to my website! I am currently a second-year Master’s student at ICT, CAS.
+- **\[2025-01\]** 🎉 One paper “ [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)” is accepted by WWW2025.
+- **\[2023-09\]** 🎉 One paper “ [Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)” is accepted by ICDM2023.
+
+## Sample Blog Post
+This is a sample blog post.
+
+#### Leave a Comment
+
+Your email address will not be published. Required fields are marked \*
+
+Loading...
+
+Comment \*
+
+[Markdown is supported.](https://daringfireball.net/projects/markdown/)
+
+Name \*Email address \*Website (optional)
+
+Submit Comment
+
+## [Future Blog Post](https://t-atlas.github.io/posts/2012/08/blog-post-4/)
+
+less than 1 minute read
+
+**Published:** January 01, 2199
+
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+
+## Blog Post Overview
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+
+#### Leave a Comment
+
+Your email address will not be published. Required fields are marked \*
+
+Loading...
+
+Comment \*
+
+[Markdown is supported.](https://daringfireball.net/projects/markdown/)
+
+Name \*Email address \*Website (optional)
+
+Submit Comment
+
+## [Blog Post for Test](https://t-atlas.github.io/posts/2025/04/blog-post-test/)
+
+less than 1 minute read
+
+**Published:** April 20, 2025
+
+This is a sample blog post.
+
+## Fact-Preserved News Headlines
+`TL;DR` This paper proposes a framework called Fact-Preserved Personalized News Headline Generation (FPG), which aims to balance the trade-off between personalization and factual consistency. We also devise an additional training procedure based on contrastive learning to further enhance the factual consistency of generated headlines.
+
+`Abstract` Personalized news headline generation, aiming at generating user-specific headlines based on readers’ preferences, burgeons a recent flourishing research direction. Existing studies generally inject a user interest embedding into an encoder-decoder headline generator to make the output personalized, while the factual consistency of headlines is inadequate to be verified. In this paper, we propose a framework Fact-Preserved Personalized News Headline Generation (short for FPG), to prompt a tradeoff between personalization and consistency. In FPG, the similarity between the candidate news to be exposed and the historical clicked news is used to give different levels of attention to key facts in the candidate news, and the similarity scores help to learn a fact-aware global user embedding. Besides, an additional training procedure based on contrastive learning is devised to further enhance the factual consistency of generated headlines. Extensive experiments conducted on a real-world benchmark PENS validate the superiority of FPG, especially on the tradeoff between personalization and factual consistency.
+
+Recommended citation: Yang, Zhao, Junhong Lian, and Xiang Ao. "Fact-Preserved Personalized News Headline Generation." _2023 IEEE International Conference on Data Mining (ICDM)._ IEEE, 2023.
+
+[Download Paper](http://t-atlas.github.io/files/ICDM2023_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/ICDM2023_slides.pdf)
+
+#### Leave a Comment
+
+Your email address will not be published. Required fields are marked \*
+
+Loading...
+
+Comment \*
+
+[Markdown is supported.](https://daringfireball.net/projects/markdown/)
+
+Name \*Email address \*Website (optional)
+
+Submit Comment
+
+## Personalized Headline Generation
+`TL;DR` This paper proposes a novel Stylistic-Content Aware Personalized Headline Generation (SCAPE) framework that reflects users' stylistic-content preferences during the generation process by incorporating panoramic interests into the headline generator.
+
+`Abstract` Personalized news headline generation aims to provide users with attention-grabbing headlines that are tailored to their preferences. Prevailing methods focus on user-oriented content preferences, but most of them overlook the fact that diverse stylistic preferences are integral to users’ panoramic interests, leading to suboptimal personalization. In view of this, we propose a novel Stylistic-Content Aware Personalized Headline Generation (SCAPE) framework. SCAPE extracts both content and stylistic features from headlines with the aid of large language model (LLM) collaboration. It further adaptively integrates users’ long- and short-term interests through a contrastive learning-based hierarchical fusion network. By incorporating the panoramic interests into the headline generator, SCAPE reflects users’ stylistic-content preferences during the generation process. Extensive experiments on the real-world dataset PENS demonstrate the superiority of SCAPE over baselines.
+
+Recommended citation: Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _Companion Proceedings of the ACM Web Conference 2025._ 2025.
+
+[Download Paper](http://t-atlas.github.io/files/WWW2025_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/WWW2025_slides.pdf)
+
+#### Leave a Comment
+
+Your email address will not be published. Required fields are marked \*
+
+Loading...
+
+Comment \*
+
+[Markdown is supported.](https://daringfireball.net/projects/markdown/)
+
+Name \*Email address \*Website (optional)
+
+Submit Comment
+
+## Archive Layout Examples
+# Archive Layout with Content
+
+A variety of common markup showing how the theme styles them.
+
+# Header one
+
+## Header two
+
+### Header three
+
+#### Header four
+
+##### Header five
+
+###### Header six
+
+## Blockquotes
+
+Single line blockquote:
+
+> Quotes are cool.
+
+## Tables
+
+| Entry | Item |  |
+| --- | --- | --- |
+| [John Doe](https://t-atlas.github.io/archive-layout-with-content/#) | 2016 | Description of the item in the list |
+| [Jane Doe](https://t-atlas.github.io/archive-layout-with-content/#) | 2019 | Description of the item in the list |
+| [Doe Doe](https://t-atlas.github.io/archive-layout-with-content/#) | 2022 | Description of the item in the list |
+
+| Header1 | Header2 | Header3 |
+| --- | --- | --- |
+| cell1 | cell2 | cell3 |
+| cell4 | cell5 | cell6 |
+| cell1 | cell2 | cell3 |
+| cell4 | cell5 | cell6 |
+| Foot1 | Foot2 | Foot3 |
+
+## Definition Lists
+
+Definition List TitleDefinition list division.StartupA startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.#doworkCoined by Rob Dyrdek and his personal body guard Christopher “Big Black” Boykins, “Do Work” works as a self motivator, to motivating your friends.Do It LiveI’ll let Bill O’Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+
+## Unordered Lists (Nested)
+
+- List item one
+  - List item one
+    - List item one
+    - List item two
+    - List item three
+    - List item four
+  - List item two
+  - List item three
+  - List item four
+- List item two
+- List item three
+- List item four
+
+## Ordered List (Nested)
+
+1. List item one
+1. List item one
+      1. List item one
+      2. List item two
+      3. List item three
+      4. List item four
+2. List item two
+3. List item three
+4. List item four
+2. List item two
+3. List item three
+4. List item four
+
+## Buttons
+
+Make any link standout more when applying the `.btn` class.
+
+## Notices
+
+**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+
+## HTML Tags
+
+### Address Tag
+
+1 Infinite Loop
+
+Cupertino, CA 95014
+
+United States
+
+### Anchor Tag (aka. Link)
+
+This is an example of a [link](http://github.com/ "GitHub").
+
+### Abbreviation Tag
+
+The abbreviation CSS stands for “Cascading Style Sheets”.
+
+### Cite Tag
+
+“Code is poetry.” —Automattic
+
+### Code Tag
+
+You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
+
+### Strike Tag
+
+This tag will let you ~~strikeout text~~.
+
+### Emphasize Tag
+
+The emphasize tag should _italicize_ text.
+
+### Insert Tag
+
+This tag should denote inserted text.
+
+### Keyboard Tag
+
+This scarcely known tag emulates `keyboard text`, which is usually styled like the `<code>` tag.
+
+### Preformatted Tag
+
+This tag styles large blocks of code.
+
+```
+.post-title {
+  margin: 0 0 5px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.2;
+  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+}
+
+```
+
+### Quote Tag
+
+Developers, developers, developers… –Steve Ballmer
+
+### Strong Tag
+
+This tag shows **bold text**.
+
+### Subscript Tag
+
+Getting our science styling on with H2O, which should push the “2” down.
+
+### Superscript Tag
+
+Still sticking with science and Isaac Newton’s E = MC2, which should lift the 2 up.
+
+### Variable Tag
+
+This allows you to denote variables.
+
+## [Page Not Found](https://t-atlas.github.io/404.html)
+
+## [Junhong Lian's Homepage](https://t-atlas.github.io/)
+
+## [Archive Layout with Content](https://t-atlas.github.io/archive-layout-with-content/)
+
+## [Posts by Category](https://t-atlas.github.io/categories/)
+
+## [Posts by Collection](https://t-atlas.github.io/collection-archive/)
+
+## [CV](https://t-atlas.github.io/cv/)
+
+## [Markdown](https://t-atlas.github.io/markdown/)
+
+## [News](https://t-atlas.github.io/news/)
+
+## [Page not in menu](https://t-atlas.github.io/non-menu-page/)
+
+## [Page Archive](https://t-atlas.github.io/page-archive/)
+
+## [Portfolio](https://t-atlas.github.io/portfolio/)
+
+## [Publications](https://t-atlas.github.io/publications/)
+
+## [Sitemap](https://t-atlas.github.io/sitemap/)
+
+## [Posts by Tags](https://t-atlas.github.io/tags/)
+
+## [Talk map](https://t-atlas.github.io/talkmap.html)
+
+## [Talks and presentations](https://t-atlas.github.io/talks/)
+
+## [Teaching](https://t-atlas.github.io/teaching/)
+
+## [Terms and Privacy Policy](https://t-atlas.github.io/terms/)
+
+## [Blog posts](https://t-atlas.github.io/year-archive/)
+
+## [Jupyter notebook markdown generator](https://t-atlas.github.io/markdown_generator/)
+
+## Posts by Category
+# Posts by Category
+
+## Personalized News Headlines
+# Posts by Collection
+
+## news
+
+## publications
+
+## [Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)
+
+Published in _2023 IEEE International Conference on Data Mining (ICDM2023)_, 2023
+
+Zhao Yang, **Junhong Lian** and Xiang Ao\*. (2023). "Fact-Preserved Personalized News Headline Generation." _In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM2023, short paper)._ Z. Yang and J. Lian are equally contributed.
+
+Recommended citation: Yang, Zhao, Junhong Lian, and Xiang Ao. "Fact-Preserved Personalized News Headline Generation." _2023 IEEE International Conference on Data Mining (ICDM)._ IEEE, 2023.
+
+[Download Paper](http://t-atlas.github.io/files/ICDM2023_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/ICDM2023_slides.pdf)
+
+## [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)
+
+Published in _The Web Conference 2025 (WWW2025)_, 2025
+
+**Junhong Lian**, Xiang Ao _, Xinyu Liu_, Yang Liu and Qing He. (2025). "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _To appear in the Web Conference 2025 (WWW2025, short paper)._
+
+Recommended citation: Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _Companion Proceedings of the ACM Web Conference 2025._ 2025.
+
+[Download Paper](http://t-atlas.github.io/files/WWW2025_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/WWW2025_slides.pdf)
+
+## Curriculum Vitae Overview
+# CV
+
+# Education
+
+- **Institute of Computing Technology, Chinese Academy of Sciences**, Master
+
+_2023.09 – 2026.07_ (expected)
+  - Major: Computer Technology.
+- **Beijing University of Posts and Telecommunications**, B.S. in Management
+
+_2019.09 – 2023.07_
+  - Major: E-Commerce Engineering with Law.
+- **Queen Mary University of London**, B.S. in Engineering
+
+_2019.09 – 2023.07_
+  - The Queen Mary-BUPT Joint Programme, First‑Class with Honours.
+
+# Publications
+
+### [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)
+
+Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _Companion Proceedings of the ACM Web Conference 2025._ 2025.
+
+### [Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)
+
+Yang, Zhao, Junhong Lian, and Xiang Ao. "Fact-Preserved Personalized News Headline Generation." _2023 IEEE International Conference on Data Mining (ICDM)._ IEEE, 2023.
+
+## Markdown Usage Guide
+## Locations of key files/directories
+
+- Basic config options: \_config.yml
+- Top navigation bar config: \_data/navigation.yml
+- Single pages: \_pages/
+- Collections of pages are .md or .html files in:
+  - \_publications/
+  - \_portfolio/
+  - \_posts/
+  - \_teaching/
+  - \_talks/
+- Footer: \_includes/footer.html
+- Static files (like PDFs): /files/
+- Profile image (can set in \_config.yml): images/profile.png
+
+## Tips and hints
+
+- Name a file “.md” to have it render in markdown, name it “.html” to render in HTML.
+- Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll.
+  - Green check: successful build
+  - Orange circle: building
+  - Red X: error
+  - No icon: not built
+- Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences.
+  - Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin ![:computer:](https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png).
+  - The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
+- While GitHub Pages prevents server side code from running, client-side scripts are supported.
+  - This means that Google Analytics is supported, and [the wiki](https://github.com/academicpages/academicpages.github.io/wiki/Adding-Google-Analytics) should contain the most up-to-date information on getting it working.
+
+## Resources
+
+- [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
+- [MathJax Documentation](https://docs.mathjax.org/en/latest/)
+
+## MathJax
+
+Support for MathJax Version 3.0 is included in the template:
+
+∇⋅E=ρϵ0∇⋅B=0∇×E=−∂tB∇×B=μ0(J+ε0∂tE)
+
+The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., a2+b2=c2)
+
+**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
+
+## Markdown guide
+
+Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub’s. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.
+
+### Header three
+
+#### Header four
+
+##### Header five
+
+###### Header six
+
+## Blockquotes
+
+Single line blockquote:
+
+> Quotes are cool.
+
+## Tables
+
+### Table 1
+
+| Entry | Item |  |
+| --- | --- | --- |
+| [John Doe](https://t-atlas.github.io/markdown/#) | 2016 | Description of the item in the list |
+| [Jane Doe](https://t-atlas.github.io/markdown/#) | 2019 | Description of the item in the list |
+| [Doe Doe](https://t-atlas.github.io/markdown/#) | 2022 | Description of the item in the list |
+
+### Table 2
+
+| Header1 | Header2 | Header3 |
+| --- | --- | --- |
+| cell1 | cell2 | cell3 |
+| cell4 | ce |  |
+| ll5 | cell6 |  |
+| cell1 | cell2 | cell3 |
+| cell4 | cell5 | cell6 |
+| Foot1 | Foot2 | Foot3 |
+
+## Definition Lists
+
+Definition List TitleDefinition list division.StartupA startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.#doworkCoined by Rob Dyrdek and his personal body guard Christopher “Big Black” Boykins, “Do Work” works as a self motivator, to motivating your friends.Do It LiveI’ll let Bill O’Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+
+## Unordered Lists (Nested)
+
+- List item one
+  - List item one
+    - List item one
+    - List item two
+    - List item three
+    - List item four
+  - List item two
+  - List item three
+  - List item four
+- List item two
+- List item three
+- List item four
+
+## Ordered List (Nested)
+
+1. List item one
+1. List item one
+      1. List item one
+      2. List item two
+      3. List item three
+      4. List item four
+2. List item two
+3. List item three
+4. List item four
+2. List item two
+3. List item three
+4. List item four
+
+## Buttons
+
+Make any link standout more when applying the `.btn` class.
+
+## Notices
+
+Basic notices or call-outs are supported using the following syntax:
+
+```
+**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
+{: .notice}
+
+```
+
+which wil render as:
+
+**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
+
+### Footnotes
+
+Footnotes can be useful for clarifying points in the text, or citing information.[1](https://t-atlas.github.io/markdown/#fn:1) Markdown support numeric footnotes, as well as text as long as the values are unique.[2](https://t-atlas.github.io/markdown/#fn:note)
+
+```
+This is the regular text.[^1] This is more regular text.[^note]
+
+[^1]: This is the footnote itself.
+[^note]: This is another footnote.
+
+```
+
+## HTML Tags
+
+### Address Tag
+
+1 Infinite Loop
+
+Cupertino, CA 95014
+
+United States
+
+### Anchor Tag (aka. Link)
+
+This is an example of a [link](http://github.com/ "GitHub").
+
+### Abbreviation Tag
+
+The abbreviation CSS stands for “Cascading Style Sheets”.
+
+### Cite Tag
+
+“Code is poetry.” —Automattic
+
+### Code Tag
+
+You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
+
+You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
+
+```
+print('Hello World!')
+
+```
+
+or R:
+
+```
+print("Hello World!", quote = FALSE)
+
+```
+
+### Details Tag (collapsible sections)
+
+The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
+
+Collapsed by default This section was collapsed by default!
+
+The source code:
+
+```HTML
+<details>
+  <summary>Collapsed by default</summary>
+  This section was collapsed by default!
+</details>
+
+```
+
+Or, you can leave a section open by default by including the `open` attribute in the tag:
+
+Open by default This section is open by default thanks to open in the <details open> tag!
+
+### Emphasize Tag
+
+The emphasize tag should _italicize_ text.
+
+### Insert Tag
+
+This tag should denote inserted text.
+
+### Keyboard Tag
+
+This scarcely known tag emulates `keyboard text`, which is usually styled like the `<code>` tag.
+
+### Preformatted Tag
+
+This tag styles large blocks of code.
+
+```
+.post-title {
+  margin: 0 0 5px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.2;
+  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+}
+
+```
+
+### Quote Tag
+
+Developers, developers, developers… –Steve Ballmer
+
+### Strike Tag
+
+This tag will let you ~~strikeout text~~.
+
+### Strong Tag
+
+This tag shows **bold text**.
+
+### Subscript Tag
+
+Getting our science styling on with H2O, which should push the “2” down.
+
+### Superscript Tag
+
+Still sticking with science and Isaac Newton’s E = MC2, which should lift the 2 up.
+
+### Variable Tag
+
+This allows you to denote variables.
+
+* * *
+
+**Footnotes**
+
+The footnotes in the page will be returned following this line, return to the section on [Markdown Footnotes](https://t-atlas.github.io/markdown/#footnotes).
+
+1. Such as this footnote. [↩](https://t-atlas.github.io/markdown/#fnref:1)
+
+2. When using text for footnotes markers, no spaces are permitted in the name. [↩](https://t-atlas.github.io/markdown/#fnref:note)
+
+## News and Updates
+# News
+
+## 2025
+
+- **\[2025-03\]** Welcome to my website! I am currently a second-year Master’s student at ICT, CAS.
+
+- **\[2025-01\]** 🎉 One paper “Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation” is accepted by WWW2025.
+
+
+## 2023
+
+- **\[2023-09\]** 🎉 One paper “Fact-Preserved Personalized News Headline Generation” is accepted by ICDM2023.
+
+## Non-Menu Page
+This is a page not in the menu. You can use markdown in this page.
+
+# Heading 1
+
+# Heading 2
+
+## Page Archive Resources
+# Page Archive
+
+## [Page Not Found](https://t-atlas.github.io/404.html)
+
+## [Junhong Lian's Homepage](https://t-atlas.github.io/)
+
+## [Archive Layout with Content](https://t-atlas.github.io/archive-layout-with-content/)
+
+## [Posts by Category](https://t-atlas.github.io/categories/)
+
+## [Posts by Collection](https://t-atlas.github.io/collection-archive/)
+
+## [CV](https://t-atlas.github.io/cv/)
+
+## [Markdown](https://t-atlas.github.io/markdown/)
+
+## [News](https://t-atlas.github.io/news/)
+
+## [Page not in menu](https://t-atlas.github.io/non-menu-page/)
+
+## [Page Archive](https://t-atlas.github.io/page-archive/)
+
+## [Portfolio](https://t-atlas.github.io/portfolio/)
+
+## [Publications](https://t-atlas.github.io/publications/)
+
+## [Sitemap](https://t-atlas.github.io/sitemap/)
+
+## [Posts by Tags](https://t-atlas.github.io/tags/)
+
+## [Talk map](https://t-atlas.github.io/talkmap.html)
+
+## [Talks and presentations](https://t-atlas.github.io/talks/)
+
+## [Teaching](https://t-atlas.github.io/teaching/)
+
+## [Terms and Privacy Policy](https://t-atlas.github.io/terms/)
+
+## [Blog posts](https://t-atlas.github.io/year-archive/)
+
+## [Jupyter notebook markdown generator](https://t-atlas.github.io/markdown_generator/)
+
+## Creative Portfolio Showcase
+# Portfolio
+
+## [Portfolio item number 1](https://t-atlas.github.io/portfolio/portfolio-1/)
+
+Short description of portfolio item number 1
+
+![](https://t-atlas.github.io/images/500x300.png)
+
+## [Portfolio item number 2](https://t-atlas.github.io/portfolio/portfolio-2/)
+
+Short description of portfolio item number 2
+
+![](https://t-atlas.github.io/images/500x300.png)
+
+## Publications on Headline Generation
+# Publications
+
+You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=nvRqvMMAAAAJ).
+
+## Conference Papers
+
+* * *
+
+## [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)
+
+Published in _The Web Conference 2025 (WWW2025)_, 2025
+
+**Junhong Lian**, Xiang Ao _, Xinyu Liu_, Yang Liu and Qing He. (2025). "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _To appear in the Web Conference 2025 (WWW2025, short paper)._
+
+Recommended citation: Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _Companion Proceedings of the ACM Web Conference 2025._ 2025.
+
+[Download Paper](http://t-atlas.github.io/files/WWW2025_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/WWW2025_slides.pdf)
+
+## [Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)
+
+Published in _2023 IEEE International Conference on Data Mining (ICDM2023)_, 2023
+
+Zhao Yang, **Junhong Lian** and Xiang Ao\*. (2023). "Fact-Preserved Personalized News Headline Generation." _In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM2023, short paper)._ Z. Yang and J. Lian are equally contributed.
+
+Recommended citation: Yang, Zhao, Junhong Lian, and Xiang Ao. "Fact-Preserved Personalized News Headline Generation." _2023 IEEE International Conference on Data Mining (ICDM)._ IEEE, 2023.
+
+[Download Paper](http://t-atlas.github.io/files/ICDM2023_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/ICDM2023_slides.pdf)
+
+## Sitemap of All Content
+# Sitemap
+
+A list of all the posts and pages found on the site. For you robots out there, there is an [XML version](https://t-atlas.github.io/sitemap.xml) available for digesting as well.
+
+## Pages
+
+## [Page Not Found](https://t-atlas.github.io/404.html)
+
+## [Junhong Lian's Homepage](https://t-atlas.github.io/)
+
+## [Archive Layout with Content](https://t-atlas.github.io/archive-layout-with-content/)
+
+## [Posts by Category](https://t-atlas.github.io/categories/)
+
+## [Posts by Collection](https://t-atlas.github.io/collection-archive/)
+
+## [CV](https://t-atlas.github.io/cv/)
+
+## [Markdown](https://t-atlas.github.io/markdown/)
+
+## [News](https://t-atlas.github.io/news/)
+
+## [Page not in menu](https://t-atlas.github.io/non-menu-page/)
+
+## [Page Archive](https://t-atlas.github.io/page-archive/)
+
+## [Portfolio](https://t-atlas.github.io/portfolio/)
+
+## [Publications](https://t-atlas.github.io/publications/)
+
+## [Sitemap](https://t-atlas.github.io/sitemap/)
+
+## [Posts by Tags](https://t-atlas.github.io/tags/)
+
+## [Talk map](https://t-atlas.github.io/talkmap.html)
+
+## [Talks and presentations](https://t-atlas.github.io/talks/)
+
+## [Teaching](https://t-atlas.github.io/teaching/)
+
+## [Terms and Privacy Policy](https://t-atlas.github.io/terms/)
+
+## [Blog posts](https://t-atlas.github.io/year-archive/)
+
+## [Jupyter notebook markdown generator](https://t-atlas.github.io/markdown_generator/)
+
+## Posts
+
+## [Future Blog Post](https://t-atlas.github.io/posts/2012/08/blog-post-4/)
+
+less than 1 minute read
+
+**Published:** January 01, 2199
+
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+
+## [Blog Post for Test](https://t-atlas.github.io/posts/2025/04/blog-post-test/)
+
+less than 1 minute read
+
+**Published:** April 20, 2025
+
+This is a sample blog post.
+
+## news
+
+## publications
+
+## [Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)
+
+Published in _2023 IEEE International Conference on Data Mining (ICDM2023)_, 2023
+
+Zhao Yang, **Junhong Lian** and Xiang Ao\*. (2023). "Fact-Preserved Personalized News Headline Generation." _In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM2023, short paper)._ Z. Yang and J. Lian are equally contributed.
+
+Recommended citation: Yang, Zhao, Junhong Lian, and Xiang Ao. "Fact-Preserved Personalized News Headline Generation." _2023 IEEE International Conference on Data Mining (ICDM)._ IEEE, 2023.
+
+[Download Paper](http://t-atlas.github.io/files/ICDM2023_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/ICDM2023_slides.pdf)
+
+## [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)
+
+Published in _The Web Conference 2025 (WWW2025)_, 2025
+
+**Junhong Lian**, Xiang Ao _, Xinyu Liu_, Yang Liu and Qing He. (2025). "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _To appear in the Web Conference 2025 (WWW2025, short paper)._
+
+Recommended citation: Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." _Companion Proceedings of the ACM Web Conference 2025._ 2025.
+
+[Download Paper](http://t-atlas.github.io/files/WWW2025_paper.pdf) \| [Download Slides](http://t-atlas.github.io/files/WWW2025_slides.pdf)
+
+## Blog Posts by Tags
+# Posts by Tags
+
+## category1
+
+## [Future Blog Post](https://t-atlas.github.io/posts/2012/08/blog-post-4/)
+
+less than 1 minute read
+
+**Published:** January 01, 2199
+
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+
+## category2
+
+## [Future Blog Post](https://t-atlas.github.io/posts/2012/08/blog-post-4/)
+
+less than 1 minute read
+
+**Published:** January 01, 2199
+
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+
+## cool posts
+
+## [Future Blog Post](https://t-atlas.github.io/posts/2012/08/blog-post-4/)
+
+less than 1 minute read
+
+**Published:** January 01, 2199
+
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+
+## test
+
+## [Blog Post for Test](https://t-atlas.github.io/posts/2025/04/blog-post-test/)
+
+less than 1 minute read
+
+**Published:** April 20, 2025
+
+This is a sample blog post.
+
+## Talk Map
+# Talk map
+
+This map is generated from a Jupyter Notebook file in [talkmap.ipynb](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which mines the location fields in the .md files in \_talks/.
+
+Leaflet debug page
+
+![](https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/images/marker-shadow.png)
+
+![](https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/images/marker-icon.png)
+
+[+](https://t-atlas.github.io/talkmap/map.html# "Zoom in") [-](https://t-atlas.github.io/talkmap/map.html# "Zoom out")
+
+[Leaflet](http://leafletjs.com/ "A JS library for interactive maps") \| Tiles © Esri — Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012
+
+Mouse over a cluster to see the bounds of its children and click a cluster to zoom to those bounds
+
+## Talks and Presentations
+# Talks and presentations
+
+## [Tutorial 1 on Relevant Topic in Your Field](https://t-atlas.github.io/talks/2013-03-01-tutorial-1)
+
+March 01, 2013
+
+Tutorial, UC-Berkeley Institute for Testing Science, Berkeley, CA, USA
+
+[More information here](http://exampleurl.com/)
+
+## [Talk 1 on Relevant Topic in Your Field](https://t-atlas.github.io/talks/2012-03-01-talk-1)
+
+March 01, 2012
+
+Talk, UC San Francisco, Department of Testing, San Francisco, CA, USA
+
+This is a description of your talk, which is a markdown file that can be all markdown-ified like any other post. Yay markdown!
+
+## Teaching Experiences
+# Teaching
+
+## [Teaching experience 1](https://t-atlas.github.io/teaching/2014-spring-teaching-1)
+
+Undergraduate course, _University 1, Department_, 2014
+
+This is a description of a teaching experience. You can use markdown like any other post.
+
+## Privacy Policy Overview
+## Privacy Policy
+
+The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+
+First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+
+### Log Files
+
+Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+
+- Internet Protocol addresses (IP)
+- Types of browser
+- Internet Service Provider (ISP)
+- Date and time stamp
+- Referring and exit pages
+- Number of clicks
+
+All of this information is not linked to anything that is personally identifiable.
+
+### Cookies and Web Beacons
+
+When you visit this site “convenience” cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com/) the next time you leave a comment.
+
+Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+
+If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers’ websites.
+
+#### Google Analytics
+
+Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+
+## Future Blog Posts
+# Blog posts
+
+## 2199
+
+## [Future Blog Post](https://t-atlas.github.io/posts/2012/08/blog-post-4/)
+
+less than 1 minute read
+
+**Published:** January 01, 2199
+
+This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+
+## 2025
+
+## [Blog Post for Test](https://t-atlas.github.io/posts/2025/04/blog-post-test/)
+
+less than 1 minute read
+
+**Published:** April 20, 2025
+
+This is a sample blog post.
+
+## Jupyter Notebook Markdown Generator
+# Jupyter notebook markdown generator
+
+These .ipynb files are Jupyter notebook files that convert a TSV containing structured data about talks ( `talks.tsv`) or presentations ( `presentations.tsv`) into individual markdown files that will be properly formatted for the academicpages template. The notebooks contain a lot of documentation about the process. The .py files are pure python that do the same things if they are executed in a terminal, they just don’t have pretty documentation.
+
+## Personalized News Headline Generation
+# Fact-Preserved Personalized News Headline Generation
+
+Zhao Yang∗†‡, Junhong Lian∗†‡, Xiang AoB†‡§ † Key Lab of Intelligent Information Processing of Chinese Academy of Sciences (CAS), Institute of Computing Technology, CAS, Beijing 100190, China. ‡ University of Chinese Academy of Sciences, Beijing 100049, China. § Institute of Intelligent Computing Technology, Suzhou, CAS. {yangzhao20s, lianjunhong23s, aoxiang}@ict.ac.cn
+
+Abstract—Personalized news headline generation, aiming at generating user-specific headlines based on readers’ preferences, burgeons a recent flourishing research direction. Existing studies generally inject a user interest embedding into an encoderdecoder headline generator to make the output personalized, while the factual consistency of headlines is inadequate to be verified. In this paper, we propose a framework Fact-Preserved Personalized News Headline Generation (short for FPG), to prompt a tradeoff between personalization and consistency. In FPG, the similarity between the candidate news to be exposed and the historical clicked news is used to give different levels of attention to key facts in the candidate news, and the similarity scores help to learn a fact-aware global user embedding. Besides, an additional training procedure based on contrastive learning is devised to further enhance the factual consistency of generated headlines. Extensive experiments conducted on a real-world benchmark PENS1 validate the superiority of FPG, especially on the tradeoff between personalization and factual consistency.
+
+Index Terms—news headline generation, personalization, factual consistency
+
+# I. INTRODUCTION
+
+News headline generation, intended to build a brief, informative, coherent headline for the given news article, has been perceived as a headline-specialized summarization task for decades \[1\]–\[10\]. Recently, personalized headline generation \[11\], i.e., generating a user-specific headline based on the user’s reading interest, was proposed to produce eye-attracting headlines rather than potential clickbait. Its underlying idea is that readers with different preferences can find their focal characters even in the same news, as illustrated in Fig.1. However, excessive personalization may threaten the factual consistency of news headlines, which is an imperative matter of principle in precision journalism \[12\].
+
+To this end, we desire to reconcile the personalization and factual consistency of generated headlines. The following challenges remain unsolved. First, these two goals seem to run counter to each other. More personalization encourages more facts related to historical clicks in the headline, while high consistency requires preserving more facts from the candidate news in the title. Hence, jointly optimizing both goals in a unified framework might be challenging. Second, neither personalization nor factual consistency can be simply judged with existing metrics, a reasonable comprehensive evaluation method is in urgent demand.
+
+![](https://t-atlas.github.io/files/images/83d37d0af9db9d582759be41b0a94d8b643f455a3b3ee033254ed64d6093ea6b.jpg)
+
+Fig. 1. An example illustrating the personalization in news headlines.
+
+To remedy these challenges, we propose a model named FPG (Fact-Preserved Personalized News Headline Generation), which utilizes an encoder-decoder framework that adapts Transformer \[13\] with a history encoder, a personalized news encoder, and a user-guided decoder. The history encoder is analogous to existing work modeling users’ interests based on their historical behaviors \[14\]–\[17\]. The personalized news encoder leverages the similarity between the candidate news and historical clicks to attach various importance to clicked news. The user-guided decoder learns a fact-aware user embedding to perturb headline generation based on personalized candidate news representations. Furthermore, an enhanced training phase based on contrastive learning \[18\], \[19\] is leveraged for buoying the factual consistency of generated results. Similar techniques were recently observed effectively in abstractive summarization \[20\]. For evaluation, we examine generated headlines based on personalization, factual consistency, and coverage, which will be detailed in Section V-C.
+
+In a nutshell, our contributions are: (1) We are the very first attempt to make a tradeoff between personalization and factual consistency for news headline generation. (2) We propose an end-to-end model FPG, equipped with a personalized news encoder that selectively concentrates on fact-consistent user interests via attention between the candidate news and historical clicks. Meanwhile, a training method based on contrastive learning takes factual consistency of the generation as a positive attribute. These two components are orthogonal to existing work. (3) Extensive experiments on a real-world benchmark demonstrate the superiority of our model in generating factpreserved personalized news headlines.
+
+# II. RELATED WORK
+
+Previous studies related to our task can be divided into two major categories: content-based headline generation and useroriented headline generation.
+
+Content-based headline generation aims to yield a concise, coherent, informative headline for the given article based on its content2, which is similar to the text summarization task. The extractive approaches \[1\], \[2\] select a subset of actual sentences from the original article to compose a news summary, resulting in incoherent headlines with inadequate information. The abstractive models \[4\], \[5\], \[7\], \[21\], \[22\] usually instantiate an encoder-decoder framework to build compact and coherent titles through learning the representations of the content. In recent years, Transformer-based pretrained models \[23\]–\[25\] have reached SOTA for contentbased headline generation \[9\], \[10\], \[26\], \[27\]. However, these approaches have mediocre performance in personalized situation due to rare consideration for user preference.
+
+User-oriented headline generation desires to build a headline that not only contains critical news facts but also grabs users’ curiosity, promoting reading interests. This may require auxiliary user information, e.g., users’ profile, landing page, historical clicks, etc. Some researchers propose to revamp headline styles \[28\] to attract readers’ attention. Implicit approaches \[28\]–\[30\] differentiate the sentence into content and style representations to implicitly perform style transfer. The explicit approaches \[31\]–\[34\] directly identify styleoriented examples or keywords for decorating titles. However, limited styles may not satisfy various users, and over-decorated headlines may also derive clickbait.
+
+Recent studies on personalized text generation emphasize avoiding clickbait in engaging headlines \[11\], \[35\]–\[37\], but incorporating users’ historical information may disrupt headline consistency due to global user embedding interference.
+
+# III. PROBLEM FORMULATION
+
+The problem of personalized headline generation can be formulated as follows. Given a user $u$ , we denote $u$ ’s historical clicked news as $C\_{u} ~~=~~\[c\_{1}^{u},c\_{2}^{u},\\ldots,c\_{N}^{u}\]$ , where $c\_{j}^{u}$ $(j{\\it\\Delta\\phi}={\\it\\Delta\\Psi}$ $1,\\ldots,N)$ is the $j$ -th clicked news headline and $N$ is the length of the clicked sequence. Each news headline $c$ is composed of a word sequence, i.e., $\\boldsymbol{c} ~~=~~\[w\_{1}^{c},w\_{2}^{c},\\dots,w\_{T}^{c}\]$ , where $T$ is the maximum length of the headline, $w\_{j}^{c} ~~\\in~~\\mathbb{V}$ for all $1\\leq j\\leq T$ and $\\mathbb{V}$ is the word vocabulary. Then, given a candidate news $v$ to be exposed to the user $u$ where its news body $X\_{v}=\[w\_{1}^{v},w\_{2}^{v},\\dots,w\_{M}^{v}\]$ contains a maximum of $M$ words, our target is to build a specific-customed headline $\\begin{array}{l l l}{{Y\_{v}^{u}}}&{{=}}&{{\[y\_{1}^{u},y\_{2}^{u},\\ldots,y\_{T}^{u}\]}}\\end{array}$ for the user $u$ based on his/her historical clicks, i.e., $C\_{u}$ , and the news body of $v$ , i.e., $X\_{v}$ , where $y\_{j}^{u}\\in\\mathbb{V}$ for all $1\\leq j\\leq T$ .
+
+![](https://t-atlas.github.io/files/images/a700cd95c412337d6d3aadb81af0fe203c66a45533d43eb1c5a28d5ca5eb9590.jpg)
+
+Fig. 2. The framework of FPG. It has N layers of transformer blocks in both news encoder and decoder. (a) is history encoder, $(\\mathbf{b})$ is personalized news encoder, and (c) is user-guided decoder.
+
+# IV. METHODOLOGY
+
+This section details our proposed FPG model, which is illustrated in Figure 2, and we adopt Transformer \[13\] as the backbone of FPG.
+
+# A. History Encoder
+
+As demonstrated in Fig.2(a), the history encoder aims to learn users’ interest representations based on their historical behaviors. For each headline $c$ in the clicked sequence $C\_{u}=$ $\[c\_{1}^{u},c\_{2}^{u},\\ldots,c\_{N}^{u}\]$ of the user $u$ , the encoder first converts $c$ from a sequence of words into a sequence of embedding vectors, i.e., $\\mathbf{c}=\[\\mathbf{w} _{1}^{c},\\mathbf{w}_{2}^{c},\\ldots,\\mathbf{w} _{T}^{c}\]$ , $\\mathbf{w}_{j}\\in\\mathbb{R}^{1\\times d\_{e}}$ . Then, the embeddings are fed into a GRU \[38\] to learn the semantic hidden state of each word, i.e., $\\textbf{h}=\\mathbf{\\Omega}\[\\mathbf{h} _{1}^{c},\\mathbf{h}_{2}^{c},\\dots,\\mathbf{h} _{T}^{c}\]$ , $\\mathbf{h}_{j}^{c} ~~\\in~~\\mathbb{R}^{1\\times d\_{e}}$ . The weighted sum of $\\mathbf{h}$ by Eq.(2) is considered the news representation of $c$ .
+
+$$
+\\begin{array}{c}{{a\_{j}=\\mathsf{S o f t m a x}\\displaystyle(\\mathbf{h} _{j}^{c}\\mathbf{tanh}\\big(\\mathbf{V}_{a}\\mathbf{h} _{j}^{c}{}^{\\top}+\\mathbf{b}_{a}\\big)\\big)}}\ {{\\mathbf{e} _{\\mathbf{c}}=\\displaystyle\\sum_{j=1}^{T}a\_{j}\\mathbf{h}\_{j}^{c}}}\\end{array}
+$$
+
+Where $\\mathbf{V} _{a}\\in\\mathbb{R}^{d_{e}\\times d\_{e}},\\mathbf{b} _{a}\\in\\mathbb{R}^{d_{e}\\times1}$ . We denote $\\begin{array}{r l}{\\mathbf{E} _{u}}&{{}=}\\end{array}$ $\[\\mathbf{e}_{1},\\mathbf{e} _{2},\\ldots,\\mathbf{e}_{N}\]$ as the news-level user interests of $u$ , where each $\\mathbf{e} _{j}$ is obtained from the $j$ -th news headline in $u$ ’s clicked sequence, i.e., $C_{u}$ .
+
+# B. Personalized News Encoder
+
+As shown in Fig.2(b), the personalized news encoder intends to encode a candidate news body based on the similarity between the candidate news and news-level interests of the corresponding user. We expect the news body to exploit some valuable information from news-level user interests, which should share semantical similarity with partial content, to learn personalized representations. Therefore, another history-cross attention sub-layer is used to capture the interaction between news body and historical behaviors: the query $\\mathbf{Q} _{h}$ is the linear projection of the news body representations $\\mathbf{X}$ while the key $\\mathbf{K}_{h}$ and value $\\mathbf{V} _{h}$ are projections of news-level user interest embeddings $\\mathbf{E_{u}}$ .
+
+$$
+\\mathbf{Q} _{h}=\\mathbf{X}^{\\top}\\mathbf{H}^{Q},\\mathbf{K}_{h}=\\mathbf{E} _{u}^{\\top}\\mathbf{H}^{K},\\mathbf{V}_{h}=\\mathbf{E}\_{u}^{\\top}\\mathbf{H}^{V}
+$$
+
+$$
+\\mathbf{X} _{p}={\\mathsf{S o f t m a x}}({\\frac{\\mathbf{Q}_{h}^{\\top}\\mathbf{K} _{h}}{\\sqrt{d_{e}}}})\\mathbf{V}\_{h}
+$$
+
+Where $\\mathbf{H}^{Q},\\mathbf{H}^{K},\\mathbf{H}^{V}\\in\\mathbb{R}^{d\_{e}\\times d\_{e}}$ are learnable parameter matrices. Through such interaction, information from historical clicks, which is semantically similar to the candidate news, is attached to the representations of the news body implicitly, enhancing attention to the user’s fine-grained interests. For example, analogous entities that appear both in clicked news and the candidate news directly reflect the user’s potential interests should be spotlighted. After utilizing N encoder blocks, we obtain the history-aware representations of the candidate news, i.e., Xepnc.
+
+# Algorithm 1: Training schedule of FPG
+
+Input: ${\\mathcal{C}}={X,Y}$ , ${\\mathcal{D}}\_{l}={X,C,Y}$ ,
+
+$\\mathcal{D}^{\*}={X,\\dot{C},Y^{+},Y^{-}}$ ;
+
+Initialize Transformer parameters $\\xi$ with BART-base;
+
+Other parameters $\\theta$ are randomly initialized;
+
+1. Pre-train the headline generator with MLE;
+2. Froze $\\xi$ to train the history encoder;
+
+   for epoch $ _{\\cdot=I}$ :epoch2 do Sample ${\\bar{X}_{i},C\_{i},Y\_{i}}$ from $\\mathcal{D}\_{l}$ ; Update $\\theta$ via minimizing Eq.(7);
+
+   end
+3. Train all parameters of FPG;
+
+   for epoch $ _{\\cdot=I}$ :epoch3 do Sample ${X_{i},C\_{i},Y\_{i}}$ from $\\mathcal{D}\_{l}$ ; Update $\\theta$ and $\\xi$ via minimizing Eq.(7);
+
+   end
+4. Fact-enhanced training;
+
+   for epoch $ _{\\cdot=I}$ :epoch4 do Sample ${X_{i},C\_{i},Y\_{i}^{+},Y\_{i}^{-}}$ from $\\mathcal{D}^{\*}$ ; Update $\\xi$ via minimizing Eq.(8);
+
+   end
+
+# C. User-guided Decoder
+
+As illustrated in Fig. 2(c), the user-guided decoder generates a personalized headline under the guidance of a global user interest embedding.
+
+Instead of learning a fixed embedding for each user \[11\], which may contain inconsistent information with the candidate news, our approach desires to learn a fact-aware global user representation based on the relevance of news-level interests to the candidate news. The user embedding is the weighted summation of news-level user interests:
+
+$$
+\\mathbf{u}=\\sum\_{j=1}^{N}\\alpha\_{j}\\mathbf{e}\_{j}
+$$
+
+Where ${\\alpha\_{1,\\dots,N}}$ are attention scores of history-cross attention sub-layer in the first news encoder block.
+
+To avoid additional edits to the decoder input format or extra training parameters, we simply replace the $\\mathrm{\[BOS\]^{3}}$ token with the user embedding $\\mathbf{u}$ so that the model again considers the user’s preference at every decoding step, enhancing the personalization of the generated headline. At each decoding step $t$ , the input embeddings of the partially generated headline is $\\mathbf{Y}^{u}=\[\\mathbf{u};\\mathbf{y} _{1},\\ldots,\\mathbf{y}_{t-1}\]$ ,where $\\mathbf{u},\\mathbf{y} _{j}\\in\\mathbb{R}^{1\\times d_{e}}$ , for all $1\\leq$ $j\\leq(t-1)$ . ${\\bf Y}^{u}$ is then fed into the masked self-attention layer and aligned with personalized encoder representations $\\mathbf{X} _{e n c}^{p}$ . After $\\mathsf{N}$ blocks, the output of the decoder at time step $t$ is $\\mathbf{S}_{t}^{\\mathsf{N}}\\in\\mathbb{R}^{1\\times d\_{e}}$ . The probability distribution $P$ over the whole vocabulary can be calculated as:
+
+$$
+P(\\hat{y\_{t}})=\\mathsf{S o f t m a x}(\\mathbf{S} _{t}^{\\mathsf{N}}\\mathbf{W}_{v}+\\mathbf{b}\_{v})
+$$
+
+Where $\\mathbf{W} _{v} ~~\\in~~\\mathbb{R}^{d_{e}\\times\|\|\\mathbb{V}\|\|}$ and $\\mathbf{b}\_{v} ~~\\in~~\\mathbb{R}^{1\\times\|\|\\mathbb{V}\|\|}$ are learnable parameter matrices. We use the negative log-likelihood as the loss function to train the headline generation model:
+
+$$
+\\mathcal{L} _{N L L}=-\\sum_{i=1}^{T}\\log P(y\_{i}\|y\_{1},\\dots,y\_{i-1};X,C)
+$$
+
+$^3\\mathrm{A}$ special token representing the beginning of a sentence.
+
+Where $T$ is the length of the generated headline.
+
+# D. Fact-enhanced Training
+
+The modules mentioned above allow news-level and global user representations to be involved in personalized headline generation, while auxiliary user information may also bring inconsistency in headline generation. Especially when none of historical clicks are relevant to the candidate news, the user embedding may induce misinformation at the decoding step. Therefore, an additional mechanism is required to enhance the factual consistency of generated personalized headlines.
+
+Previous studies have shown that simply removing unfaithful instances from the supervision data \[39\] or utilizing methods such as reinforcement learning \[40\] and contrastive learning \[20\], \[41\] can enhance the consistency in text generation. Motivated by \[20\], we apply a multi-stage fact-enhanced training phase, as demonstrated in Algorithm 1, to improve the factual consistency of generated headlines by minimizing a contrastive learning loss:
+
+$$
+\\begin{array}{r l}&{\\mathcal{L} _{C L L}=-\\underbrace{{{\\mathbb{E}}_{x,c,y^{+}\\in{\\mathcal{D}}^{ _}}}{\\log{P(y^{+};x,c)}}}{L{C}^{+}}}\ &{\\quad\\quad-\\underbrace{{{\\mathbb{E}}\_{x,c,y^{-}\\in{\\mathcal{D}}^{_}}}{\\log(1-{P(y^{-};x,c)})}} _{L_{C}^{-}}}\\end{array}
+$$
+
+Training examples for contrastive learning (notated as $\\mathbf{\\boldsymbol{D}^{\*}}=$ ${X,C,Y^{+},Y^{-}})$ are constructed from the news corpus. We selected the prominently ranked headline samples with high factual accuracy scores compared to the news articles as positive instances. Additionally, we generated negative instances by deliberately designing positive instances with factual errors using a series of rule-based methods.
+
+TABLE I THE STATISTICS OF DATASETS. $\\mathcal{D}\_{T}$ DENOTES THE TEST SET.
+
+![](https://t-atlas.github.io/files/images/08a02e57568814ef4a5129ad0999510f4c45dd5a56d724fa32d7c4bb5cbef336.jpg)
+
+# V. EXPERIMENT SETTINGS
+
+# A. Datasets Settings
+
+We validate our proposed method on the PENS benchmark, which comprises a news corpus, 500, 000 anonymized user click behavior data from Microsoft News involving 445, 765 users, and manually annotated personalized headlines. The test set includes 50 news of interest chosen by 103 annotators to build their clickstream, along with 200 news articles for which they provided preferred headlines, serving as personalized headlines. More details on PENS can be found in \[11\].
+
+Due to the lack of reliable personalized headlines during the training phase, distant supervision is conducted to train our model. We take advantage of historical clicks to model a user’s interests and approximate original headlines of newly clicked news within this impression as imperfect labels for training. It’s notable that considering some news that have appeared in the clickstreams of too many users as personalized headlines is unreasonable. To mitigate this problem, we have limited the number of users associated with each news during the training process. This limitation ensures that our model doesn’t overly focus on news articles that have a broad appeal and have been clicked on by a vast number of users. The training data with the limitation number $l$ is noted as $\\mathcal{D} _{l}$ . We use $\\mathcal{D}_{5}$ for our major experiments, where the same news article in the training set is clicked by a maximum of five users.
+
+In addition, we only pre-train the headline generator with the corpus that excludes candidate news used in the training and test set, indicated as $\\mathcal{C}$ . This decision stemmed from our observation that, despite achieving higher coverage scores, the model cannot acquire the capability to decorate user-specific headlines, which contradicts our goal of personalized headline generation. The statistics of datasets are shown in Table I.
+
+# B. Baselines
+
+Baselines consist of non-personalized and personalized approaches. We include some SOTA headline generation models: (1) PGN \[22\] is a seq2seq model with a copy mechanism. (2) $\\mathbf{PG}+$ Transformer \[42\] combines a transformer-based encoder with the pointer-generator network. (3) Transformer \[13\] is an encoder-decoder model based only on the attention mechanism. (4) BART \[25\] is a highly effective large pre-trained transformer-based model for text generation. Besides, we also compare with some baselines mentioned in \[11\], including NPA \[16\], EBNR \[43\], NRMS \[15\], and NAML \[14\].
+
+Our proposed model is denoted as FPG-GRU. By replacing the GRU layer in our history encoder with other structures like
+
+CNN and Self-Attention layer, we have two more variants of FPG, including FPG-CNN, FPG-SA.
+
+# C. Evaluation Metrics
+
+Traditional metrics like ROUGE \[44\] mainly assess textreference overlap and fail to capture headline personalization and consistency with content. Thus, we adopt a three-pronged approach to comprehensively evaluate headline quality.
+
+1. Personalization: While lacking a valid metric for personalization, we can gauge it by comparing generated headlines to users’ historically clicked titles, which reflect their fine-grained reading preferences as the personalization score.
+
+$$
+\\mathsf{P}\_{s i m}(\\mathsf{m a x}/\\mathsf{a v g})=\\mathsf{M a x}/\\mathsf{M e a n}s i m(c,y)
+$$
+
+Where $C\_{u}$ is the click sequence of user $u,y$ is the generated headline, sim indicates similarity functions. We report the mean and maximum value of all cosine similarity scores to evaluate fine-grained personalization, noted as $\\mathsf{P} _{C}(\\mathsf{m a x})$ and $\\mathsf{P}_{C}(\\mathsf{a v g})$ . A high maximum score indicates similarity to at least one reader’s historically clicked title related to their interest, while the mean score reflects overall similarity between historical titles and the generated headline.
+
+2. Factual Consistency: The factual consistency scores reflect the news headline’s faithfulness to the source article. We utilize FactCC \[45\], a weakly-supervised, model-based approach, to evaluate the factual consistency score.
+
+3. Coverage: We assess the informativeness and coverage of generated headlines by reporting the average F1 of ROUGE scores \[44\]. The coverage scores also partially reflect general personalization, given that manually-written headlines in test set mirror annotators’ personalized reading preferences \[11\].
+
+
+# $D$ . Implementation Details
+
+The head number in multi-head attention layer is 12. The number of encoder and decoder block N is 6. The dimension $d\_{e}$ is set to 768. All components of Transformer are initialized with BART-base parameters4. The optimizer is AdamW \[46\] with $\\beta\_{1} ~~=~~ 0.9$ and $\\beta\_{2} ~~=~~ 0.99$ . The epoch number for the pre-trained phrase is 5, and 5, 9, 1 for each training stage afterward. The learning rates for each training stage are set to $3e\\mathrm{ ~~-~~}5,1e\\mathrm{ ~~-~~}4,3e\\mathrm{ ~~-~~}5$ , and $1e-7$ , respectively. During decoding, we use beam search with beamsize $=3$ . We trained and evaluated the model on a single NVIDIA V100 GPU.
+
+# VI. EXPERIMENT RESULTS
+
+# A. Performance Evaluation
+
+The main results are shown in Table II. We evaluate generated personalized headlines through three aspects, namely coverage, factual consistency, and personalization.
+
+Coverage indicates that our method FPG-GRU achieves the highest scores at ROUGE-1, -2, and -L with 27.33, 10.51, and 23.30, significantly outperforming other baselines. This indicates that our model generates more informative, fluent headlines, and matches the users’ general interests well.
+
+TABLE II THE OVERALL PERFORMANCES OF COMPARED METHODS.
+
+![](https://t-atlas.github.io/files/images/cd30d43706da77f430a199684e0d683f2e5523e781c900d0ba15a25c9701bebf.jpg)
+
+TABLE III A CASE OF PERSONALIZED NEWS HEADLINES FROM THREE MODELS.
+
+![](https://t-atlas.github.io/files/images/9d6f870e0718f5d99ba1688129f6bebe7b5286e6614bb654d34eb52dd018bc07.jpg)
+
+Factual consistency issues were prevalent in earlier works and are more pronounced in current personalization methods, probably because emphasizing personalization compromises headline faithfulness. We attribute BART’s strong performance in factual consistency primarily to its ability to reconstruct the corrupted original text during the pre-training phase.
+
+Personalization results reveal that personalized methods get higher personalization scores by modeling the user interests to inject personalized information, surpassing other non-personalized methods. Furthermore, it’s worth noting that previous personalized models sometimes obtain higher personalization scores at the expense of headline consistency, potentially undermining the credibility of news. Our method is more like fact-preserving personalization, striking a balance between personalization and factual consistency in news headlines. While retaining BART’s strong ability of consistency, we further enhance the user appeal of generated headlines.
+
+# B. Case Study
+
+Finally, we exhibit an interesting case in our experiment, as shown in Table III. We compare our generated personalized headlines with outputs from the base headline generator, i.e., BART, and with personalized titles built by SOTA of personalized headlines generation, i.e., PENS-NAML.
+
+Notably, previous models trained from scratch exhibited factual and syntactic errors. For instance, when the source news article reported “Justin Rose” as the golfer’s score, the generated headline mistakenly mentioned “Tiger Woods”. Analyzing the user’s click history, it’s evident he/she is a golf tournament enthusiast, possibly favoring “Tiger Woods”. While personalized headlines should emphasize such interests, they must maintain factual consistency. In contrast, BART faithfully reflected the news content, generating a more coherent and factual headline despite lacking personalization. Meanwhile, our FPG-GRU strikes a balance between user appeal and factual consistency, offering a more personalized, informative, and consistent headline. It highlights relevant phrases like “Tiger Woods” and “U.S. Open” and provides additional details such as $"65"$ and “Pebble Beach”, aligning better with the user’s interests.
+
+# VII. CONCLUSION AND DISCUSSION
+
+In this paper, we proposed a framework FPG to make a trade-off between personalization and factual consistency in personalized news headline generation. This framework is underpinned by the principle of user appeal, leveraging the semantic similarity between the candidate news and the user’s historical click patterns to selectively emphasize key facts that align with the user’s nuanced interests. Meanwhile, the global user embedding subtly influences the decoder’s ultimate prediction, thereby infusing a degree of personalization into the generated headlines. In the pursuit of consistency, we have engineered a fact-aware user embedding that serves to mitigate the propagation of inconsistent information. Additionally, we have implemented a contrastive learning-based factual enhancement training regimen, which bolsters the model’s proficiency in preserving factual consistency between the generated headlines and the source news. Extensive experiments conducted on the PENS benchmark demonstrate the superiority of our method over other baselines in the balance between personalization and fact-preservation.
+
+Our focus on fact-preserving personalization makes generating high-quality personalized headlines particularly challenging when the candidate news lacks facts that align with the user’s historical click pattern. These concerns have inspired us to advocate for further research to model the various interests of users, including innate preferences and behavioral tendencies, to generate more effective personalized headlines.
+
+# ACKNOWLEDGMENT
+
+The research work supported by National Key R&D Plan No. 2022YFC3303303, the National Natural Science Foundation of China under Grant (No.61976204). Xiang Ao is also supported by the Project of Youth Innovation Promotion Association CAS, Beijing Nova Program Z201100006820062.
+
+# REFERENCES
+
+\[1\] B. Dorr, D. Zajic, and R. Schwartz, “Hedge trimmer: A parse-and-trim approach to headline generation,” in Proceedings of the HLT-NAACL 03 Text Summarization Workshop, 2003. \[2\] E. Alfonseca, D. Pighin, and G. Garrido, “HEADY: News headline abstraction through event pattern clustering,” in Proceedings of ACL, 2013. \[3\] K. Lopyrev, “Generating news headlines with recurrent neural networks,” arXiv preprint arXiv:1512.01712, 2015. \[4\] S. Takase, J. Suzuki, N. Okazaki, T. Hirao, and M. Nagata, “Neural headline generation on Abstract Meaning Representation,” in Proceedings of EMNLP, 2016. \[5\] J. Tan, X. Wan, and J. Xiao, “From neural sentence summarization to headline generation: A coarse-to-fine approach,” in Proceedings of IJCAI, 2017.
+
+\[6\] L. Luo, X. Ao, Y. Song, F. Pan, M. Yang, and Q. He, “Reading like HER: Human reading inspired extractive summarization,” in Proceedings of EMNLP, 2019. \[7\] D. Gavrilov, P. Kalaidin, and V. Malykh, “Self-attentive model for headline generation,” in Proceedings of ECIR, 2019. \[8\] X. Gu, Y. Mao, J. Han, J. Liu, Y. Wu, C. Yu, D. Finnie, H. Yu, J. Zhai, and N. Zukoski, “Generating representative headlines for news stories,” in Proceedings of WWW, 2020. \[9\] J. Zhang, Y. Zhao, M. Saleh, and P. J. Liu, “Pegasus: Pre-training with extracted gap-sentences for abstractive summarization,” in Proceedings of ICML, 2020.
+
+\[10\] T. Schick and H. Schitze, “Few-shot text generation with natural language instructions,” in Proceedings of EMNLP, 2021.
+
+\[11\] X. Ao, X. Wang, L. Luo, Y. Qiao, Q. He, and X. Xie, “PENS: A dataset and generic framework for personalized news headline generation,” in Proceedings of ACL, 2021.
+
+\[12\] M. W. Wagner and M. Gruszczynski, “When framing matters: How partisan and journalistic frames affect individual opinions and party identification,” Journalism & Communication Monographs, 2016.
+
+\[13\] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, “Attention is all you need,” in Proceedings of NIPS, 2017.
+
+\[14\] C. Wu, F. Wu, M. An, J. Huang, Y. Huang, and X. Xie, “Neural news recommendation with attentive multi-view learning,” in Proceedings of IJCAI, 2019.
+
+\[15\] C. Wu, F. Wu, S. Ge, T. Qi, Y. Huang, and X. Xie, “Neural news recommendation with multi-head self-attention,” in Proceedings of EMNLP, 2019.
+
+\[16\] C. Wu, F. Wu, M. An, J. Huang, Y. Huang, and X. Xie, “Npa: Neural news recommendation with personalized attention,” in Proceedings of KDD, 2019.
+
+\[17\] M. An, F. Wu, C. Wu, K. Zhang, Z. Liu, and X. Xie, “Neural news recommendation with long- and short-term user representations,” in Proceedings of ACL, 2019.
+
+\[18\] P. Khosla, P. Teterwak, C. Wang, A. Sarna, Y. Tian, P. Isola, A. Maschinot, C. Liu, and D. Krishnan, “Supervised contrastive learning,” in Proceedings of NeurIPS, 2020.
+
+\[19\] B. Gunel, J. Du, A. Conneau, and V. Stoyanov, “Supervised contrastive learning for pre-trained language model fine-tuning,” in Proceedings of ICLR, 2021.
+
+\[20\] F. Nan, C. Nogueira dos Santos, H. Zhu, P. Ng, K. McKeown, R. Nallapati, D. Zhang, Z. Wang, A. O. Arnold, and B. Xiang, “Improving factual consistency of abstractive summarization via question answering,” in Proceedings of ACL, 2021.
+
+\[21\] R. Sun, Y. Zhang, M. Zhang, and D. Ji, “Event-driven headline generation,” in Proceedings of ACL, 2015.
+
+\[22\] A. See, P. J. Liu, and C. D. Manning, “Get to the point: Summarization with pointer-generator networks,” in Proceedings of ACL, 2017.
+
+\[23\] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “BERT: Pretraining of deep bidirectional transformers for language understanding,” in Proceedings of NAACL, 2019.
+
+\[24\] C. Raffel, N. Shazeer, A. Roberts, K. Lee, S. Narang, M. Matena, Y. Zhou, W. Li, and P. J. Liu, “Exploring the limits of transfer learning with a unified text-to-text transformer,” Journal of Machine Learning Research, 2020.
+
+\[25\] M. Lewis, Y. Liu, N. Goyal, M. Ghazvininejad, A. Mohamed, O. Levy, V. Stoyanov, and L. Zettlemoyer, “BART: Denoising sequence-tosequence pre-training for natural language generation, translation, and comprehension,” in Proceedings of ACL, 2020.
+
+\[26\] Y. Liu, P. Liu, D. Radev, and G. Neubig, “BRIO: Bringing order to abstractive summarization,” in Proceedings of ACL, 2022.
+
+\[27\] Z. Li, J. Wu, J. Miao, and X. Yu, “News headline generation based on improved decoder from transformer,” Scientific Reports, 2022.
+
+\[28\] T. Shen, T. Lei, R. Barzilay, and T. Jaakkola, “Style transfer from nonparallel text by cross-alignment,” in Proceedings of NIPS, 2017.
+
+\[29\] Z. Fu, X. Tan, N. Peng, D. Zhao, and R. Yan, “Style transfer in text: Exploration and evaluation,” in Proceedings of AAAI, 2018.
+
+\[30\] S. Prabhumoye, Y. Tsvetkov, R. Salakhutdinov, and A. W. Black, “Style transfer through back-translation,” in Proceedings of ACL, 2018.
+
+\[31\] K. Shu, S. Wang, T. Le, D. Lee, and H. Liu, “Deep headline generation for clickbait detection,” in Proceedings of ICDM, 2018.
+
+\[32\] R. Zhang, J. Guo, Y. Fan, Y. Lan, J. Xu, H. Cao, and X. Cheng, “Question headline generation for news articles,” in Proceedings of CIKM, 2018.
+
+\[33\] P. Xu, C.-S. Wu, A. Madotto, and P. Fung, “Clickbait? sensational headline generation with auto-tuned reinforcement learning,” in Proceedings of EMNLP, 2019.
+
+\[34\] H. Liu, W. Guo, Y. Chen, and X. Li, “Contrastive learning enhanced author-style headline generation,” in Proceedings of EMNLP, 2022.
+
+\[35\] H. Xu, H. Liu, P. Jiao, and W. Wang, “Transformer reasoning network for personalized review summarization,” in Proceedings of SIGIR, 2021.
+
+\[36\] X. Wang, X. Gu, J. Cao, Z. Zhao, Y. Yan, B. Middha, and X. Xie, “Reinforcing pretrained models for generating attractive text advertisements,” in Proceedings of KDD, 2021.
+
+\[37\] K. Zhang, G. Lu, G. Zhang, Z. Lei, and L. Wu, “Personalized headline generation with enhanced user interest perception,” in Proceedings of ICANN, 2022.
+
+\[38\] K. Cho, B. van Merrienboer, C. Gulcehre, D. Bahdanau, F. Bougares, H. Schwenk, and Y. Bengio, “Learning phrase representations using RNN encoder–decoder for statistical machine translation,” in Proceedings of EMNLP, 2014.
+
+\[39\] K. Matsumaru, S. Takase, and N. Okazaki, “Improving truthfulness of headline generation,” in Proceedings of ACL, 2020.
+
+\[40\] H. Gao, L. Wu, P. Hu, and F. Xu, “Rdf-to-text generation with graphaugmented structural neural encoders,” in Proceedings of IJCAI, 2020.
+
+\[41\] S. Cao and L. Wang, “CLIFF: Contrastive learning for improving faithfulness and factuality in abstractive summarization,” in Proceedings of EMNLP, 2021.
+
+\[42\] M. Zhong, P. Liu, D. Wang, X. Qiu, and X. Huang, “Searching for effective neural extractive summarization: What works and what’s next,” in Proceedings of ACL, 2019.
+
+\[43\] S. Okura, Y. Tagami, S. Ono, and A. Tajima, “Embedding-based news recommendation for millions of users,” in Proceedings of KDD, 2017.
+
+\[44\] C.-Y. Lin, “ROUGE: A package for automatic evaluation of summaries,” in Text Summarization Branches Out, 2004.
+
+\[45\] W. Kryscinski, B. McCann, C. Xiong, and R. Socher, “Evaluating the factual consistency of abstractive text summarization,” in Proceedings of EMNLP, 2020.
+
+\[46\] I. Loshchilov and F. Hutter, “Decoupled weight decay regularization,” in Proceedings of ICLR, 2019.
+
+## Personalized News Headlines
+# Fact-Preserved Personalized News Headline Generation
+
+Zhao Yang∗†‡, Junhong Lian∗†‡, Xiang Ao†‡§ † Key Lab of Intelligent Information Processing of Chinese Academy of Sciences (CAS), Institute of Computing Technology, CAS, Beijing 100190, China. ‡ University of Chinese Academy of Sciences, Beijing 100049, China. § Institute of Intelligent Computing Technology, Suzhou, CAS. {yangzhao20s, lianjunhong23s, aoxiang}@ict.ac.cn
+
+# 01
+
+# Introduction
+
+# Personalization in News Headlines
+
+Personalized news headline generation involves generating a user-specific headline based on the user’s reading interest.
+
+The fundamental idea is that readers with different preferences can find their focal characters or aspects they are interested in, even within the same news.
+
+![](https://t-atlas.github.io/files/images/c1c910dac97bcb96a2145be2619aa40153513dcea73a432d709a4046af033f56.jpg)
+
+# Motivation
+
+# Eye-attracting Headlines or Potential Clickbait
+
+Excessive personalization may threaten the factual consistency of news headlines.
+
+![](https://t-atlas.github.io/files/images/68336eca35db697d9f264443a362343ccd07384187ce8dc050b9a62c99270dda.jpg)
+
+# 02
+
+# Method
+
+# Problem Formulation
+
+We perceived news headline generation as a headline-specialized summarization task.
+
+![](https://t-atlas.github.io/files/images/4c8f1b7be8bc85fd88687d36cf4b9bde5ef63d709575ff3adfbed1f493c51c59.jpg)
+
+# 02
+
+# Method
+
+# The Framework of FPG
+
+It has N layers of transformer blocks in both news encoder and decoder.
+
+(a) is history encoder, (b) is personalized news encoder, and (c) is user-guided decoder.
+
+![](https://t-atlas.github.io/files/images/6ead5e9fee20654af5a4b46e3bbb5155768e3ad152f04dff6cd8e7b350213a10.jpg)
+
+ICDM 2023 – 23rd IEEE International Conference on Data Mining
+
+# 02
+
+# Method
+
+# History Encoder
+
+The history encoder aims to learn users’ interest representations based on their historical behaviors. We denote $E\_{u}$ as the news-level user interests of $u$ .
+
+$$
+a\_{j}=\\mathsf{S o f t m a x}(\\mathbf h\_{j}^{c}\\mathsf{t a n h}(\\mathbf V\_{a}\\mathbf h\_{j}^{c\\top}+\\mathbf b\_{a}))
+$$
+
+$$
+\\mathbf{e\_{c}}=\\sum\_{j=1}^{T}a\_{j}\\mathbf{h}\_{j}^{c}
+$$
+
+Where $\\mathbf{V} _{a}\\in\\mathbb{R}^{d_{e}\\times d\_{e}},\\mathbf{b} _{a}\\in\\mathbb{R}^{d_{e}\\times1},$
+
+![](https://t-atlas.github.io/files/images/f40a81d97925cc7d00e47385542585353c9594ace0d748503b87c38561e3da66.jpg)
+
+ICDM 2023 – 23rd IEEE International Conference on Data Mining
+
+# 02
+
+# Method
+
+# Personalized News Encoder
+
+The personalized news encoder intends to encode a candidate news by matching user interests, using a history-cross attention to integrate the user's historical behaviors.
+
+$$
+\\begin{array}{c}{{{\\bf Q} _{h}={\\bf X}^{\\top}{\\bf H}^{Q},~{\\bf K}_{h}={\\bf E} _{u}^{\\top}{\\bf H}^{K},~{\\bf V}_{h}={\\bf E} _{u}^{\\top}{\\bf H}^{V}}}\ {{{\\bf X}_{p}={\\sf S o f t m a x}(\\frac{{\\bf Q} _{h}^{\\top}{\\bf K}_{h}}{\\sqrt{d\_{e}}}){\\bf V}\_{h}}}\\end{array}
+$$
+
+Where $\\mathbf{H}^{Q},\\mathbf{H}^{K},\\mathbf{H}^{V}\\in\\mathbb{R}^{d\_{e}\\times d\_{e}}$ are learnable parameter
+
+![](https://t-atlas.github.io/files/images/1908524593c73b4bac49a136ac73ff57ea3b752f1c0724ef43b68d9673db2c33.jpg)
+
+ICDM 2023 – 23rd IEEE International Conference on Data Mining
+
+# Method
+
+# User-guided Decoder
+
+The user-guided decoder generates a personalized headline based on a fact-aware user's global interests representation and the relevance of news-level interests.
+
+$$
+\\mathbf{u}=\\sum\_{j=1}^{N}\\alpha\_{j}\\mathbf{e}\_{j}
+$$
+
+Where ${\\alpha\_{1,...,N}}$ are attention scores of history-cross attention
+
+$$
+P(\\hat{y\_{t}})=\\mathsf{S o f t m a x}(\\mathbf{S} _{t}^{\\mathsf{N}}\\mathbf{W}_{v}+\\mathbf{b}\_{v})
+$$
+
+Where $\\mathbf{W} _{v} ~~\\in~~\\mathbb{R}^{d_{e}\\times\|\|\\mathbb{V}\|\|}$ and $\\mathbf{b}\_{v} ~~\\in~~\\mathbb{R}^{1\\times\|\|\\mathbb{V}\|\|}$ are learnable parameter
+
+We use the negative log-likelihood as the loss function to train the headline generation model:
+
+$$
+\\mathcal{L} _{N L L}=-\\sum_{i=1}^{T}\\log P(y\_{i}\|y\_{1},\\dots,y\_{i-1};X,C)
+$$
+
+Where $T$ is the length of the generated headline.
+
+![](https://t-atlas.github.io/files/images/6132c7e1b5dd37e198fd23f905577785aa6ff46d0a825c8b8d0265b5c6fab563.jpg)
+
+ICDM 2023 – 23rd IEEE International Conference on Data Mining
+
+# Method
+
+# Fact-enhanced Training
+
+We apply a multi-stage fact-enhanced training phase to improve the factual consistency of generated headlines by minimizing a contrastive learning loss $L\_{C L L}$ .
+
+$$
+\\begin{array}{r l}&{\\mathcal{L} _{C L L}=-\\underbrace{\\mathbb{E}_{x,c,y^{+}\\in\\mathcal{D}^{ _}}\\log P(y^{+};x,c)}{L{C}^{+}}}\ &{\\qquad-\\underbrace{\\mathbb{E}\_{x,c,y^{-}\\in\\mathcal{D}^{_}}\\log(1-P(y^{-};x,c))} _{L_{C}^{-}}}\ &{\\mathcal{D}^{\*}={X,C,Y^{+},Y^{-}}}\\end{array}
+$$
+
+$c$ : User’s Historical Clicks
+
+$X$ : Candidate News
+
+𝒀𝒀: Specific-customed Headline
+
+$Y^{+}$ : High Factual Score Headline
+
+$Y^{-}$ : Factual Errors Headline
+
+$\\pmb{D}^{l}$ : News Clicked by a Maximum of 𝒍𝒍 users
+
+Input: ${\\mathcal{C}}={X,Y}$ ${\\mathcal{D}}\_{l}={X,C,Y}$ $\\mathcal{D}^{\*}={X,C,Y^{+},Y^{-}}$ ;
+
+Initialize Transformer parameters $\\xi$ with BART-base;
+
+Other parameters $\\theta$ are randomly initialized;
+
+1. Pre-train the headline generator with MLE;
+2. Froze $\\xi$ to train the history encoder;
+
+   for epoch $\\v{r}=I$ :epoch2 do Sample ${X\_{i},C\_{i},Y\_{i}}$ from $\\mathcal{D}\_{l}$ Update $\\theta$ via minimizing Eq.(7);
+
+   end
+3. Train all parameters of FPG;
+
+   for epoch $=l$ :epoch3 do Sample ${X\_{i},C\_{i},Y\_{i}}$ from $\\mathcal{D}\_{l}$ Update $\\theta$ and $\\xi$ via minimizing Eq.(7);
+
+   end
+4. Fact-enhanced training;
+
+   for epoch $=l$ :epoch4 do Sample ${X\_{i},C\_{i},Y\_{i}^{+},Y\_{i}^{-}}$ from $\\mathbf{\\nabla}\\mathcal{D}^{\*}$ Update $\\xi$ via minimizing Eq.(8);
+
+   end
+
+# 03
+
+# Experiments
+
+# Evaluation Metrics
+
+We adopt a three-pronged approach to comprehensively evaluate headline quality.
+
+![](https://t-atlas.github.io/files/images/65ddf9dd19a8cc462a142f67dbba101a5cba5a50d38bc839e0c110de4b0f5ee6.jpg)
+
+# Personalization
+
+$$
+\\mathsf{P}\_{s i m}(\\mathsf{m a x}/\\mathsf{a v g})=\\mathsf{M a x}/\\mathsf{M e a n}s i m(c,y)
+$$
+
+# Factual Consistency
+
+FactCC Score
+
+![](https://t-atlas.github.io/files/images/a1e1d27c16158a82b81aec1d904cd735a03c1eca0af6351d5b5921af31d252ad.jpg)
+
+Coverage
+
+The average F1 of ROUGE scores
+
+# 03
+
+# Experiments
+
+# Overall Performances on PENS benchmark
+
+Our method outperforms others in balancing personalization with factual consistency in news headline generation, achieving the highest coverage scores, which suggests it creates more informative and fluent headlines that align well with users' interests.
+
+TABLE II THE OVERALL PERFORMANCES OF COMPARED METHODS.
+
+ICDM 2023 – 23rd IEEE International Conference on Data Mining
+
+![](https://t-atlas.github.io/files/images/2de85583ca679de452005270923c99fffbb0f288013fa17b8eb52b3c0aca8641.jpg)
+
+# 03
+
+# Experiments
+
+# Case Study
+
+Our model successfully combined user interests with factual consistency, creating personalized and informative headlines that avoid potential clickbait.
+
+TABLE VI A CASE OF PERSONALIZED NEWS HEADLINES GENERATED FROM THREE DIFFERENT MODELS. THE UNDERLINED WORDS INDICATE SOME CRITICAL FACTS OF THE ORIGINAL NEWS ARTICLE. THE WORDS IN RED FONT REPRESENT CONSISTENT KEYWORDS OF PERSONALIZED INTERESTS, AND THE WORDS IN BLUE FONT DENOTE FACTUAL ERRORS AND CORRESPONDING FACTS IN THE NEWS ARTICLE.
+
+![](https://t-atlas.github.io/files/images/9db38b27aef2f7e9542b277741bc14e4b0a7d0827508032c7c7310e8385e866c.jpg)
+
+# Thanks.
+
+# Fact-Preserved Personalized News Headline Generation
+
+Zhao Yang∗†‡, Junhong Lian∗†‡, Xiang Ao†‡§ † Key Lab of Intelligent Information Processing of Chinese Academy of Sciences (CAS), Institute of Computing Technology, CAS, Beijing 100190, China. ‡ University of Chinese Academy of Sciences, Beijing 100049, China. § Institute of Intelligent Computing Technology, Suzhou, CAS. {yangzhao20s, lianjunhong23s, aoxiang}@ict.ac.cn The source code will be ready soon at [https://github.com/ictmldm/FPG](https://github.com/ictmldm/FPG)
+
+## Personalized Headline Generation
+# Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation
+
+Junhong Lian†¶
+
+Institute of Computing Technology,
+
+Chinese Academy of Sciences
+
+Beijing, China
+
+[lianjunhong23s@ict.ac.cn](mailto:lianjunhong23s@ict.ac.cn)
+
+Xiang Ao∗†‡¶
+
+Institute of Computing Technology,
+
+Chinese Academy of Sciences
+
+Beijing, China
+
+[aoxiang@ict.ac.cn](mailto:aoxiang@ict.ac.cn)
+
+Xinyu Liu∗§¶
+
+Institute of Computing Technology,
+
+Chinese Academy of Sciences
+
+Beijing, China
+
+[liuxinyu@ict.ac.cn](mailto:liuxinyu@ict.ac.cn)
+
+Yang Liu†¶
+
+Institute of Computing Technology,
+
+Chinese Academy of Sciences
+
+Beijing, China
+
+[liuyang2023@ict.ac.cn](mailto:liuyang2023@ict.ac.cn)
+
+Qing He†¶
+
+Institute of Computing Technology,
+
+Chinese Academy of Sciences
+
+Beijing, China
+
+[heqing@ict.ac.cn](mailto:heqing@ict.ac.cn)
+
+# Abstract
+
+Personalized news headline generation aims to provide users with attention-grabbing headlines that are tailored to their preferences. Prevailing methods focus on user-oriented content preferences, but most of them overlook the fact that diverse stylistic preferences are integral to users’ panoramic interests, leading to suboptimal personalization. In view of this, we propose a novel Stylistic-Content Aware Personalized Headline Generation (SCAPE) framework. SCAPE extracts both content and stylistic features from headlines with the aid of large language model (LLM) collaboration. It further adaptively integrates users’ long- and short-term interests through a contrastive learning-based hierarchical fusion network. By incorporating the panoramic interests into the headline generator, SCAPE reflects users’ stylistic-content preferences during the generation process. Extensive experiments on the real-world dataset PENS demonstrate the superiority of SCAPE over baselines.
+
+# CCS Concepts
+
+• Computing methodologies $\\rightarrow$ Natural language generation;
+
+• Information systems $\\rightarrow$ Personalization; Data mining.
+
+# Keywords
+
+Personalized Headline Generation, Stylistic-Content Awareness Fusion, User Preference Modeling, Large Language Models
+
+# ACM Reference Format:
+
+Junhong Lian, Xiang Ao, Xinyu Liu, Yang Liu, and Qing He. 2025. Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation. In
+
+![](https://t-atlas.github.io/files/images/4f7091df0fa2ec1903845216d32ae0a5999da2e0eae88b5491826c328e8d5ec0.jpg)
+
+Figure 1: Illustration of the Joint Influence of Content Interests and Stylistic Preferences on Headline Personalization.
+
+Companion Proceedings of the ACM Web Conference 2025 (WWW Companion ’25), April 28-May 2, 2025, Sydney, NSW, Australia. ACM, New York, NY, USA, 4 pages. [https://doi.org/10.1145/3701716.3715539](https://doi.org/10.1145/3701716.3715539)
+
+# 1 Introduction
+
+Generating attractive news headlines has been firmly established as a special form of text summarization \[7, 12\]. Numerous efforts have focused on generating attention-grabbing headlines through personalized approaches, recognizing that readers with diverse preferences may find different focal points in the same news \[1, 2\]. These methods aimed to build engaging headlines tailored to individual users’ reading interests by utilizing auxiliary information, such as user profiles and historical clicks \[15, 16, 19, 21\]. In spite of that, existing personalized approaches primarily emphasize useroriented content-driven headlines, while largely overlooking the stylistic features of news headlines.
+
+The stylistic features of news headlines are pivotal in journalism communication \[3, 5\]. Boosting headline engagement through text style transfer has become a widely-used approach \[9, 20\]. Style transfer-based methods incorporate specific stylistic elements or employ interrogative forms in news headlines to capture readers’ attention \[9, 14\]. Nevertheless, these style transfer-based methods rely on a single, uniform stylistic strategy to boost engagement risks crossing into clickbait \[1, 19\]. To improve content consistency, recent works \[10, 20\] have emphasized the style-content duality in headline generation, focusing on transferring to prototype headline styles while maintaining content decoupling. Despite these efforts, style transfer-based methods are unsatisfactory because they have yet to achieve user-oriented personalization.
+
+In this work, we focus on encompassing both content interests and stylistic preferences to fully meet users’ needs for personalized headline generation. The reason is that even readers with similar content preferences may exhibit distinct style preferences for headlines due to different personal reading habits. For example, consider the case illustrated in Figure 1, wherein users’ content focus and stylistic preferences jointly affect the personalization of headlines. We mark their content interests and stylistic patterns with different colors and text highlighting. Base on User A’s historical click patterns, we can infer that User A prefers the “subject-subordinate title” format and interrogative forms to increase engagement, while User B favors “numbered list” headlines and short exclamatory sentences. Hence, we contend that both content interests and stylistic preferences are interwoven to form users’ panoramic interests in personalization and must be considered simultaneously. However, simultaneously addressing this issue is challenging. A primary obstacle is how to extract the inherent content and stylistic features encapsulated in headlines without ground-truth labels. Moreover, another challenge is to decouple implicit user panoramic interests and integrate them into headlines without explicit supervision.
+
+To remedy the above challenges, we propose a novel framework named Stylistic-Content Aware Personalized Headline Generation (SCAPE). We first designed a headline inference module that uses LLM to infer content and stylistic attributes for each news headline individually. It subsequently produces an offline embedding table that encapsulates these attributes at the headline-level. Furthermore, a hierarchical gated fusion network is devised to adaptively integrate users’ long- and short-term content interests and stylistic preferences. In addition, a self-supervised strategy is adopted to decouple the intertwined user preferences. Lastly, a personalized injection module leverages the fused user representation to guide a lightweight generator to produce final outputs. This ensures that the generated headlines reflect user’s panoramic interests. Our main contributions are summarized as follows:
+
+• To the best of our knowledge, this work represents the first attempt to incorporate both content and style preferences from user profiles for personalized news headline generation. We introduce a novel framework, SCAPE, which extracts the inherent features of headlines through LLM collaboration and facilitates personalized generation via a hierarchical fusion of both content interests and stylistic preferences. • Extensive evaluations conducted on the real-world personalized news headline generation benchmark PENS \[2\] demonstrate the superior performance of our method.
+
+# 2 Methodology
+
+# 2.1 Problem Formulation
+
+Consider a news database denoted as $\\mathcal{D}=\\left{{{n} _{i}}=\\left({{t}_{i}},{{b} _{i}}\\right)\\right}_{i=1}^{\|\\mathcal{D}\|}$ , where and represent the original headline and the body of news , and $\|\\mathcal D\|$ is the total number of news. For a given user $u$ , we denoted $u$ ’s click history as $H\_{u}=\[t\_{h\_{1}},t\_{h\_{2}},\\cdot\\cdot\\cdot,t\_{h\_{L}}\]$ , comprising $L$ clicked headlines $t\_{h\_{j}}$ $(j=1,\\cdots,L)$ , where each $t\_{h\_{j}}$ satisfies $t\_{h\_{j}}\\in{t\_{i}\\mid n\_{i}=$ $(t\_{i},b\_{i})\\in\\mathcal{D}\\dot{}$ . Then, given a candidate news $n\_{c}=(t\_{c},b\_{c})\\in\\mathcal{D}$ , our target is to generate a personalized headline $P\_{c}^{u}$ for user $u$ based on $u$ ’s click history $H\_{u}$ and the body $b\_{c}$ of the candidate news.
+
+![](https://t-atlas.github.io/files/images/ab100433803761f878e4e136b823b54d1dccb230d412aab7969b0030188e4bce.jpg)
+
+Figure 2: Architecture of the Proposed SCAPE Framework.
+
+# 2.2 Our SCAPE Framework
+
+In this section, we describe our proposed SCAPE framework, which is illustrated in Figure 2. It consists of a headline inference module, a hierarchical gated fusion network, and a personalized injection module for headline generator.
+
+2.2.1 Headline Inference. Extracting the inherent features from headlines without ground-truth labels is challenging, but LLMs with extensive world knowledge offer a promising solution for inferring high-level latent concepts. Building on this, the headline inference module in SCAPE employs an instruction-tuned LLM, denoted as $L L M\_{i n s t}$ , to infer text style and content interests from headlines $t\_{i}$ in news database $\\mathcal{D}$ as follows:
+
+$$
+R\_{s}=L L M\_{i n s t}(t\_{i},\\mathcal{P} _{\\mathrm{style}})\\quad R_{c}=L L M\_{i n s t}(t\_{i},\\mathcal{P}\_{\\mathrm{content}})
+$$
+
+where $\\mathcal{P} _{\\mathrm{style}}$ and $\\mathcal{P}_{\\mathrm{content}}$ are the prompts designed to instruct the LLM to infer stylistic features and content interests, respectively, with $R\_{s}$ and $R\_{c}$ as corresponding responses.
+
+Inspired by instruction-following text embedding \[13\], we design task-specific instructions $I\_{s}$ and $I\_{c}$ for embedding style and interest. These instructions are concatenated with news headlines and their corresponding responses, which are then encoded by an embedding-based LLM, denoted as $L L M\_{e m b}$ . The offline stored headline embedding table $E$ is constructed as follows:
+
+$$
+\\begin{array}{c}{E\_{s}=L L M\_{e m b}(\\left\[t\_{i},I\_{s},R\_{s}\\right\])\\quad E\_{c}=L L M\_{e m b}(\\left\[t\_{i},I\_{c},R\_{c}\\right\])}\ {E=\\left{(E\_{s}(t\_{i}),E\_{c}(t\_{i}))\\right.\\mid n\_{i}=(t\_{i},b\_{i})\\in\\mathcal{D}\\right}}\\end{array}
+$$
+
+where $E\_{s}(t\_{i})$ and $E\_{c}(t\_{i})$ represent the style and content embeddings of headline $t\_{i}$ , respectively, and $E$ is the set of style-content embedding pairs for all headlines in $\\mathcal{D}$ .
+
+2.2.2 Hierarchical Stylistic-Content Awareness Fusion. Given that historical clicks reflect both stable personal traits and recent shortterm characteristics, we employ an attention mechanism to aggregate all clicks and a GRU network for the $K$ recent clicks. This yields the user’s long-term content interests representation $u\_{c}^{l}$ and short-term content interests representation $u\_{c}^{s}$ as follows:
+
+$$
+\\Tilde{E} _{c}(t_{h\_{j}})=\\mathrm{MLP}(E\_{c}(t\_{h\_{j}}))\\quad\\forall j\\in{1,...,L}
+$$
+
+$$
+u\_{c}^{l}=\\mathrm{Attn}(\\tilde{E} _{c}(t_{h\_{1}}),\\dots,\\tilde{E} _{c}(t_{h\_{L}}))
+$$
+
+$$
+u\_{c}^{s}=\\mathrm{GRU}(\[\\tilde{E} _{c}(t_{h\_{L-K+1}}),\\dots,\\tilde{E} _{c}(t_{h\_{L}})\])
+$$
+
+where $\\tilde{E} _{c}(t_{h\_{j}})$ is the projected content embedding for the $j$ -th historical click with $L>K$ . Similarly, we obtain the user’s long-term and short-term stylistic preferences, denoted as $u\_{s}^{l}$ and $u\_{s}^{s}$ .
+
+We then obtain the fusion of long- and short-term representations corresponding to different types of interests, as follows:
+
+$$
+\\begin{array}{r}{\\alpha=\\sigma(W\_{g c}\\cdot\[u\_{c}^{l},u\_{c}^{s}\]+b\_{g c})\\qquad\\beta=\\sigma(W\_{g s}\\cdot\[u\_{s}^{l},u\_{s}^{s}\]+b\_{g s})}\\end{array}
+$$
+
+$$
+u\_{c}=\\alpha\\cdot u\_{c}^{l}+\\left(1-\\alpha\\right)\\cdot u\_{c}^{s}\\qquadu\_{s}=\\beta\\cdot u\_{s}^{l}+\\left(1-\\beta\\right)\\cdot u\_{s}^{s}
+$$
+
+where $\\sigma$ denotes the sigmoid activation function, and $\\alpha$ is the gating weight for content interests. $W\_{g c}$ and $b\_{g c}$ are learnable parameters. Similarly, we derive the gating weight $\\beta$ and representation $u\_{s}$ for style preferences through the same process.
+
+Subsequently, we integrate the $u\_{c}$ and $u\_{s}$ based on the attention weights derived from the candidate article representation. This stylistic-content awareness fusion mechanism enables the stepwise integration of diverse representations of the user.
+
+2.2.3 Personalized Injection Module Guided Generator. Once the user representation $U$ is obtained, SCAPE integrates it into a decoder of the lightweight headline generator through the personalized injection module. Specifically, the user representation $U$ is added to the input embeddings $\\mathbf{X}$ of each token in the decoder. This user-specific vector is subsequently propagated through the residual flow, thereby influencing the generated headlines. By integrating user preferences at the token level, the headline generator can better align its output with the user’s interests, producing stylisticcontent-aware personalized headlines that effectively reflect their panoramic interests, formulated as follows:
+
+$$
+\\mathbf{X}^{\\prime}=\\mathbf{X}+\\left({\\mathbf{1}}\_{n}\\otimes U\\right)
+$$
+
+where $\\mathbf{X}\\in\\mathbb{R}^{n\\times d}$ , $U\\in\\mathbb{R}^{d}$ , $n$ is the sequence length, $d$ is the embedding dimension, and $\\mathbf{1}\_{n}\\in\\mathbb{R}^{n}$ is an all-ones vector.
+
+# 2.3 Disentanglement Strategy
+
+To prevent the $u\_{c}$ and $u\_{s}$ in Section 2.2.2 from collapsing into trivial forms, we adopt a mechanism inspired by \[22\] to promote the disentanglement of long- and short-term (LS-term) style and content interest representations. Specifically, we aggregate users’ historical LS-term clicks using mean aggregation to derive proxies for stylistic preferences $(p\_{u\_{s}}^{l}$ and $\\boldsymbol{p} _{u_{s}}^{s}$ ) and content interests $(p\_{u\_{c}}^{l}$ and $\\mathcal{P} _{u_{c}}^{s}$ ).
+
+We employ contrastive learning between user LS-term representations and proxies, ensuring that the learned representations of LS-term style or content are more similar to their respective proxies than to opposite proxies. For content interests modeling, a user’s long-term content interest $u\_{c}^{l}$ should be more similar to the long-term content proxy $p\_{u\_{c}}^{l}$ than to the short-term content proxy $\\mathcal{P} _{u_{c}}^{s}$ or the long-term style proxy $p\_{u\_{s}}^{l}$ .
+
+The triplet loss function is used to achieve contrastive learning, and the final contrastive learning loss can computed as follows:
+
+$$
+{\\mathcal{L}} _{\\mathrm{CL}}={\\frac{1}{\|{\\mathcal{R}}\|}}\\sum_{R\\in{\\mathcal{R}}}{\\frac{1}{\|N\_{R}\|}}\\sum\_{N\\in{\\mathcal{N}} _{R}}\\operatorname\*{max}{(0,d(R,P_{R})-d(R,N)+m)}
+$$
+
+where $\\mathcal{R}={u\_{s}^{l},u\_{s}^{s},u\_{c}^{l},u\_{c}^{s}}$ is user representations set, and $\\mathcal{N} _{R}$ is negative proxies set. $P_{R}$ is the positive proxy corresponding to $R,d$ denotes the Euclidean distance, and $m$ is a positive margin value.
+
+# 3 Experiments
+
+# 3.1 Experimental Setup
+
+3.1.1 Datasets and Baselines. We use the publicly available personalized news headline generation dataset PENS \[2\] as benchmark. The dataset comprises 500, 000 anonymized impressions from over 445, 000 users and 113, 762 news articles, capturing detailed historical click data to reflect nuanced personalized preferences. The test set includes 3, 940 news items annotated by 103 users, each providing 200 unique parallel headlines as the gold standard for personalized headline evaluation.
+
+We compare SCAPE with SOTA personalized headline generation methods on the PENS benchmark, including pointer-networkbased frameworks \[1, 2, 21\] and methods based on pre-trained language models \[15, 19\]. We also expanded our evaluation by employing a prompt-based method to comprehensively investigate the performance of LLMs against strong personalized baselines, evaluating both open-source LLMs \[4, 18\] of various sizes and closed-source LLMs \[6, 8, 11\] via API services.
+
+3.1.2 Evaluation Metrics. We use ROUGE metrics to measure lexical similarity, with ROUGE-1 and ROUGE-2 for informativeness, and ROUGE-L for fluency. To evaluate the factual consistency of generated headlines, we follow previous work \[19\] that reported Fact Scores. As for personalization, due to the lack of a widely accepted evaluation method, we design a pairwise comparison task \[17\], where strong LLMs evaluate candidates against original headlines based on the user’s historical clicks. To minimize bias, we swap the contextual order of candidates and perform two independent assessments, marking inconsistencies as ties. Personalization performance is reported as "win/tie/lose" outcomes between the candidates and original headlines across baseline methods.
+
+3.1.3 Implementation Details. We use FlanT5-base as the backbone for the headline generator. The model is pre-trained on general headline generation, as \[15, 19\], for 2 epochs with a peak learning rate (LR) of $1e\\mathrm{ ~~-~~}4$ and cosine decay. Early stopping is applied within 5 epochs for subsequent steps, with peak LRs set to $1e-3$ , $1e-6$ , and $1e-5$ , respectively. Other details are consistent with prior work \[19\]. The collaborative LLMs are Qwen2.5-72B-Instruct and GTE-Qwen2-7B-Instruct. We employ the Huggingface ROUGE pipeline as prior work \[15\] and re-report results for FPG \[19\]. In the pairwise comparison evaluation of personalization performance, we use Qwen2.5-72B-Instruct as the judge to obtain the comprehensive assessment. We use NVIDIA A800 80GB GPU for our experiments.
+
+Table 1: Performance of the Compared Baseline Methods.
+
+![](https://t-atlas.github.io/files/images/cb3c11bf20c1f9ad70f016a38203eef370a4d217b2e2afb4b1510fffef08eaed.jpg)
+
+The symbol \* denotes the significance level with $p\\leq0.05$ . Bold font indicates the best-performing method. Underline indicates the second-best results in the group.
+
+![](https://t-atlas.github.io/files/images/39b8a16004cff24f9db8bb6e4b10769c18619eddd7e77aca5865ca0d95a3806f.jpg)
+
+Figure 3: Win Rates in Personalization Evaluation.
+
+# 3.2 Results and Analysis
+
+Table 1 compares SCAPE with baseline methods, demonstrating its superior performance and setting a new benchmark for personalized headline generation in SOTA results. SCAPE significantly outperforms other methods in informativeness and fluency. This result highlights that SCAPE better improves content coverage through its stylistic-content-aware user modeling via LLM collaboration. Furthermore, SCAPE emphasizes the importance of balancing long- and short-term content interests and stylistic preferences to improve the factual consistency of personalized headlines.
+
+Figure 3 shows the win rates of personalization evaluation using LLMs with customized prompts as judges. While GPT-4o shows higher win rates than the personalized model FPG, LLMs still struggle to generate personalized headlines based on prompt engineering. This underscores the challenge posed by the complexity and diversity of user’s clicks preferences. Our SCAPE framework takes a crucial step forward in personalized headlines generation by considering both user-oriented content interests and modeling linguistic style preferences in users’ historical clicks.
+
+# 4 Conclusion
+
+In this paper, we propose SCAPE, a novel framework to tackle the challenges of insufficiently user preference modeling in personalized headline generation. SCAPE introduces a headline inference module that extracts the inherent stylistic features and content interests from news headlines without explicit supervision. A hierarchical gated fusion mechanism is further introduced to dynamically combine both long- and short-term interests for panoramic user modeling, which then guides the headline generator to produce stylistic-content aware personalized headlines. Extensive experiments on the PENS dataset show that SCAPE sets a new state-of-the-art benchmark for personalized headline generation.
+
+# Acknowledgments
+
+The research work supported by National Key R&D Plan No.2022YFC3303303, the National Natural Science Foundation of China under Grant (No. U2436209, 62476263). Xiang Ao is also supported by the Project of Youth Innovation Promotion Association CAS, Beijing Nova Program 20230484430, the Innovation Funding of ICT, CAS under Grant No. E461060.
+
+# References
+
+\[1\] Xiang Ao, Ling Luo, Xiting Wang, et al. 2023. Put Your Voice on Stage: Personalized Headline Generation for News Articles. ACM TKDD (2023). \[2\] Xiang Ao, Xiting Wang, Ling Luo, Ying Qiao, Qing He, and Xing Xie. 2021. PENS: A Dataset and Generic Framework for Personalized News Headline Generation. In Proc. of ACL 2021.
+
+\[3\] Allan Bell. 1991. The language of news media. Blackwell Oxford.
+
+\[4\] Hyung Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus, Yunxuan Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, et al. 2024. Scaling instruction-finetuned language models. JMLR (2024). \[5\] John Fiske. 2010. Introduction to communication studies. Routledge. \[6\] Team GLM, Aohan Zeng, Bin Xu, Bowen Wang, Chenhui Zhang, Da Yin, Dan Zhang, Diego Rojas, Guanyu Feng, Hanlin Zhao, et al. 2024. Chatglm: A family of large language models from glm-130b to glm-4 all tools. arXiv preprint arXiv:2406.12793 (2024).
+
+\[7\] Xiaotao Gu, Yuning Mao, Jiawei Han, et al. 2020. Generating Representative Headlines for News Stories. In Proc. of The Web Conference 2020. \[8\] Aaron Hurst, Adam Lerer, Adam P Goucher, Adam Perelman, Aditya Ramesh, Aidan Clark, AJ Ostrow, Akila Welihinda, Alan Hayes, Alec Radford, et al. 2024. Gpt-4o system card. arXiv preprint arXiv:2410.21276 (2024).
+
+\[9\] Di Jin, Zhijing Jin, Joey Tianyi Zhou, et al. 2020. Hooks in the Headline: Learning to Generate Headlines with Controlled Styles. In Proc. of ACL 2020.
+
+\[10\] Mingzhe Li, Xiuying Chen, Min Yang, et al. 2021. Learning to Write Eye-Catching Headlines via Disentanglement. In Proc. of AAAI 2021.
+
+\[11\] Aixin Liu, Bei Feng, Bin Wang, Bingxuan Wang, Bo Liu, Chenggang Zhao, Chengqi Dengr, Chong Ruan, Damai Dai, Daya Guo, et al. 2024. Deepseekv2: A strong, economical, and efficient mixture-of-experts language model. arXiv preprint arXiv:2405.04434 (2024).
+
+\[12\] Ling Luo, Xiang Ao, Yan Song, Feiyang Pan, Min Yang, and Qing He. 2019. Reading like HER: Human Reading Inspired Extractive Summarization. In Proc. of EMNLP-IJCNLP 2019.
+
+\[13\] Letian Peng, Yuwei Zhang, Zilong Wang, Jayanth Srinivasa, Gaowen Liu, Zihan Wang, and Jingbo Shang. 2024. Answer is All You Need: Instruction-following Text Embedding via Answering the Question. In Proc. of ACL 2024.
+
+\[14\] Kai Shu, Suhang Wang, Thai Le, et al. 2018. Deep Headline Generation for Clickbait Detection. In Proc. of ICDM 2018.
+
+\[15\] Yun-Zhu Song, Yi-Syuan Chen, Lu Wang, and Hong-Han Shuai. 2023. General then Personal: Decoupling and Pre-training for Personalized Headline Generation. TACL (2023).
+
+\[16\] Xiaoyu Tan, Leijun Cheng, Xihe Qiu, et al. 2024. Enhancing Personalized Headline Generation via Offline Goal-Conditioned Reinforcement Learning with Large Language Models. In Proc. of KDD 2024.
+
+\[17\] Peiyi Wang, Lei Li, Liang Chen, Zefan Cai, Dawei Zhu, Binghuai Lin, Yunbo Cao, Qi Liu, Tianyu Liu, and Zhifang Sui. 2024. Large language models are not fair evaluators. In Proc. of ACL 2024.
+
+\[18\] An Yang, Baosong Yang, Binyuan Hui, Bo Zheng, Bowen Yu, Chang Zhou, Chengpeng Li, Chengyuan Li, Dayiheng Liu, Fei Huang, et al. 2024. Qwen2 technical report. arXiv preprint arXiv:2407.10671 (2024).
+
+\[19\] Zhao Yang, Junhong Lian, and Xiang Ao. 2023. Fact-Preserved Personalized News Headline Generation. In Proc. of ICDM 2023.
+
+\[20\] Boning Zhang and Yang Yang. 2023. MediaHG: Rethinking Eye-catchy Features in Social Media Headline Generation. In Proc. of EMNLP 2023.
+
+\[21\] Kui Zhang, Guangquan Lu, Guixian Zhang, Zhi Lei, and Lijuan Wu. 2022. Personalized Headline Generation with Enhanced User Interest Perception. In Proc. of ICANN 2022.
+
+\[22\] Yu Zheng, Chen Gao, Jianxin Chang, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2022. Disentangling long and short-term interests for recommendation. In Proc. of The Web Conference 2022.
+
+## Personalized Headline Generation
+# Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation
+
+Junhong Lian†¶, Xiang Ao∗†‡¶, Xinyu Liu∗§¶, Yang Liu†¶, Qing He†¶
+
+† Key Lab of Intelligent Information Processing, Institute of Computing Technology(ICT), Chinese Academy of Sciences (CAS). Also affiliated with the Key Lab of AI Safety, CAS, Beijing, China.
+
+‡ Institute of Intelligent Computing Technology, CAS, Suzhou, China. § High Performance Computer Research Center, ICT, CAS. $\\P$ The authors are also with the University of Chinese Academy of Sciences, CAS.
+
+$^\*$ Corresponding authors: {aoxiang, liuxinyu}@ict.ac.cn
+
+The ACM Web Conference 2025, Sydney, Australia. 28 April - 2 May 2025
+
+# 01
+
+# Personalization in News Headlines
+
+Personalized news headline generation involves generating a user-specific headline based on the user’s reading interest.
+
+# Historical clicks
+
+![](https://t-atlas.github.io/files/images/21f44b14f95a1aa7e1e498e052b3d2f867c5292c6d49fa72a335dbec922184db.jpg)
+
+User A
+
+1.The Iron Bowl:Alabama Not Dead Yet
+
+2\. Where did Irump and Harris win? Election 2024 results
+
+3\. Did Biden and Irump hatch the Lebanese ceasefire?
+
+4\. Real Madrid 'in TOTAL CRISIS': European champions are ...
+
+Trump's Shoching Move: Did He Just win Over the Youth Vote?
+
+Messi Nominated for FIFA Best: Fair decision or bias?
+
+Colombia Travel Tips: Stay Safe and Explore Smart
+
+Existing methods largely overlooking the stylistic features of news headlines.
+
+![](https://t-atlas.github.io/files/images/5e90fb495cf805e96db5fb755e6e26a9f119d7b83c2b65ad6644cc5497a584b5.jpg)
+
+![](https://t-atlas.github.io/files/images/6c7a328874fb0df71e0c50d2a6c557e89f73a6c7f134640c6b1a86c4f9c439c0.jpg)
+
+![](https://t-atlas.github.io/files/images/6ab8ef044c8e879e1ce810295975c1a14039c616dfbc94a438368d0aedd40e6b.jpg)
+
+Content interests and stylistic preferences are interwoven to form users’ panoramic interests.
+
+# Half of young voters view Republican Partyfavorablypost-election
+
+# Lionel Messi gets nominated for FIFA BestAward
+
+# Colombia Travel Tips: Things You Need To Know Before You Go
+
+Big Shift! Half of Young Voters Now Supporting Republicans
+
+Messi's 2024 FIFA Best Player Nomination Ignites Controversy
+
+The 5 Essential Things You Must Know Before Visiting Colombia
+
+User B
+
+# Historical clicks
+
+![](https://t-atlas.github.io/files/images/8324362f67bbc2173bce74c6f73d72ef7462356095f4119fbed15f632d0d117b.jpg)
+
+1. The 5 best states to visit on your first trip to the US
+2. Messi's son debuts at Argentina youth tournament ...
+3. It lives! 47-year-old Voyager 1 is back in action
+
+   4.The 10 Best NBA Centers of All Time ...
+
+# 01
+
+# Challenges
+
+We identified two major challenges:
+
+# Style-Content Features Extraction
+
+How to extract the inherent content and stylistic features encapsulated in headlines without ground-truth labels?
+
+# Panoramic Interest Decoupling
+
+How to decouple implicit user panoramic interests and integrate them into headlines without explicit supervision?
+
+# 02
+
+# SCAPE Framework
+
+![](https://t-atlas.github.io/files/images/5e63104c700476d69692c41a129cb29dc6c02e61c2d998822ddc59e3a2c890af.jpg)
+
+LLM-based headline feature inference. $R\_{s}=L L M\_{i n s t}(t\_{i},\\mathcal{P} _{\\mathrm{style}})\\quad R_{c}=L L M\_{i n s t}(t\_{i},\\mathcal{P}\_{\\mathrm{content}})$
+
+Offline embedding for latent attributes. $\\begin{array}{c}{E\_{s}=L L M\_{e m b}(\\left\[t\_{i},I\_{s},R\_{s}\\right\])\\quad E\_{c}=L L M\_{e m b}(\\left\[t\_{i},I\_{c},R\_{c}\\right\])}\ {E=\\left{\\left(E\_{s}(t\_{i}),E\_{c}(t\_{i})\\right)\\mid n\_{i}=\\left(t\_{i},b\_{i}\\right)\\in\\mathcal{D}\\right}}\\end{array}$
+
+# 02
+
+# SCAPE Framework
+
+Hierarchical gated fusion for long & short-term interests.
+
+$$
+\\begin{array}{r l}&{\\tilde{E} _{c}(t_{h\_{j}})=\\mathrm{MLP}(E\_{c}(t\_{h\_{j}}))\\quad\\forall j\\in{1,\\dots,L}}\ &{\\qquadu\_{c}^{l}=\\mathrm{Attn}(\\tilde{E} _{c}(t_{h\_{1}}),\\dots,\\tilde{E} _{c}(t_{h\_{L}}))}\ &{u\_{c}^{s}=\\mathrm{GRU}(\[\\tilde{E} _{c}(t_{h\_{L-K+1}}),\\dots,\\tilde{E} _{c}(t_{h\_{L}})\])}\\end{array}
+$$
+
+$$
+\\begin{array}{r}{\\alpha=\\sigma(W\_{g c}\\cdot\[u\_{c}^{l},u\_{c}^{s}\]+b\_{g c})\\qquad\\beta=\\sigma(W\_{g s}\\cdot\[u\_{s}^{l},u\_{s}^{s}\]+b\_{g s})}\\end{array}
+$$
+
+$$
+u\_{c}=\\alpha\\cdot u\_{c}^{l}+\\left(1-\\alpha\\right)\\cdot u\_{c}^{s}\\qquadu\_{s}=\\beta\\cdot u\_{s}^{l}+\\left(1-\\beta\\right)\\cdot u\_{s}^{s}
+$$
+
+Personalized injection at token-level generation.
+
+$$
+\\mathbf{X}^{\\prime}=\\mathbf{X}+\\left({\\mathbf{1}}\_{n}\\otimes U\\right)
+$$
+
+Disentanglement Strategy.
+
+$$
+{\\mathcal{L}} _{\\mathrm{CL}}={\\frac{1}{\|{\\mathcal{R}}\|}}\\sum_{R\\in{\\mathcal{R}}}{\\frac{1}{\|N\_{R}\|}}\\sum\_{N\\in N\_{R}}\\operatorname\*{max}\\left(0,d(R,P\_{R})-d(R,N)+m\\right)
+$$
+
+![](https://t-atlas.github.io/files/images/58b661a98773bb210a1464d5a21a008d10a7507578e3c087a939ab16dca053fb.jpg)
+
+# Experiments
+
+Our method sets a new benchmark for personalized headline generation in SOTA results by considering both user-oriented content interests and modeling linguistic style preferences in users’ historical clicks.
+
+Table 1: Performance of the Compared Baseline Methods.
+
+![](https://t-atlas.github.io/files/images/4a9480a37a30b91bbb8746c1b6890c00c65712bc40d986722f0080c9196c6cbc.jpg)
+
+The symbol \* denotes the significance level with $p\\leq0.05$ . Bold font indicates the best-performing method. Underline indicates the second-best results in the group.
+
+![](https://t-atlas.github.io/files/images/b1ae7ab5416a016ea79a5578d8be6524ea8f1cef93674e0cf6b46c885802fe2f.jpg)
+
+Figure 3: Win Rates in Personalization Evaluation.
+
+# Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation
+
+Junhong Lian†¶, Xiang Ao∗†‡¶, Xinyu Liu∗§¶, Yang Liu†¶, Qing He†¶
+
+† Key Lab of Intelligent Information Processing, Institute of Computing Technology(ICT), Chinese
+
+Academy of Sciences (CAS). Also affiliated with the Key Lab of AI Safety, CAS, Beijing, China. ‡ Institute of Intelligent Computing Technology, CAS, Suzhou, China. § High Performance Computer Research Center, ICT, CAS. ¶ The authors are also with the University of Chinese Academy of Sciences, CAS.
+
+∗ Corresponding authors: {aoxiang, liuxinyu}@ict.ac.cn
+
+The source code will be ready soon at [https://github.com/ictmldm/SCAPE](https://github.com/ictmldm/SCAPE)
+
+The ACM Web Conference 2025, Sydney, Australia. 28 April - 2 May 2025
+
+## Talk Map Exploration
+![](https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/images/marker-shadow.png)
+
+![](https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/images/marker-icon.png)
+
+[+](https://t-atlas.github.io/talkmap/map.html# "Zoom in") [-](https://t-atlas.github.io/talkmap/map.html# "Zoom out")
+
+[Leaflet](http://leafletjs.com/ "A JS library for interactive maps") \| Tiles © Esri — Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012
+
+Mouse over a cluster to see the bounds of its children and click a cluster to zoom to those bounds
+

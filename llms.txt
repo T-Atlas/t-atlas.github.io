@@ -1,0 +1,30 @@
+# https://t-atlas.github.io/ llms.txt
+
+- [NLP Researcher Profile](https://t-atlas.github.io/): Master's student researching NLP and personalized generation.
+- [Sample Blog Post](https://t-atlas.github.io/posts/2025/04/blog-post-test/): Sample blog post with comment section and future post link.
+- [Blog Post Overview](https://t-atlas.github.io/posts/2012/08/blog-post-4/): Sample blog post showcasing comment functionality and scheduling.
+- [Fact-Preserved News Headlines](https://t-atlas.github.io/publication/2023-12-01-fact-preserved): Framework for personalized news headlines balancing facts and preferences.
+- [Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests): Novel framework for personalized headline generation using user preferences.
+- [Archive Layout Examples](https://t-atlas.github.io/archive-layout-with-content/): Explore various markup styles and layout examples.
+- [Posts by Category](https://t-atlas.github.io/categories/): Explore various categories of posts and topics.
+- [Personalized News Headlines](https://t-atlas.github.io/collection-archive/): Explore personalized news headline generation research publications.
+- [Curriculum Vitae Overview](https://t-atlas.github.io/cv/): Master's and Bachelor's degrees in Computing and Management.
+- [Markdown Usage Guide](https://t-atlas.github.io/markdown/): Comprehensive guide on Markdown usage and configuration.
+- [News and Updates](https://t-atlas.github.io/news/): Updates on academic achievements and research papers accepted.
+- [Non-Menu Page](https://t-atlas.github.io/non-menu-page/): Explore a non-menu page with markdown content.
+- [Page Archive Resources](https://t-atlas.github.io/page-archive/): Explore various resources including publications, portfolio, and teaching.
+- [Creative Portfolio Showcase](https://t-atlas.github.io/portfolio/): Explore a diverse collection of creative portfolio items.
+- [Publications on Headline Generation](https://t-atlas.github.io/publications/): Explore conference papers on personalized headline generation techniques.
+- [Sitemap of All Content](https://t-atlas.github.io/sitemap/): Comprehensive sitemap listing all posts and pages available.
+- [Blog Posts by Tags](https://t-atlas.github.io/tags/): Explore various blog posts categorized by tags.
+- [Talk Map](https://t-atlas.github.io/talkmap.html): Interactive map displaying talk locations from Jupyter Notebook.
+- [Talks and Presentations](https://t-atlas.github.io/talks/): Explore various talks and tutorials in testing science.
+- [Teaching Experiences](https://t-atlas.github.io/teaching/): Overview of teaching experiences and courses offered.
+- [Privacy Policy Overview](https://t-atlas.github.io/terms/): Privacy policy outlining data collection and usage practices.
+- [Future Blog Posts](https://t-atlas.github.io/year-archive/): Explore future blog posts and archives from T-Atlas.
+- [Jupyter Notebook Markdown Generator](https://t-atlas.github.io/markdown_generator/): Convert TSV data into formatted markdown files for academic use.
+- [Personalized News Headline Generation](https://t-atlas.github.io/files/ICDM2023_paper.pdf): A framework for generating personalized news headlines while ensuring factual consistency.
+- [Personalized News Headlines](https://t-atlas.github.io/files/ICDM2023_slides.pdf): Personalized news headline generation ensuring factual consistency.
+- [Personalized Headline Generation](https://t-atlas.github.io/files/WWW2025_paper.pdf): A framework for personalized headline generation using user interests.
+- [Personalized Headline Generation](https://t-atlas.github.io/files/WWW2025_slides.pdf): Personalized headline generation using user interests and styles.
+- [Talk Map Exploration](https://t-atlas.github.io/talkmap/map.html): Interactive map for exploring talk locations and clusters.
