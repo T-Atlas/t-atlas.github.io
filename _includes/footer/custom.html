@@ -1,3 +1,18 @@
 <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
+{% if site.friends and site.friends.links.size > 0 %}
+<div class="friends-links">
+  <div class="friends-section-title">{{ site.friends.title }}</div>
+  <ul class="friends-list">
+    {% for link in site.friends.links %}
+      <li>
+        <a href="{{ link.url }}" {% if site.friends.settings.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.name }}</a>
+        {%- if site.friends.settings.show_description and link.description -%}
+          <span class="friend-description">&nbsp;- {{ link.description }}</span>
+        {%- endif -%}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
 <!-- end custom footer snippets -->

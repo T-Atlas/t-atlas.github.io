@@ -1,0 +1,79 @@
+/* 友情链接样式 - 垂直布局 */
+.friends-links {
+  margin: 1em 0;
+  font-family: $sans-serif-narrow; 
+  font-size: $type-size-6; /* 匹配页脚版权文字大小 */
+  color: var(--global-text-color-light);
+}
+
+.friends-section-title {
+  font-family: $sans-serif-narrow; 
+  font-size: $type-size-5;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+
+.friends-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friends-list li {
+  margin-bottom: 0.25em;
+}
+
+.friends-list li a {
+  color: #6495ED; /* 低饱和度蓝色 */
+  text-decoration: none;
+}
+
+.friends-list li a:hover {
+  text-decoration: underline;
+  color: var(--link-color-hover);
+}
+
+.friends-list .friend-description {
+  /* 描述文本颜色与列表项一致，无需额外设置 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .friends-links .friends-list {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+// 暗色主题支持
+@media (prefers-color-scheme: dark) {
+  .friends-links {
+    border-top-color: #444;
+    
+    h4 {
+      color: #e0e0e0;
+    }
+    
+    h5 {
+      color: #ccc;
+    }
+    
+    .friends-list {
+      li {
+        a {
+          color: #66b3ff;
+          
+          &:hover {
+            color: #99ccff;
+          }
+        }
+        
+        .friend-description {
+          color: #aaa;
+        }
+      }
+    }
+  }
+} 
