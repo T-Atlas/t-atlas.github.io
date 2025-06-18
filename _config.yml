@@ -88,8 +88,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
+  # books: (注释掉 - 目前没有书籍发表)
+  #   title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
@@ -224,21 +224,21 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: false
-    permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: false
-    permalink: /:collection/:path/
-  talks:
-    output: false
     permalink: /:collection/:path/
   news:
     output: true
     permalink: /:collection/:path/
+  # teaching: (注释掉 - 不在导航中使用)
+  #   output: false
+  #   permalink: /:collection/:path/
+  # portfolio: (注释掉 - 不在导航中使用)
+  #   output: false
+  #   permalink: /:collection/:path/
+  # talks: (注释掉 - 不在导航中使用)
+  #   output: false
+  #   permalink: /:collection/:path/
   
 
 # 这些设置控制页面和集合如何被包含在站点中
@@ -262,15 +262,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: false
-      share: false
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -280,23 +271,6 @@ defaults:
       author_profile: false
       share: false
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: false
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: false
-      share: false
   # _news
   - scope:
       path: ""
@@ -306,6 +280,32 @@ defaults:
       author_profile: false
       share: false
       comments: true
+  # _teaching (注释掉 - 不在导航中使用)
+  # - scope:
+  #     path: ""
+  #     type: teaching
+  #   values:
+  #     layout: single
+  #     author_profile: false
+  #     share: false
+  #     comments: true
+  # _portfolio (注释掉 - 不在导航中使用)
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: false
+  #     share: false
+  #     comment: true
+  # _talks (注释掉 - 不在导航中使用)
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: false
+  #     share: false
 
 
 # Sass/SCSS
@@ -316,9 +316,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: Asia/Shanghai
 
 
 # Plugins
