@@ -1,0 +1,24 @@
+en:
+  title: "Admired Friends"
+  settings:
+    show_description: true
+    open_in_new_tab: true
+  links:
+    - name: "Dr. Yang Liu"
+      url: "https://ponderly.github.io"
+      description: "An approachable and talented assistant professor focusing on Graph Machine Learning and AI Safety."
+    - name: "Dr. Yiqing Wu"
+      url: "https://wyqing20.github.io"
+      description: "A promising young scientist who interests in Recommendation System and Large Language Models."
+zh:
+  title: "见贤思齐"
+  settings:
+    show_description: true
+    open_in_new_tab: true
+  links:
+    - name: "柳阳 博士"
+      url: "https://ponderly.github.io"
+      description: "年轻有为的中科院计算所助理研究员，专注于图机器学习和AI安全。"
+    - name: "吴贻清 博士"
+      url: "https://wyqing20.github.io"
+      description: "才华横溢的AI算法工程师，对推荐系统和大型语言模型感兴趣。"

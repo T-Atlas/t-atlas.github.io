@@ -1,12 +1,19 @@
 <!-- start custom footer snippets -->
-{% if site.friends and site.friends.links.size > 0 %}
+{%- if page.url contains '/zh/' -%}
+  {%- assign lang_code = 'zh' -%}
+{%- else -%}
+  {%- assign lang_code = 'en' -%}
+{%- endif -%}
+{%- assign friends_data = site.data.friends[lang_code] -%}
+
+{% if friends_data and friends_data.links.size > 0 %}
 <div class="friends-links">
-  <div class="friends-section-title">{{ site.friends.title }}</div>
+  <div class="friends-section-title">{{ friends_data.title }}</div>
   <ul class="friends-list">
-    {% for link in site.friends.links %}
+    {% for link in friends_data.links %}
       <li>
-        <a href="{{ link.url }}" {% if site.friends.settings.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.name }}</a>
-        {%- if site.friends.settings.show_description and link.description -%}
+        <a href="{{ link.url }}" {% if friends_data.settings.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.name }}</a>
+        {%- if friends_data.settings.show_description and link.description -%}
           <span class="friend-description">&nbsp;- {{ link.description }}</span>
         {%- endif -%}
       </li>

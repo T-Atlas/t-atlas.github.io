@@ -383,20 +383,3 @@ compress_html:
   ignore:
     envs: development
 
-# Friends Links
-# 友情链接
-friends:
-  title: "Admired Friends"
-  title_zh: "友情链接"
-  links:
-    - name: "Dr. Yang Liu"
-      url: "https://ponderly.github.io"
-      description: "An approachable and talented assistant professor focusing on Graph Machine Learning and AI Safety."
-      
-    - name: "Dr. Yiqing Wu"
-      url: "https://wyqing20.github.io"
-      description: "A promising young scientist who interests in Recommendation System and Large Language Models."
-  
-  settings:
-    show_description: true
-    open_in_new_tab: true
