@@ -7,6 +7,7 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 
+# English navigation
 main:
   - title: "About Me"
     url: "/#about-me"
@@ -37,3 +38,20 @@ main:
     
   # - title: "Guide"
   #   url: /markdown/
+
+# Chinese navigation
+zh:
+  - title: "关于我"
+    url: "/zh/#about-me"
+    
+  - title: "新闻动态"
+    url: "/zh/news"
+    
+  - title: "学术发表"
+    url: /zh/publications/
+        
+  - title: "博客文章"
+    url: /zh/year-archive/
+    
+  - title: "个人简历"
+    url: /zh/cv/

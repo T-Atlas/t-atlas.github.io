@@ -76,4 +76,124 @@
       }
     }
   }
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  
+  .language-switcher__btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    background: transparent;
+    border: none;
+    color: var(--global-masthead-link-color);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 4px;
+      background: var(--global-border-color);
+      width: 100%;
+      transition: transform 0.3s ease;
+      transform: scaleX(0);
+    }
+    
+    &:hover {
+      color: var(--global-masthead-link-color-hover);
+      text-decoration: none;
+      
+      &:before {
+        transform: scaleX(1);
+      }
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  
+  .language-switcher__icon {
+    font-size: 1em;
+    opacity: 0.8;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+  }
+  
+  .language-switcher__text-wrapper {
+    position: relative;
+    width: 22px;
+    height: 1.2em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .language-switcher__current {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .language-switcher__next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 10px));
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .language-switcher__btn:hover {
+    .language-switcher__icon {
+      opacity: 1;
+      transform: rotate(180deg);
+    }
+    
+    .language-switcher__current {
+      opacity: 0;
+      transform: translate(-50%, calc(-50% - 10px));
+    }
+    
+    .language-switcher__next {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .language-switcher {
+  /* No specific dark theme adjustments needed, using CSS variables */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .language-switcher {
+    .language-switcher__btn {
+      margin: 0 0.5rem;
+      padding: 0.4rem 0;
+      font-size: 0.75em;
+    }
+    
+    .language-switcher__icon {
+      font-size: 0.9em;
+    }
+  }
 } 

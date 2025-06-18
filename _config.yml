@@ -14,8 +14,13 @@
 # 此文件不会自动重新加载。如果更改了此文件，请重新启动服务器进程。
 
 # Basic Site Settings
-locale                   : "en-CN"
+locale                   : "en"
+default_locale           : "en"
 site_theme               : "default"
+
+# Multi-language support
+languages: ["en", "zh"]
+exclude_from_localization: ["javascript", "images", "css", "files"]
 title                    : "Junhong Lian / 连俊宏"
 title_separator          : "-"
 name                     : &name "Junhong Lian"
@@ -91,10 +96,13 @@ author:
 publication_category:
   # books: (注释掉 - 目前没有书籍发表)
   #   title: 'Books'
+  #   title_zh: '专著'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+    title_zh: '期刊论文'
   conferences:
     title: 'Conference Papers'
+    title_zh: '会议论文'
 
 # 站点设置
 teaser                   :  # 预告图片备用图像的文件名，放置在 /images/ 目录下，例如 "500x300.png"
@@ -379,6 +387,7 @@ compress_html:
 # 友情链接
 friends:
   title: "Admired Friends"
+  title_zh: "友情链接"
   links:
     - name: "Dr. Yang Liu"
       url: "https://ponderly.github.io"

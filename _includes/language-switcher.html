@@ -1,0 +1,32 @@
+<div class="language-switcher">
+  {% assign current_lang = page.lang | default: site.default_locale %}
+  {% assign current_page = page.url %}
+  
+  {% if current_lang == 'en' %}
+    {% if current_page == '/' %}
+      {% assign zh_url = '/zh/' %}
+    {% else %}
+      {% assign zh_url = current_page | prepend: '/zh' %}
+    {% endif %}
+    <a href="{{ zh_url }}" class="language-switcher__btn" title="切换到中文">
+      <span class="language-switcher__icon">🌐</span>
+      <div class="language-switcher__text-wrapper">
+        <span class="language-switcher__current">EN</span>
+        <span class="language-switcher__next">中</span>
+      </div>
+    </a>
+  {% else %}
+    {% if current_page == '/zh/' %}
+      {% assign en_url = '/' %}
+    {% else %}
+      {% assign en_url = current_page | replace_first: '/zh', '' %}
+    {% endif %}
+    <a href="{{ en_url }}" class="language-switcher__btn" title="Switch to English">
+      <span class="language-switcher__icon">🌐</span>
+      <div class="language-switcher__text-wrapper">
+        <span class="language-switcher__current">中</span>
+        <span class="language-switcher__next">EN</span>
+      </div>
+    </a>
+  {% endif %}
+</div> 
