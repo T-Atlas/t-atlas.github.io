@@ -20,25 +20,27 @@
 在最初开发网站时，能够在推送到GitHub之前在本地预览更改非常有用。要在本地工作，你需要：
 
 1. 克隆仓库并按照上述步骤进行更新。
-1. 确保已安装ruby-dev、bundler和nodejs
+
+### 使用不同的集成开发环境 (IDE)
+1. 确保已安装 ruby-dev、bundler 和 nodejs
     
     在大多数Linux发行版和[Windows子系统Linux](https://learn.microsoft.com/zh-cn/windows/wsl/about)上，命令是：
     ```bash
     sudo apt install ruby-dev ruby-bundler nodejs
     ```
-    如果看到错误`无法定位包ruby-bundler`、`无法定位包nodejs`，请运行以下命令：
+    如果看到错误`无法定位软件包 ruby-bundler` 或 `无法定位软件包 nodejs`，请运行以下命令：
     ```bash
     sudo apt update && sudo apt upgrade -y
     ```
-    然后再次尝试运行`sudo apt install ruby-dev ruby-bundler nodejs`。
+    然后再次尝试运行 `sudo apt install ruby-dev ruby-bundler nodejs`。
 
-    在MacOS上的命令是：
+    在 MacOS 上的命令是：
     ```bash
     brew install ruby
     brew install node
     gem install bundler
     ```
-1. 运行`bundle install`安装ruby依赖项。如果遇到错误，删除Gemfile.lock并重试。
+2. 运行 `bundle install` 以安装 Ruby 依赖项。如果出现错误，请删除 Gemfile.lock 并重试。
 
     如果看到文件权限错误，如`Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.`或`Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
     本地安装Gems（推荐）：
@@ -47,22 +49,27 @@
     ```
     然后再次尝试运行`bundle install`。如果成功，你应该会看到一个名为`vendor`的文件夹，打开`.gitignore`并将`vendor`添加进去。
 
-1. 运行`jekyll serve -l -H localhost`生成HTML并从`localhost:4000`提供服务，本地服务器会在更改时自动重建并刷新页面。
+3. 运行`jekyll serve -l -H localhost`生成HTML并从`localhost:4000`提供服务，本地服务器会在更改时自动重建并刷新页面。
     你也可以尝试`bundle exec jekyll serve -l -H localhost`，以确保jekyll使用你本地机器上的特定依赖项。
 
 如果你在Linux上运行，可能需要先安装一些额外的依赖项才能本地运行：`sudo apt install build-essential gcc make`
 
-## 使用Docker
+## 使用 Docker
 
 在不同的操作系统上工作，或者只是想避免安装依赖项？如果你已经安装了[Docker](https://www.docker.com/)，你可以使用提供的`Dockerfile`构建一个容器来为你运行网站。
 
 你可以通过在仓库中运行以下命令来构建和执行容器：
 
 ```bash
+chmod -R 777 .
 docker compose up
 ```
 
-现在你应该能够从`localhost:4000`访问网站了。
+现在您应该能够从 `localhost:4000` 访问该网站。
+
+### 在 VS Code 中使用 DevContainer
+
+如果您正在使用 [Visual Studio Code](https://code.visualstudio.com/)，您可以使用此存储库附带的 [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers)。通常情况下，VS Code 会检测到有可用的开发容器配置，并询问您是否要使用该容器。如果没有发生这种情况，您可以手动通过 **F1->DevContainer: Reopen in Container** 启动容器。这会在容器中重新启动您的 VS Code，并自动在 http://localhost:4000 上本地托管您的学术页面。所有更改将在几秒钟内实时更新到该页面。
 
 # 维护
 
