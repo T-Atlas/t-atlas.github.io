@@ -12,9 +12,9 @@ redirect_from:
 Education
 ======
 
-* **Institute of Computing Technology, Chinese Academy of Sciences**, Master  
-  _2023.09 – 2026.07_ (expected)
-  - Major: Computer Technology.
+* **Institute of Computing Technology, Chinese Academy of Sciences**, Ph.D. student  
+  _2023.09 – 2028.07_ (expected)
+  - Major: Computer Science and Technology.
 
 * **Beijing University of Posts and Telecommunications**, B.S. in Management  
   _2019.09 – 2023.07_

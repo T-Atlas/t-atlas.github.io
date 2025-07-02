@@ -8,15 +8,19 @@ redirect_from:
 ---
 ## About Me {#about-me}
 
-I am currently a second-year Master's student at the Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS), under the supervision of Prof. [Xiang Ao](https://aoxaustin.github.io/index.html) and co-supervised with Dr. [Xinyu Liu](https://ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496680.html). My research interests include natural language processing (NLP), personalized generation in large language models (LLMs), and applications of NLP in the financial domain.
+I am currently a third-year Ph.D. student at the Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS), under the supervision of Prof. [Xiang Ao](https://aoxaustin.github.io/index.html).
+My research interests include natural language processing (NLP), personalized generation in large language models (LLMs), and applications of NLP in the financial domain.
+
+During my master's stage, I was fortunate to be co-supervised with Dr. [Xinyu Liu](https://ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496680.html).
 
 <span style="color:green">If you have any questions regarding my work or are interested in collaborating with me, please contact me via email. </span>
 
 ## 🔥 Recent News {#news}
 
-* **[2025-03]** Welcome to my website! I am currently a second-year Master's student at ICT, CAS.
+* **[2025-07]** I will be a third-year Ph.D. student at the ICT, CAS in September 2025.
 * **[2025-01]** 🎉 One paper "[Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)" is accepted by WWW2025.
 * **[2023-09]** 🎉 One paper "[Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)" is accepted by ICDM2023.
+* **[2023-08]** I am a master's student at the ICT, CAS under the supervision of Prof. Xiang Ao and co-supervised with Dr. Xinyu Liu.
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
@@ -68,11 +72,11 @@ More info about configuring Academic Pages can be found in [the guide](https://a
 
 ### 开始使用
 1. 如果您还没有 GitHub 账户，请注册一个并确认您的电子邮件（必需！）
-2. 点击右上角的“Use this template”按钮，分叉 [此模板](https://github.com/academicpages/academicpages.github.io)。
-3. 进入仓库设置（最右侧的选项卡，位于“Code”下方，应该在“Unwatch”下方）。将仓库重命名为“[您的 GitHub 用户名].github.io”，这将是您网站的 URL。
-4. 设置全站配置并创建内容和元数据（见下文——另见 [此组差异](http://archive.is/3TPas)，显示为用户名“getorg-testacct”的用户设置 [示例网站](https://getorg-testacct.github.io) 时更改的文件）。
+2. 点击右上角的"Use this template"按钮，分叉 [此模板](https://github.com/academicpages/academicpages.github.io)。
+3. 进入仓库设置（最右侧的选项卡，位于"Code"下方，应该在"Unwatch"下方）。将仓库重命名为"[您的 GitHub 用户名].github.io"，这将是您网站的 URL。
+4. 设置全站配置并创建内容和元数据（见下文——另见 [此组差异](http://archive.is/3TPas)，显示为用户名"getorg-testacct"的用户设置 [示例网站](https://getorg-testacct.github.io) 时更改的文件）。
 5. 将任何文件（如 PDF、.zip 文件等）上传到 files/ 目录。它们将出现在 https://[您的 GitHub 用户名].github.io/files/example.pdf。
-6. 进入仓库设置，在“GitHub pages”部分检查状态。
+6. 进入仓库设置，在"GitHub pages"部分检查状态。
 
 ### 全站配置
 网站的主配置文件位于根目录中的 [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml)，它定义了侧边栏内容和其他全站功能。您需要用关于您自己和您的网站 GitHub 仓库的变量替换默认变量。顶部菜单的配置文件位于 [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml)。例如，如果您没有作品集或博客文章，可以从 navigation.yml 文件中删除这些项以从标题中移除它们。
@@ -85,7 +89,7 @@ More info about configuring Academic Pages can be found in [the guide](https://a
 仓库包括 [一组 Jupyter 笔记本](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator)，它们将包含演讲或演示文稿的结构化数据的 CSV 文件转换为适合 Academic Pages 模板的单个 Markdown 文件。该目录中的示例 CSV 是我用于创建我的个人网站 stuartgeiger.com 的 CSV。我通常的工作流程是，将我的出版物和演讲保存在电子表格中，然后运行这些笔记本中的代码生成 Markdown 文件，然后将它们提交并推送到 GitHub 仓库。
 
 ### 如何编辑您网站的 GitHub 仓库
-许多人使用 git 客户端在其本地计算机上创建文件，然后将它们推送到 GitHub 的服务器。如果您不熟悉 git，可以直接在 github.com 界面中编辑这些配置和 Markdown 文件。导航到文件（如 [此文件](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md)），然后点击内容预览右上角的铅笔图标（“Raw | Blame | History”按钮的右侧）。您可以通过点击铅笔图标右侧的垃圾桶图标删除文件。您还可以通过导航到目录并点击“Create new file”或“Upload files”按钮来创建新文件或上传文件。
+许多人使用 git 客户端在其本地计算机上创建文件，然后将它们推送到 GitHub 的服务器。如果您不熟悉 git，可以直接在 github.com 界面中编辑这些配置和 Markdown 文件。导航到文件（如 [此文件](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md)），然后点击内容预览右上角的铅笔图标（"Raw | Blame | History"按钮的右侧）。您可以通过点击铅笔图标右侧的垃圾桶图标删除文件。您还可以通过导航到目录并点击"Create new file"或"Upload files"按钮来创建新文件或上传文件。
 
 ### 示例：编辑演讲的 Markdown 文件
 ![编辑演讲的 Markdown 文件](/images/editing-talk.png)
