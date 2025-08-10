@@ -9,6 +9,8 @@ author_profile: true
 
 ## 2025
 
+* **[2025-08]** 🎉 One paper "Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback" is accepted by CIKM2025.
+
 * **[2025-07]** I will be a third-year Ph.D. student at the ICT, CAS in September 2025.
 
 * **[2025-01]** 🎉 One paper "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation" is accepted by WWW2025.

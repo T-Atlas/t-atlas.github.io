@@ -17,6 +17,7 @@ redirect_from:
 
 ## 🔥 最新动态 {#news}
 
+* **[2025-08]** 🎉 论文 "[Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback](https://t-atlas.github.io/publication/2025-08-09-improved-personalized)" 被CIKM2025会议接收。
 * **[2025-07]** 我将于2025年9月成为中科院计算所的三年级博士研究生。
 * **[2025-01]** 🎉 论文 "[Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)" 被WWW2025会议接收。
 * **[2023-09]** 🎉 论文 "[Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)" 被ICDM2023会议接收。

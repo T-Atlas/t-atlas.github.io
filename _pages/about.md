@@ -17,6 +17,7 @@ During my master's stage, I was fortunate to be co-supervised with Dr. [Xinyu Li
 
 ## 🔥 Recent News {#news}
 
+* **[2025-08]** 🎉 One paper "[Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback](https://t-atlas.github.io/publication/2025-08-09-improved-personalized)" is accepted by CIKM2025.
 * **[2025-07]** I will be a third-year Ph.D. student at the ICT, CAS in September 2025.
 * **[2025-01]** 🎉 One paper "[Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)" is accepted by WWW2025.
 * **[2023-09]** 🎉 One paper "[Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)" is accepted by ICDM2023.

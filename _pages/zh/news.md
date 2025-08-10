@@ -10,6 +10,8 @@ author_profile: true
 
 ## 2025
 
+* **[2025-08]** 🎉 论文 "Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback" 被CIKM2025会议接收。
+
 * **[2025-07]** 我将于2025年9月成为中科院计算所的三年级博士研究生。
 
 * **[2025-01]** 🎉 论文 "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation" 被WWW2025会议接收。
