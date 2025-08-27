@@ -7,17 +7,15 @@ author_profile: true
 
 {% include base_path %}
 
-## 2025
+{% assign english_news = site.news | where: 'lang', 'en' %}
+{% assign news_by_year = english_news | sort: 'date' | reverse | group_by_exp: 'item', 'item.date | date: "%Y"' %}
+{% for year_group in news_by_year %}
 
-* **[2025-08]** 🎉 One paper "Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback" is accepted by CIKM2025.
+## {{ year_group.name }}
 
-* **[2025-07]** I will be a third-year Ph.D. student at the ICT, CAS in September 2025.
+{% for news_item in year_group.items %}
 
-* **[2025-01]** 🎉 One paper "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation" is accepted by WWW2025.
+* **[{{ news_item.date | date: '%Y-%m' }}]** {% assign excerpt = news_item.excerpt | default: news_item.excerpt %}{{ excerpt | strip_html | strip_newlines }}{% if news_item.has_detail %} [Read More]({{ news_item.url | relative_url }}){% endif %}
+{% endfor %}
 
-
-## 2023
-
-* **[2023-09]** 🎉 One paper "Fact-Preserved Personalized News Headline Generation" is accepted by ICDM2023.
-
-* **[2023-08]** I am a master's student at the ICT, CAS under the supervision of Prof. Xiang Ao and co-supervised with Dr. Xinyu Liu.
+{% endfor %}

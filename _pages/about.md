@@ -17,11 +17,12 @@ During my master's stage, I was fortunate to be co-supervised with Dr. [Xinyu Li
 
 ## 🔥 Recent News {#news}
 
-* **[2025-08]** 🎉 One paper "[Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback](https://t-atlas.github.io/publication/2025-08-09-improved-personalized)" is accepted by CIKM2025.
-* **[2025-07]** I will be a third-year Ph.D. student at the ICT, CAS in September 2025.
-* **[2025-01]** 🎉 One paper "[Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)" is accepted by WWW2025.
-* **[2023-09]** 🎉 One paper "[Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)" is accepted by ICDM2023.
-* **[2023-08]** I am a master's student at the ICT, CAS under the supervision of Prof. Xiang Ao and co-supervised with Dr. Xinyu Liu.
+{% assign english_news = site.news | where_exp: 'item', 'item.lang != "zh"' %}
+{% assign recent_news = english_news | sort: 'date' | reverse | slice: 0, site.recent_news_count %}
+{% for news_item in recent_news %}
+
+* **[{{ news_item.date | date: '%Y-%m' }}]** {% if news_item.excerpt_zh and page.lang == 'zh' %}{{ news_item.excerpt_zh | strip_html | strip_newlines }}{% else %}{{ news_item.excerpt | strip_html | strip_newlines }}{% endif %}
+{% endfor %}
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 

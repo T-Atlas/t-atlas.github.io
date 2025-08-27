@@ -8,17 +8,16 @@ author_profile: true
 
 {% include base_path %}
 
-## 2025
+{% assign chinese_news = site.news | where: 'lang', 'zh' %}
+{% assign news_by_year = chinese_news | sort: 'date' | reverse | group_by_exp: 'item', 'item.date | date: "%Y"' %}
+{% for year_group in news_by_year %}
 
-* **[2025-08]** 🎉 论文 "Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback" 被CIKM2025会议接收。
+## {{ year_group.name }}
 
-* **[2025-07]** 我将于2025年9月成为中科院计算所的三年级博士研究生。
+{% for news_item in year_group.items %}
 
-* **[2025-01]** 🎉 论文 "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation" 被WWW2025会议接收。
+* **[{{ news_item.date | date: '%Y-%m' }}]** {% assign excerpt = news_item.excerpt_zh | default: news_item.excerpt %}{{ excerpt | strip_html | strip_newlines }}{% if news_item.has_detail %}{% assign zh_url = news_item.url %}{% unless news_item.url contains '/zh/' %}{% assign zh_url = news_item.url | replace: '/news/', '/zh/news/' %}{% endunless %} [查看详情]({{ zh_url | relative_url }}){% endif %}
 
+{% endfor %}
 
-## 2023
-
-* **[2023-09]** 🎉 论文 "Fact-Preserved Personalized News Headline Generation" 被ICDM2023会议接收。 
-
-* **[2023-08]** 我目前是中科院计算所的硕士研究生，导师是敖翔副研究员和刘新宇副研究员。 
+{% endfor %}
