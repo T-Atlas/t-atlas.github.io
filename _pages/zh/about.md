@@ -9,7 +9,7 @@ redirect_from:
 ---
 ## 关于我 {#about-me}
 
-我目前是中国科学院计算技术研究所的三年级博士研究生，导师是[敖翔](https://aoxaustin.github.io/index.html)副研究员。我的研究兴趣包括自然语言处理（NLP）、大语言模型的个性化生成，以及NLP在金融领域的应用。
+我目前是中国科学院计算技术研究所的三年级博士研究生，导师是[敖翔](https://aoxaustin.github.io/index.html)研究员。我的研究兴趣包括自然语言处理（NLP）、大语言模型的个性化生成，以及NLP在金融领域的应用。
 
 在硕士阶段，我有幸得到[刘新宇](https://ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496680.html)副研究员的联合指导。
 

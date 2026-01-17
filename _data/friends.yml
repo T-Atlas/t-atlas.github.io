@@ -10,6 +10,9 @@ en:
     - name: "Dr. Yiqing Wu"
       url: "https://wyqing20.github.io"
       description: "A promising young scientist who interests in Recommendation System and Large Language Models."
+    - name: "Zhongqi Wang"
+      url: "https://robin-wzq.github.io"
+      description: "A PhD candidate at ICT, CAS working on backdoor attacks and defenses in computer vision."
 zh:
   title: "见贤思齐"
   settings:
@@ -22,3 +25,6 @@ zh:
     - name: "吴贻清 博士"
       url: "https://wyqing20.github.io"
       description: "才华横溢的AI算法工程师，对推荐系统和大型语言模型感兴趣。"
+    - name: "王中琦"
+      url: "https://robin-wzq.github.io"
+      description: "中科院计算所博士在读，研究兴趣专注于计算机视觉的后门攻击与防御。"
