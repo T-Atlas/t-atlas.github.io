@@ -24,18 +24,14 @@
 .clustrmaps-widget {
   flex-shrink: 0;
   text-align: center;
-  overflow: hidden;
 }
-/* 桌面版：显示小地图，隐藏大地图 */
-.clustrmaps-desktop { display: block; }
-.clustrmaps-mobile { display: none; }
-
+/* 桌面版：地图在右侧 */
 @media (min-width: 768px) {
   .clustrmaps-widget {
     align-self: center;
   }
 }
-/* 手机版：显示大地图，隐藏小地图 */
+/* 手机版：堆叠布局，地图居中 */
 @media (max-width: 767px) {
   .footer-custom-wrapper {
     flex-direction: column;
@@ -44,8 +40,6 @@
   .clustrmaps-widget {
     margin: 10px auto 0;
   }
-  .clustrmaps-desktop { display: none; }
-  .clustrmaps-mobile { display: block; }
 }
 </style>
 
@@ -68,14 +62,7 @@
 
   <!-- ClustrMaps visitor statistics -->
   <div class="clustrmaps-widget">
-    <!-- 桌面版：170px -->
-    <div class="clustrmaps-desktop">
-      <script type='text/javascript' src='//cdn.clustrmaps.com/map_v2.js?cl=434e78&w=170&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f&cmo=f7e396&cmn=e97f4a'></script>
-    </div>
-    <!-- 手机版：250px -->
-    <div class="clustrmaps-mobile">
-      <script type='text/javascript' src='//cdn.clustrmaps.com/map_v2.js?cl=434e78&w=250&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f&cmo=f7e396&cmn=e97f4a'></script>
-    </div>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=434e78&w=200&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f&cmo=f7e396&cmn=e97f4a'></script>
     <noscript>
       <a href='https://clustrmaps.com/site/1c913' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=434e78&w=200&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f'/></a>
     </noscript>
