@@ -6,28 +6,66 @@
 {%- endif -%}
 {%- assign friends_data = site.data.friends[lang_code] -%}
 
-{% if friends_data and friends_data.links.size > 0 %}
-<div class="friends-links">
-  <div class="friends-section-title">{{ friends_data.title }}</div>
-  <ul class="friends-list">
-    {% for link in friends_data.links %}
-      <li>
-        <a href="{{ link.url }}" {% if friends_data.settings.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.name }}</a>
-        {%- if friends_data.settings.show_description and link.description -%}
-          <span class="friend-description">&nbsp;- {{ link.description }}</span>
-        {%- endif -%}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
+<style>
+.footer-custom-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.friends-links {
+  flex: 1;
+  min-width: 280px;
+}
+.clustrmaps-widget {
+  flex-shrink: 0;
+  text-align: center;
+}
+/* 桌面版：限制地图大小 */
+@media (min-width: 768px) {
+  .clustrmaps-widget {
+    max-width: 200px;
+  }
+}
+/* 手机版：地图居中显示 */
+@media (max-width: 767px) {
+  .footer-custom-wrapper {
+    flex-direction: column;
+  }
+  .clustrmaps-widget {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+</style>
 
-<!-- ClustrMaps visitor statistics -->
-<div class="clustrmaps-widget" style="text-align: center; margin: 20px 0;">
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=434e78&w=a&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f&cmo=f7e396&cmn=e97f4a'></script>
-  <noscript>
-    <a href='https://clustrmaps.com/site/1c913'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=434e78&w=a&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f'/></a>
-  </noscript>
+<div class="footer-custom-wrapper">
+  {% if friends_data and friends_data.links.size > 0 %}
+  <div class="friends-links">
+    <div class="friends-section-title">{{ friends_data.title }}</div>
+    <ul class="friends-list">
+      {% for link in friends_data.links %}
+        <li>
+          <a href="{{ link.url }}" {% if friends_data.settings.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.name }}</a>
+          {%- if friends_data.settings.show_description and link.description -%}
+            <span class="friend-description">&nbsp;- {{ link.description }}</span>
+          {%- endif -%}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <!-- ClustrMaps visitor statistics -->
+  <div class="clustrmaps-widget">
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=434e78&w=200&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f&cmo=f7e396&cmn=e97f4a'></script>
+    <noscript>
+      <a href='https://clustrmaps.com/site/1c913' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=434e78&w=200&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f'/></a>
+    </noscript>
+  </div>
 </div>
 
 <!-- end custom footer snippets -->
