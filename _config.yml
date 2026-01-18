@@ -100,7 +100,7 @@ words_per_minute         : 160
 future                   : true # This post will show up by default. To disable scheduling of future posts, set to false.
 read_more                : "disabled" # 如果启用 enabled，会在摘要中添加"阅读更多"链接
 talkmap_link             : false      # 将其更改为 true 以在演讲页面添加 talkmap 链接
-recent_news_count        : 5         # About页面显示的近期新闻数量
+recent_news_count        : 10         # About页面显示的近期新闻数量
 comments:
   provider               : staticman # false (默认值), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
