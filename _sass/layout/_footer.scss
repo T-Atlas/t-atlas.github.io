@@ -13,11 +13,9 @@
   width: 100%;
   clear: both;
 
-  /* sticky footer fix start */
-  position: absolute;
-  bottom: 0em;
+  /* sticky footer - use relative positioning instead */
+  position: relative;
   height: auto;
-  /* sticky footer fix end */
 
   margin-top: 3em;
 

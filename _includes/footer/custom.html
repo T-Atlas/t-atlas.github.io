@@ -12,8 +12,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 15px;
+  gap: 25px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--global-border-color, #e1e1e1);
 }
 .friends-links {
   flex: 1;
@@ -22,22 +24,29 @@
 .clustrmaps-widget {
   flex-shrink: 0;
   text-align: center;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-/* 桌面版：限制地图大小 */
+/* 桌面版：地图在右侧 */
 @media (min-width: 768px) {
   .clustrmaps-widget {
-    max-width: 200px;
+    max-width: 180px;
+    align-self: center;
   }
 }
-/* 手机版：地图居中显示 */
+/* 手机版：堆叠布局，地图居中 */
 @media (max-width: 767px) {
   .footer-custom-wrapper {
     flex-direction: column;
+    align-items: stretch;
   }
   .clustrmaps-widget {
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
+    width: fit-content;
+    max-width: 280px;
+    margin: 10px auto 0;
+    padding: 10px;
   }
 }
 </style>
