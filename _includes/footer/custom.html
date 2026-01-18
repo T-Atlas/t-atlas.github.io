@@ -28,10 +28,19 @@
   background: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+/* 强制限制 ClustrMaps 内部元素大小 */
+.clustrmaps-widget iframe,
+.clustrmaps-widget canvas,
+.clustrmaps-widget > script + * {
+  max-width: 100% !important;
+  height: auto !important;
 }
 /* 桌面版：地图在右侧 */
 @media (min-width: 768px) {
   .clustrmaps-widget {
+    width: 180px;
     max-width: 180px;
     align-self: center;
   }
@@ -43,8 +52,8 @@
     align-items: stretch;
   }
   .clustrmaps-widget {
-    width: fit-content;
-    max-width: 280px;
+    width: 260px;
+    max-width: 260px;
     margin: 10px auto 0;
     padding: 10px;
   }
@@ -70,9 +79,9 @@
 
   <!-- ClustrMaps visitor statistics -->
   <div class="clustrmaps-widget">
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=434e78&w=200&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f&cmo=f7e396&cmn=e97f4a'></script>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=434e78&w=170&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f&cmo=f7e396&cmn=e97f4a'></script>
     <noscript>
-      <a href='https://clustrmaps.com/site/1c913' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=434e78&w=200&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f'/></a>
+      <a href='https://clustrmaps.com/site/1c913' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=434e78&w=170&t=tt&d=d6PaenUHXb-8cs3baiU4CCHgG_Kkk5qdQWzWOjH20Us&co=ffffff&ct=607b8f'/></a>
     </noscript>
   </div>
 </div>
