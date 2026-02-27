@@ -4,10 +4,60 @@
   
   {% if current_lang == 'en' %}
     {% if current_page == '/' %}
-      {% assign zh_url = '/zh/' %}
+      {% assign zh_target = '/zh/' %}
     {% else %}
-      {% assign zh_url = current_page | prepend: '/zh' %}
+      {% assign zh_target = current_page | prepend: '/zh' %}
     {% endif %}
+    {% assign zh_target_slash = zh_target %}
+    {% assign zh_target_html = zh_target %}
+    {% assign zh_exists = false %}
+
+    {% if zh_target contains '.html' %}
+      {% assign zh_target_slash = zh_target | replace: '.html', '/' %}
+    {% elsif zh_target != '/zh/' %}
+      {% assign zh_target_slash = zh_target | append: '/' %}
+      {% assign zh_target_html = zh_target | append: '.html' %}
+    {% endif %}
+
+    {% for p in site.pages %}
+      {% if p.url == zh_target %}
+        {% assign zh_exists = true %}
+        {% break %}
+      {% elsif p.url == zh_target_slash %}
+        {% assign zh_exists = true %}
+        {% break %}
+      {% elsif p.url == zh_target_html %}
+        {% assign zh_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% unless zh_exists %}
+      {% for collection in site.collections %}
+        {% for doc in collection.docs %}
+          {% if doc.url == zh_target %}
+            {% assign zh_exists = true %}
+            {% break %}
+          {% elsif doc.url == zh_target_slash %}
+            {% assign zh_exists = true %}
+            {% break %}
+          {% elsif doc.url == zh_target_html %}
+            {% assign zh_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if zh_exists %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endunless %}
+
+    {% if zh_exists %}
+      {% assign zh_url = zh_target %}
+    {% else %}
+      {% assign zh_url = current_page %}
+    {% endif %}
+
     <a href="{{ zh_url }}" class="language-switcher__btn" title="切换到中文">
       <span class="language-switcher__icon">🌐</span>
       <div class="language-switcher__text-wrapper">
