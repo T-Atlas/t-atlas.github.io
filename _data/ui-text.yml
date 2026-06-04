@@ -288,7 +288,7 @@ zh: &DEFAULT_ZH
   tags_label                 : "标签："
   categories_label           : "分类："
   date_label                 : "发布时间："
-  citation_label             : "推荐引用："
+  citation_label             : "推荐引用格式："
   download_paper_label       : "下载论文"
   download_slides_label      : "下载幻灯片"
   download_poster_label      : "下载海报"
