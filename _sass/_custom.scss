@@ -6,6 +6,165 @@
   color: var(--global-text-color-light);
 }
 
+/* AI4AIR Chinese blog styles */
+.ai4air-article {
+  --ai4air-accent: #0f4c81;
+  --ai4air-text: #3f3f3f;
+  --ai4air-caption: #5f6975;
+
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--ai4air-text);
+  font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: left;
+
+  p,
+  li {
+    line-height: 1.75;
+  }
+
+  p {
+    margin: 1.5em 8px;
+    color: var(--ai4air-text);
+    letter-spacing: 0.1em;
+  }
+
+  strong {
+    color: var(--ai4air-accent);
+    font-weight: 700;
+    font-size: inherit;
+  }
+
+  a {
+    color: var(--ai4air-accent);
+  }
+
+  ul,
+  ol {
+    margin: 1.5em 8px;
+    padding-left: 1.4em;
+    color: var(--ai4air-text);
+    letter-spacing: 0.1em;
+  }
+
+  .ai4air-figure {
+    margin: 1.5em 8px;
+  }
+
+  .ai4air-figure img {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgba(15, 76, 129, 0.12);
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .ai4air-figure figcaption {
+    max-width: 920px;
+    margin: 0.8em auto 0;
+    color: #888;
+    font-size: 0.8em;
+    line-height: 1.65;
+    text-align: center;
+  }
+
+  .findlab-wide-image {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    margin: 1.5em auto;
+    border: 1px solid rgba(15, 76, 129, 0.12);
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .ai4air-editor-note {
+    margin: 1.5em 8px;
+    color: #888;
+    font-size: 0.88em;
+    line-height: 1.75;
+    text-align: right;
+  }
+
+  .ai4air-editor-note p {
+    margin: 0.8em 0;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: inherit;
+  }
+
+  .ai4air-transfer-note {
+    margin: 2em 8px 1em;
+    color: var(--ai4air-text);
+    font-size: 0.95em;
+    font-weight: 700;
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+
+  .ai4air-info-card {
+    margin: 2em 8px;
+    padding: 1.1em 1.2em;
+    border: 1px solid rgba(15, 76, 129, 0.16);
+    border-left: 4px solid var(--ai4air-accent);
+    border-radius: 8px;
+    background: rgba(15, 76, 129, 0.035);
+    box-shadow: 0 8px 24px rgba(15, 76, 129, 0.06);
+  }
+
+  .ai4air-info-card p {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 640px) {
+  .ai4air-article {
+    .ai4air-info-card {
+      padding: 1em;
+    }
+  }
+}
+
+.page__content .ai4air-article {
+  h2 {
+    display: table;
+    margin: 2.2em auto 1.1em;
+    padding: 0.45em 1.15em 0.5em;
+    border-bottom: 3px solid var(--ai4air-accent);
+    color: var(--ai4air-accent);
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 4px;
+    font-size: 1.55em;
+  }
+
+  h3 {
+    display: block;
+    margin: 1.8em 8px 0.9em;
+    padding: 0.35em 0.75em;
+    border-left: 4px solid var(--ai4air-accent);
+    border-bottom: 0;
+    border-radius: 4px;
+    background: rgba(15, 76, 129, 0.06);
+    color: var(--ai4air-accent);
+    font-size: 1.05em;
+    font-weight: 800;
+    line-height: 1.75;
+    text-align: left;
+    text-shadow: none;
+    letter-spacing: 0.1em;
+  }
+}
+
 .friends-section-title {
   font-family: $sans-serif-narrow; 
   font-size: $type-size-5;
