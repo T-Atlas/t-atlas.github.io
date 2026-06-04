@@ -7,6 +7,7 @@ excerpt: "**Junhong Lian**, Xiang Ao\\*, Xinyu Liu\\*, Yang Liu and Qing He. (20
 date: 2025-01-28
 venue: 'The Web Conference 2025 (WWW2025)'
 slidesurl: 'http://t-atlas.github.io/files/WWW2025_slides.pdf'
+posterurl: 'http://t-atlas.github.io/files/WWW2025_poster.pdf'
 paperurl: 'http://t-atlas.github.io/files/WWW2025_paper.pdf'
 citation: 'Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." <i>Companion Proceedings of the ACM Web Conference 2025.</i> 2025.'
 ---

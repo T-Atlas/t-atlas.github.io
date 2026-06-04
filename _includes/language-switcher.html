@@ -1,13 +1,17 @@
 <div class="language-switcher">
   {% assign current_lang = page.lang | default: site.default_locale %}
   {% assign current_page = page.url %}
+  {% assign switcher_enabled = false %}
   
   {% if current_lang == 'en' %}
-    {% if current_page == '/' %}
+    {% if page.alternate_url %}
+      {% assign zh_target = page.alternate_url %}
+    {% elsif current_page == '/' %}
       {% assign zh_target = '/zh/' %}
     {% else %}
       {% assign zh_target = current_page | prepend: '/zh' %}
     {% endif %}
+
     {% assign zh_target_slash = zh_target %}
     {% assign zh_target_html = zh_target %}
     {% assign zh_exists = false %}
@@ -54,29 +58,84 @@
 
     {% if zh_exists %}
       {% assign zh_url = zh_target %}
-    {% else %}
-      {% assign zh_url = current_page %}
+      {% assign switcher_enabled = true %}
     {% endif %}
 
-    <a href="{{ zh_url }}" class="language-switcher__btn" title="切换到中文">
-      <span class="language-switcher__icon">🌐</span>
-      <div class="language-switcher__text-wrapper">
-        <span class="language-switcher__current">EN</span>
-        <span class="language-switcher__next">中</span>
-      </div>
-    </a>
-  {% else %}
-    {% if current_page == '/zh/' %}
-      {% assign en_url = '/' %}
-    {% else %}
-      {% assign en_url = current_page | replace_first: '/zh', '' %}
+    {% if switcher_enabled %}
+      <a href="{{ zh_url }}" class="language-switcher__btn" title="切换到中文">
+        <span class="language-switcher__icon">🌐</span>
+        <div class="language-switcher__text-wrapper">
+          <span class="language-switcher__current">EN</span>
+          <span class="language-switcher__next">中</span>
+        </div>
+      </a>
     {% endif %}
-    <a href="{{ en_url }}" class="language-switcher__btn" title="Switch to English">
-      <span class="language-switcher__icon">🌐</span>
-      <div class="language-switcher__text-wrapper">
-        <span class="language-switcher__current">中</span>
-        <span class="language-switcher__next">EN</span>
-      </div>
-    </a>
+  {% else %}
+    {% if page.alternate_url %}
+      {% assign en_target = page.alternate_url %}
+    {% elsif current_page == '/zh/' %}
+      {% assign en_target = '/' %}
+    {% else %}
+      {% assign en_target = current_page | replace_first: '/zh', '' %}
+    {% endif %}
+
+    {% assign en_target_slash = en_target %}
+    {% assign en_target_html = en_target %}
+    {% assign en_exists = false %}
+
+    {% if en_target contains '.html' %}
+      {% assign en_target_slash = en_target | replace: '.html', '/' %}
+    {% elsif en_target != '/' %}
+      {% assign en_target_slash = en_target | append: '/' %}
+      {% assign en_target_html = en_target | append: '.html' %}
+    {% endif %}
+
+    {% for p in site.pages %}
+      {% if p.url == en_target %}
+        {% assign en_exists = true %}
+        {% break %}
+      {% elsif p.url == en_target_slash %}
+        {% assign en_exists = true %}
+        {% break %}
+      {% elsif p.url == en_target_html %}
+        {% assign en_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% unless en_exists %}
+      {% for collection in site.collections %}
+        {% for doc in collection.docs %}
+          {% if doc.url == en_target %}
+            {% assign en_exists = true %}
+            {% break %}
+          {% elsif doc.url == en_target_slash %}
+            {% assign en_exists = true %}
+            {% break %}
+          {% elsif doc.url == en_target_html %}
+            {% assign en_exists = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if en_exists %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endunless %}
+
+    {% if en_exists %}
+      {% assign en_url = en_target %}
+      {% assign switcher_enabled = true %}
+    {% endif %}
+
+    {% if switcher_enabled %}
+      <a href="{{ en_url }}" class="language-switcher__btn" title="Switch to English">
+        <span class="language-switcher__icon">🌐</span>
+        <div class="language-switcher__text-wrapper">
+          <span class="language-switcher__current">中</span>
+          <span class="language-switcher__next">EN</span>
+        </div>
+      </a>
+    {% endif %}
   {% endif %}
 </div> 

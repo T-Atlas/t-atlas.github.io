@@ -1,6 +1,7 @@
 {% include base_path %}
 
 {% include base_path %}
+{% assign ui_locale = page.lang | default: site.default_locale | default: site.locale | slice: 0, 2 %}
 
 {% case site.category_archive.type %}
   {% when "liquid" %}
@@ -10,6 +11,10 @@
 {% endcase %}
 
 {% if site.category_archive.path %}
+  {% assign category_archive_path = site.category_archive.path %}
+  {% if ui_locale == 'zh' %}
+    {% assign category_archive_path = site.category_archive.path | prepend: '/zh' %}
+  {% endif %}
   {% comment %}
     <!-- Sort alphabetically regardless of case e.g. a B c d E -->
     <!-- modified from http://www.codeofclimber.ru/2015/sorting-site-tags-in-jekyll/ -->
@@ -18,12 +23,12 @@
   {% assign category_hashes = (page_categories | split: ',' | sort:0) %}
 
   <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[ui_locale].categories_label | default: "Categories:" }} </strong>
     <span itemprop="keywords">
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '#' %}
       {% capture category_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
-      <a href="{{ base_path }}{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      <a href="{{ base_path }}{{ category_word | slugify | prepend: path_type | prepend: category_archive_path }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
     {% endfor %}
     </span>
   </p>

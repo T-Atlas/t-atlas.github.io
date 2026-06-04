@@ -12,15 +12,11 @@ A list of main pages and content found on the site. For you robots out there, th
 <h2>Main Pages</h2>
 {% assign sorted_pages = site.pages | where_exp: "post", "post.sitemap != false" | sort: "title" %}
 {% for post in sorted_pages %}
+  {% if post.lang == 'zh' %}
+    {% continue %}
+  {% endif %}
   {% include archive-single.html %}
 {% endfor %}
-
-<!-- <hr>
-
-<h2>News</h2>
-{% for post in site.news %}
-  {% include archive-single.html %}
-{% endfor %} -->
 
 <hr>
 
@@ -33,7 +29,7 @@ A list of main pages and content found on the site. For you robots out there, th
 <hr>
 
 <h2>Blog Posts</h2>
-{% assign sorted_posts = site.posts | sort: "date" | reverse %}
+{% assign sorted_posts = site.posts | where_exp: "post", "post.lang != 'zh'" | sort: "date" | reverse %}
 {% for post in sorted_posts %}
   {% include archive-single.html %}
 {% endfor %}
