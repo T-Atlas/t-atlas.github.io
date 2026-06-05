@@ -109,6 +109,14 @@ We emphasize <span class="findlab-highlight">problem-driven research, system-bui
 - Address: Institute of Computing Technology, Chinese Academy of Sciences, No. 6 Kexueyuan South Road, Zhongguancun, Haidian District, Beijing, China
 - Original WeChat article (Chinese): [https://mp.weixin.qq.com/s/agP3z2ziP87NrJIP2ilY9Q](https://mp.weixin.qq.com/s/agP3z2ziP87NrJIP2ilY9Q)
 
-![Scan to follow the FinD Lab WeChat official account](/images/find-lab-wechat/wechat-code-en.png){: .findlab-wide-image }
+---
+
+
+<div class="ai4air-transfer-note">
+  <div>This article is reposted from FinD Lab's official WeChat account</div>
+  <div>Scan to follow FinD Lab on WeChat for timely insights into frontier AI research</div>
+</div>
+
+![Scan to follow FinD Lab on WeChat for timely insights into frontier AI research](/images/find-lab-wechat/wechat-code-en.png){: .findlab-wide-image }
 
 </div>

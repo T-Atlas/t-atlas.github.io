@@ -2,20 +2,41 @@
 
 ## Researcher Profile
 
-Junhong Lian is a researcher working on natural language processing, personalized generation in large language models, and AI for research.
+Junhong Lian is a researcher working on natural language processing, personalized generation in large language models, multimodal sarcasm detection, and AI for AI research. The site provides English and Chinese pages, news, blog posts, publications, and CV information.
 
 ## Main Pages
 
 - [English Home](https://t-atlas.github.io/)
 - [中文主页](https://t-atlas.github.io/zh/)
 - [Publications](https://t-atlas.github.io/publications/)
-- [预印本 / Preprints](https://t-atlas.github.io/publications/#preprints)
+- [中文学术发表](https://t-atlas.github.io/zh/publications/)
+- [Preprints](https://t-atlas.github.io/publications/#preprints)
 - [News](https://t-atlas.github.io/news/)
+- [新闻动态](https://t-atlas.github.io/zh/news/)
 - [Blog Posts](https://t-atlas.github.io/year-archive/)
 - [中文博客](https://t-atlas.github.io/zh/year-archive/)
 - [CV](https://t-atlas.github.io/cv/)
+- [中文简历](https://t-atlas.github.io/zh/cv/)
 
 ## Blog Posts
+
+### [FinD Lab WeChat Official Account Is Now Live](https://t-atlas.github.io/posts/2026/04/find-lab-wechat/)
+
+Published: April 20, 2026
+
+An English introduction to the Financial Intelligence & Data Science Lab (FinD Lab), its research focus, team profile, recruitment information, and official WeChat account.
+
+### [金融智能与数据科学研究组微信公众号开通啦！](https://t-atlas.github.io/zh/posts/2026/04/find-lab-wechat/)
+
+发布时间：2026年4月20日
+
+FinD Lab 中文介绍，涵盖研究组方向、团队成员、招生信息和微信公众号入口。
+
+### [AI4AIR：大模型赋能 AI 研究综述分享](https://t-atlas.github.io/zh/posts/2026/06/ai4air-survey/)
+
+发布时间：2026年6月4日
+
+中文解读 AI4AIR survey，介绍大语言模型在 AI 研究流程中的角色、二维分类体系、五类核心功能，以及 A14AIR / Awesome LLMs for AI Research 项目资源。
 
 ### [My First Blog Post](https://t-atlas.github.io/posts/2025/03/first-blog-post/)
 
@@ -29,28 +50,54 @@ Welcome to my first blog post. I will share what I see, learn, and think about h
 
 欢迎来到我的第一篇博客，我在这里分享我的见闻和思考。
 
+## News
+
+### [AI4AIR Survey Preprint Released](https://t-atlas.github.io/news/2026-06-01-ai4air-survey/)
+
+Published: June 2026
+
+The AI4AIR survey preprint is available, with project resources shared on GitHub and the project page.
+
+### [AI4AIR 综述预印本发布](https://t-atlas.github.io/zh/news/2026-06-01-ai4air-survey/)
+
+发布时间：2026年6月
+
+AI4AIR 综述论文预印本发布，项目资源同步在 GitHub 和项目主页更新。
+
 ## Publications
 
-### [Towards AI for AI Research: A Survey](https://t-atlas.github.io/publication/2026-06-01-ai4air-survey)
+### [AI4AIR: A Comprehensive Survey on Large Language Models for AI Research](https://t-atlas.github.io/publication/2026-06-01-ai4air-survey.html)
 
 Preprint, 2026.
 
-Authors include Junhong Lian, Xiaoyu Zhang, Jiaqi Zhang, Tingwen Liu, Kaile Wang, Yang Zhao, Peiwen Yuan, Zhenyu Guo, Yisong Huang, Qin Jin, Qun Liu, Zhiting Hu, Xiang Ao, and Xueqi Cheng. Xiang Ao and Xueqi Cheng are corresponding authors.
+This survey reviews large language models as pivotal components within machine learning research pipelines, covering data engineering, model design and optimization, model evaluation, and closed-loop AI research automation. The project page is [Awesome LLMs for AI Research](https://ict-find-lab.github.io/Awesome-LLMs-for-AI-Research/).
 
-### [Improved Personalized News Headline Generation via Causal Modeling of Content and Style](https://t-atlas.github.io/publication/2025-08-09-improved-personalized)
+### [GDCNet: Generative Discrepancy Comparison Network for Multimodal Sarcasm Detection](https://t-atlas.github.io/publication/2026-01-18-gdcnet.html)
+
+ICASSP 2026.
+
+GDCNet uses large-language-model-generated image-grounded captions as stable semantic anchors for multimodal sarcasm detection, modeling discrepancies between generated descriptions and original text.
+
+### [Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback](https://t-atlas.github.io/publication/2025-08-09-improved-personalized.html)
 
 CIKM 2025.
 
+This work proposes PHG-DIF, a personalized headline generation framework that denoises clickstream noise and models instant, evolving, and stable user interests through dynamic aggregation.
+
 Downloads: [Paper](https://t-atlas.github.io/files/CIKM2025_paper.pdf), [Slides](https://t-atlas.github.io/files/CIKM2025_slides.pdf), [Poster](https://t-atlas.github.io/files/CIKM2025_poster.pdf).
 
-### [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests)
+### [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests.html)
 
 WWW 2025.
 
+This work proposes SCAPE, a Stylistic-Content Aware Personalized Headline Generation framework that models both content and stylistic user preferences.
+
 Downloads: [Paper](https://t-atlas.github.io/files/WWW2025_paper.pdf), [Slides](https://t-atlas.github.io/files/WWW2025_slides.pdf), [Poster](https://t-atlas.github.io/files/WWW2025_poster.pdf).
 
-### [Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved)
+### [Fact-Preserved Personalized News Headline Generation](https://t-atlas.github.io/publication/2023-12-01-fact-preserved.html)
 
 ICDM 2023.
+
+This work proposes Fact-Preserved Personalized News Headline Generation (FPG), balancing personalization with factual consistency in generated news headlines.
 
 Downloads: [Paper](https://t-atlas.github.io/files/ICDM2023_paper.pdf), [Slides](https://t-atlas.github.io/files/ICDM2023_slides.pdf).
