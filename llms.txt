@@ -6,7 +6,7 @@
 - [中文主页](https://t-atlas.github.io/zh/): 中文版个人主页。
 - [Publications](https://t-atlas.github.io/publications/): Publications and preprints on personalized generation, multimodal sarcasm detection, and AI for AI research.
 - [中文学术发表](https://t-atlas.github.io/zh/publications/): 中文版学术发表列表。
-- [News](https://t-atlas.github.io/news/): Academic updates and paper acceptance news.
+- [News](https://t-atlas.github.io/news/): Academic milestones and paper news.
 - [新闻动态](https://t-atlas.github.io/zh/news/): 中文新闻动态。
 - [Blog Posts](https://t-atlas.github.io/year-archive/): English blog archive.
 - [中文博客](https://t-atlas.github.io/zh/year-archive/): 中文博客归档。
@@ -15,9 +15,9 @@
 
 ## Featured Content
 
+- [AI4AIR Chinese Blog](https://t-atlas.github.io/zh/posts/2026/06/ai4air-survey/): 中文解读 AI4AIR survey and the A14AIR resource project.
 - [FinD Lab WeChat Official Account Is Now Live](https://t-atlas.github.io/posts/2026/04/find-lab-wechat/): English introduction to FinD Lab and its official WeChat account.
 - [金融智能与数据科学研究组微信公众号开通](https://t-atlas.github.io/zh/posts/2026/04/find-lab-wechat/): FinD Lab 中文介绍与微信公众号信息。
-- [AI4AIR Chinese Blog](https://t-atlas.github.io/zh/posts/2026/06/ai4air-survey/): 中文解读 AI4AIR survey and the A14AIR resource project.
 - [AI4AIR Survey News](https://t-atlas.github.io/news/2026-06-01-ai4air-survey/): English news item for the AI4AIR survey preprint.
 - [AI4AIR 综述新闻](https://t-atlas.github.io/zh/news/2026-06-01-ai4air-survey/): 中文新闻条目。
 
@@ -26,5 +26,15 @@
 - [AI4AIR Survey](https://t-atlas.github.io/publication/2026-06-01-ai4air-survey.html): Preprint survey on large language models for AI research.
 - [GDCNet](https://t-atlas.github.io/publication/2026-01-18-gdcnet.html): ICASSP 2026 paper on multimodal sarcasm detection.
 - [PHG-DIF](https://t-atlas.github.io/publication/2025-08-09-improved-personalized.html): CIKM 2025 paper on denoising fake interests for personalized headline generation.
-- [SCAPE](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests.html): WWW 2025 paper on stylistic-content aware personalized headline generation.
+- [SCAPE](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests.html): WWW 2025 Companion paper on stylistic-content aware personalized headline generation, DOI 10.1145/3701716.3715539.
 - [Fact-Preserved News Headlines](https://t-atlas.github.io/publication/2023-12-01-fact-preserved.html): ICDM 2023 paper on factual consistency in personalized news headline generation.
+
+## News Index
+
+- [AI4AIR Survey Preprint Released](https://t-atlas.github.io/news/2026-06-01-ai4air-survey/)
+- [ICASSP2026 Paper Accepted](https://t-atlas.github.io/news/2026-01-18-icassp-paper/)
+- [CIKM2025 Paper Accepted](https://t-atlas.github.io/news/2025-08-09-cikm-paper/)
+- [Third Year PhD Student](https://t-atlas.github.io/news/2025-07-25-phd-third-year/)
+- [WWW2025 Paper Accepted](https://t-atlas.github.io/news/2025-01-21-www-paper/)
+- [ICDM2023 Paper Accepted](https://t-atlas.github.io/news/2023-09-01-icdm-paper/)
+- [Started Master Program](https://t-atlas.github.io/news/2023-08-31-master-student/)

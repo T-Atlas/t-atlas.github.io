@@ -6,8 +6,8 @@ permalink: /publication/2023-12-01-fact-preserved
 excerpt: 'Zhao Yang, **Junhong Lian** and Xiang Ao*. (2023). &quot;Fact-Preserved Personalized News Headline Generation.&quot; <i>In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM2023, short paper).</i> Z. Yang and J. Lian are equally contributed.'
 date: 2023-12-01
 venue: '2023 IEEE International Conference on Data Mining (ICDM2023)'
-slidesurl: 'http://t-atlas.github.io/files/ICDM2023_slides.pdf'
-paperurl: 'http://t-atlas.github.io/files/ICDM2023_paper.pdf'
+slidesurl: '/files/ICDM2023_slides.pdf'
+paperurl: '/files/ICDM2023_paper.pdf'
 citation: 'Yang, Zhao, Junhong Lian, and Xiang Ao. "Fact-Preserved Personalized News Headline Generation." <i>2023 IEEE International Conference on Data Mining (ICDM).</i> IEEE, 2023.'
 ---
 

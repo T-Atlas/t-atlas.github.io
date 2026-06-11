@@ -6,9 +6,9 @@ permalink: /publication/2025-08-09-improved-personalized
 excerpt: 'Kejin Liu, **Junhong Lian**, Xiang Ao*, Ningtao Wang, Xing Fu, Yu Cheng, Weiqiang Wang and Xinyu Liu. (2025). &quot;Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback.&quot; <i>In Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM2025).</i> K. Liu and J. Lian are equally contributed.'
 date: 2025-08-09
 venue: 'The 34th ACM International Conference on Information and Knowledge Management (CIKM 2025)'
-slidesurl: 'http://t-atlas.github.io/files/CIKM2025_slides.pdf'
-posterurl: 'http://t-atlas.github.io/files/CIKM2025_poster.pdf'
-paperurl: 'http://t-atlas.github.io/files/CIKM2025_paper.pdf'
+slidesurl: '/files/CIKM2025_slides.pdf'
+posterurl: '/files/CIKM2025_poster.pdf'
+paperurl: '/files/CIKM2025_paper.pdf'
 citation: 'Liu, Kejin, et al. "Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback." <i>Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM 2025).</i> 2025.'
 ---
 

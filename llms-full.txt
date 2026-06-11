@@ -20,23 +20,23 @@ Junhong Lian is a researcher working on natural language processing, personalize
 
 ## Blog Posts
 
-### [FinD Lab WeChat Official Account Is Now Live](https://t-atlas.github.io/posts/2026/04/find-lab-wechat/)
-
-Published: April 20, 2026
-
-An English introduction to the Financial Intelligence & Data Science Lab (FinD Lab), its research focus, team profile, recruitment information, and official WeChat account.
-
-### [金融智能与数据科学研究组微信公众号开通啦！](https://t-atlas.github.io/zh/posts/2026/04/find-lab-wechat/)
-
-发布时间：2026年4月20日
-
-FinD Lab 中文介绍，涵盖研究组方向、团队成员、招生信息和微信公众号入口。
-
 ### [AI4AIR：大模型赋能 AI 研究综述分享](https://t-atlas.github.io/zh/posts/2026/06/ai4air-survey/)
 
 发布时间：2026年6月4日
 
 中文解读 AI4AIR survey，介绍大语言模型在 AI 研究流程中的角色、二维分类体系、五类核心功能，以及 A14AIR / Awesome LLMs for AI Research 项目资源。
+
+### [Financial Intelligence & Data Science Lab (FinD Lab) WeChat Official Account Is Now Live](https://t-atlas.github.io/posts/2026/04/find-lab-wechat/)
+
+Published: April 20, 2026
+
+An English introduction to the Financial Intelligence & Data Science Lab (FinD Lab), its research focus, team profile, recruitment information, and official WeChat account.
+
+### [金融智能与数据科学研究组（FinD Lab）微信公众号开通啦！](https://t-atlas.github.io/zh/posts/2026/04/find-lab-wechat/)
+
+发布时间：2026年4月20日
+
+FinD Lab 中文介绍，涵盖研究组方向、团队成员、招生信息和微信公众号入口。
 
 ### [My First Blog Post](https://t-atlas.github.io/posts/2025/03/first-blog-post/)
 
@@ -54,29 +54,105 @@ Welcome to my first blog post. I will share what I see, learn, and think about h
 
 ### [AI4AIR Survey Preprint Released](https://t-atlas.github.io/news/2026-06-01-ai4air-survey/)
 
-Published: June 2026
+Published: June 1, 2026
 
 The AI4AIR survey preprint is available, with project resources shared on GitHub and the project page.
 
 ### [AI4AIR 综述预印本发布](https://t-atlas.github.io/zh/news/2026-06-01-ai4air-survey/)
 
-发布时间：2026年6月
+发布时间：2026年6月1日
 
 AI4AIR 综述论文预印本发布，项目资源同步在 GitHub 和项目主页更新。
+
+### [ICASSP2026 Paper Accepted](https://t-atlas.github.io/news/2026-01-18-icassp-paper/)
+
+Published: January 18, 2026
+
+GDCNet: Generative Discrepancy Comparison Network for Multimodal Sarcasm Detection was accepted by ICASSP 2026.
+
+### [ICASSP2026论文接收](https://t-atlas.github.io/zh/news/2026-01-18-icassp-paper/)
+
+发布时间：2026年1月18日
+
+GDCNet: Generative Discrepancy Comparison Network for Multimodal Sarcasm Detection 被 ICASSP 2026 接收。
+
+### [CIKM2025 Paper Accepted](https://t-atlas.github.io/news/2025-08-09-cikm-paper/)
+
+Published: August 9, 2025
+
+Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback was accepted by CIKM 2025.
+
+### [CIKM2025论文接收](https://t-atlas.github.io/zh/news/2025-08-09-cikm-paper/)
+
+发布时间：2025年8月9日
+
+Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback 被 CIKM 2025 接收。
+
+### [Third Year PhD Student](https://t-atlas.github.io/news/2025-07-25-phd-third-year/)
+
+Published: July 25, 2025
+
+Junhong Lian will be a third-year Ph.D. student at the Institute of Computing Technology, Chinese Academy of Sciences in September 2025.
+
+### [三年级博士研究生](https://t-atlas.github.io/zh/news/2025-07-25-phd-third-year/)
+
+发布时间：2025年7月25日
+
+连俊宏将于 2025 年 9 月成为中国科学院计算技术研究所三年级博士研究生。
+
+### [WWW2025 Paper Accepted](https://t-atlas.github.io/news/2025-01-21-www-paper/)
+
+Published: January 21, 2025
+
+Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation was accepted by WWW 2025.
+
+### [WWW2025论文接收](https://t-atlas.github.io/zh/news/2025-01-21-www-paper/)
+
+发布时间：2025年1月21日
+
+Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation 被 WWW 2025 接收。
+
+### [ICDM2023 Paper Accepted](https://t-atlas.github.io/news/2023-09-01-icdm-paper/)
+
+Published: September 1, 2023
+
+Fact-Preserved Personalized News Headline Generation was accepted by ICDM 2023.
+
+### [ICDM2023论文接收](https://t-atlas.github.io/zh/news/2023-09-01-icdm-paper/)
+
+发布时间：2023年9月1日
+
+Fact-Preserved Personalized News Headline Generation 被 ICDM 2023 接收。
+
+### [Started Master Program](https://t-atlas.github.io/news/2023-08-31-master-student/)
+
+Published: August 31, 2023
+
+Junhong Lian started the master's program at ICT, CAS under the supervision of Prof. Xiang Ao and co-supervision of Dr. Xinyu Liu.
+
+### [Started Master Program](https://t-atlas.github.io/zh/news/2023-08-31-master-student/)
+
+发布时间：2023年8月31日
+
+连俊宏开始在中科院计算所攻读硕士研究生，导师为敖翔副研究员，并由刘新宇副研究员共同指导。
 
 ## Publications
 
 ### [AI4AIR: A Comprehensive Survey on Large Language Models for AI Research](https://t-atlas.github.io/publication/2026-06-01-ai4air-survey.html)
 
-Preprint, 2026.
+Preprint, under review, 2026.
 
 This survey reviews large language models as pivotal components within machine learning research pipelines, covering data engineering, model design and optimization, model evaluation, and closed-loop AI research automation. The project page is [Awesome LLMs for AI Research](https://ict-find-lab.github.io/Awesome-LLMs-for-AI-Research/).
+
+Downloads: [Paper](https://ict-find-lab.github.io/Awesome-LLMs-for-AI-Research/assets/AI4AIR_Survey_v260601.pdf).
 
 ### [GDCNet: Generative Discrepancy Comparison Network for Multimodal Sarcasm Detection](https://t-atlas.github.io/publication/2026-01-18-gdcnet.html)
 
 ICASSP 2026.
 
 GDCNet uses large-language-model-generated image-grounded captions as stable semantic anchors for multimodal sarcasm detection, modeling discrepancies between generated descriptions and original text.
+
+Downloads: [Paper](https://t-atlas.github.io/files/ICASSP2026_paper.pdf), [Poster](https://t-atlas.github.io/files/ICASSP2026_poster.pdf).
 
 ### [Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback](https://t-atlas.github.io/publication/2025-08-09-improved-personalized.html)
 
@@ -88,7 +164,7 @@ Downloads: [Paper](https://t-atlas.github.io/files/CIKM2025_paper.pdf), [Slides]
 
 ### [Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation](https://t-atlas.github.io/publication/2025-04-28-panoramic-interests.html)
 
-WWW 2025.
+WWW 2025 Companion Proceedings, pp. 1109-1112. DOI: 10.1145/3701716.3715539.
 
 This work proposes SCAPE, a Stylistic-Content Aware Personalized Headline Generation framework that models both content and stylistic user preferences.
 

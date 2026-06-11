@@ -3,12 +3,12 @@ title: "Panoramic Interests: Stylistic-Content Aware Personalized Headline Gener
 collection: publications
 category: conferences
 permalink: /publication/2025-04-28-panoramic-interests
-excerpt: "**Junhong Lian**, Xiang Ao\\*, Xinyu Liu\\*, Yang Liu and Qing He. (2025). &quot;Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation.&quot; <i>To appear in the Web Conference 2025 (WWW2025, short paper).</i>"
+excerpt: "**Junhong Lian**, Xiang Ao\\*, Xinyu Liu\\*, Yang Liu and Qing He. (2025). &quot;Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation.&quot; <i>In Companion Proceedings of the ACM Web Conference 2025 (WWW2025, short paper).</i>"
 date: 2025-01-28
 venue: 'The Web Conference 2025 (WWW2025)'
-slidesurl: 'http://t-atlas.github.io/files/WWW2025_slides.pdf'
-posterurl: 'http://t-atlas.github.io/files/WWW2025_poster.pdf'
-paperurl: 'http://t-atlas.github.io/files/WWW2025_paper.pdf'
+slidesurl: '/files/WWW2025_slides.pdf'
+posterurl: '/files/WWW2025_poster.pdf'
+paperurl: '/files/WWW2025_paper.pdf'
 citation: 'Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." <i>Companion Proceedings of the ACM Web Conference 2025.</i> 2025.'
 ---
 

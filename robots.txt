@@ -19,4 +19,3 @@ Allow: /
 
 # 指定站点地图
 Sitemap: https://t-atlas.github.io/sitemap.xml
-Sitemap: https://t-atlas.github.io/sitemaps.xml
