@@ -24,7 +24,7 @@ Junhong Lian is a researcher working on natural language processing, personalize
 
 发布时间：2026年6月4日
 
-中文解读 AI4AIR survey，介绍大语言模型在 AI 研究流程中的角色、二维分类体系、五类核心功能，以及 A14AIR / Awesome LLMs for AI Research 项目资源。
+中文解读 AI4AIR survey，介绍大语言模型在 AI 研究流程中的角色、二维分类体系、五类核心功能，以及 AI4AIR / Awesome LLMs for AI Research 项目资源。
 
 ### [Financial Intelligence & Data Science Lab (FinD Lab) WeChat Official Account Is Now Live](https://t-atlas.github.io/posts/2026/04/find-lab-wechat/)
 

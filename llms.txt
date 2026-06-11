@@ -15,7 +15,7 @@
 
 ## Featured Content
 
-- [AI4AIR Chinese Blog](https://t-atlas.github.io/zh/posts/2026/06/ai4air-survey/): 中文解读 AI4AIR survey and the A14AIR resource project.
+- [AI4AIR Chinese Blog](https://t-atlas.github.io/zh/posts/2026/06/ai4air-survey/): 中文解读 AI4AIR survey and the AI4AIR resource project.
 - [FinD Lab WeChat Official Account Is Now Live](https://t-atlas.github.io/posts/2026/04/find-lab-wechat/): English introduction to FinD Lab and its official WeChat account.
 - [金融智能与数据科学研究组微信公众号开通](https://t-atlas.github.io/zh/posts/2026/04/find-lab-wechat/): FinD Lab 中文介绍与微信公众号信息。
 - [AI4AIR Survey News](https://t-atlas.github.io/news/2026-06-01-ai4air-survey/): English news item for the AI4AIR survey preprint.

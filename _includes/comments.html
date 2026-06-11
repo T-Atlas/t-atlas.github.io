@@ -76,7 +76,7 @@
       {% endif %}
     </section>
   {% when "custom" %}
-    <h4 class="page__comments-title">{{ comments_label }}</h4>
+    <h4 class="page__comments-title">{% if page.lang == "zh" %}留言评论{% else %}{{ comments_label }}{% endif %}</h4>
     <section id="comments"></section>
     {% include /comments-providers/scripts.html %}
   {% endcase %}
