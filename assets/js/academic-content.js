@@ -77,11 +77,7 @@ function followTheme(render) {
   const refresh = () => {
     pending = pending.then(render).catch(error => console.warn(error));
   };
-  new MutationObserver(refresh).observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ["data-theme"]
-  });
-  refresh();
+  window.SiteTheme.subscribe(refresh);
 }
 
 function hasMath() {

@@ -3,10 +3,10 @@ layout: compress
 ---
 
 {% include base_path %}
-{% assign html_lang = page.lang | default: site.locale | slice: 0, 2 %}
+{% include language-context.html %}
 
 <!doctype html>
-<html lang="{{ html_lang }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ page_lang }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}

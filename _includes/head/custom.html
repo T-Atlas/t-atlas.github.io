@@ -10,7 +10,13 @@
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
-<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<!-- Non-blocking icon styles, hosted alongside the site. -->
+<link rel="preload" href="{{ base_path }}/assets/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ base_path }}/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/fontawesome.css">
+</noscript>
 
 
 <!-- end custom head snippets -->

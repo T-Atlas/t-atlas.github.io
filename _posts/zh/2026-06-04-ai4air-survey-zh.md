@@ -2,6 +2,7 @@
 title: "AI4AIR：大模型赋能 AI 研究综述分享"
 date: 2026-06-04
 permalink: /zh/posts/2026/06/ai4air-survey/
+toc: true
 lang: zh
 excerpt: "我们团队发布了一篇预印本综述论文，聚焦 **AI** for **AI** **R**esearch（AI4AIR）这一正在快速兴起的方向。AI4AIR 关注大语言模型如何反过来进入 AI 研究流程本身，并在数据工程、模型设计与优化、模型评测和闭环研究中发挥作用。"
 tags:

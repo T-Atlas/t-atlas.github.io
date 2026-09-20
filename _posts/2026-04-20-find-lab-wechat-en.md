@@ -2,6 +2,7 @@
 title: "Financial Intelligence & Data Science Lab (FinD Lab) WeChat Official Account Is Now Live!"
 date: 2026-04-20
 permalink: /posts/2026/04/find-lab-wechat/
+toc: true
 lang: en
 alternate_url: /zh/posts/2026/04/find-lab-wechat/
 excerpt: "Financial Intelligence & Data Science Lab (FinD Lab @ ICT) originated from the Machine Learning and Data Mining Group (ICT-MLDM) at the Institute of Computing Technology (ICT), Chinese Academy of Sciences (CAS). The lab focuses on data mining in financial scenarios and model-intrinsic safety in related downstream settings, conducting systematic fundamental research and exploring frontier applications."

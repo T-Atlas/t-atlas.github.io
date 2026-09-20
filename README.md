@@ -95,3 +95,7 @@ docker compose up
 [![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
 [![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
 </div>
+
+## 本站维护说明
+
+中英配对、六套皮肤、主题同步、JSON 简历、论文引用、CSV/TSV 导入和验证命令见 [网站维护说明](docs/site-maintenance.md)。现有 permalink 保持不变；修改 JS 后请运行 `npm run build:js`。

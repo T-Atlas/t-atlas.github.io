@@ -1,10 +1,10 @@
 # Leaflet cluster map of talk locations
 #
-# Run this from the _talks/ directory, which contains .md files of all your
-# talks. This scrapes the location YAML field from each .md file, geolocates it
+# Run this from the repository root; _talks/ contains the Markdown talks. This scrapes the location YAML field from each .md file, geolocates it
 # with geopy/Nominatim, and uses the getorg library to output data, HTML, and
 # Javascript for a standalone cluster map. This is functionally the same as the
 # #talkmap Jupyter notebook.
+from pathlib import Path
 import frontmatter
 import glob
 import getorg
@@ -51,6 +51,12 @@ for file in g:
     except Exception as ex:
         print(f"An unhandled exception occurred while processing input {location} with message {ex}")
 
+# Preserve the maintained Leaflet template when getorg refreshes map data.
+map_path = Path("talkmap/map.html")
+map_template = map_path.read_text(encoding="utf-8")
+
 # Save the map
 m = getorg.orgmap.create_map_obj()
 getorg.orgmap.output_html_cluster_map(location_dict, folder_name="talkmap", hashed_usernames=False)
+
+map_path.write_text(map_template, encoding="utf-8")

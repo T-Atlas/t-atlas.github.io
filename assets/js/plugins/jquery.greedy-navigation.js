@@ -6,7 +6,7 @@
 */
 
 var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
+var $btn = $('#site-nav > .nav-toggle');
 var $vlinks = $('#site-nav .visible-links');
 var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
 var $hlinks = $('#site-nav .hidden-links');
@@ -57,6 +57,7 @@ function updateNav() {
 
   // Keep counter updated
   $btn.attr("count", breaks.length);
+  $btn.attr("aria-expanded", !$hlinks.hasClass("hidden"));
 
   // update masthead height and the body/sidebar top padding
   var mastheadHeight = $('.masthead').height();
@@ -74,13 +75,24 @@ function updateNav() {
 $(window).on('resize', function () {
   updateNav();
 });
-screen.orientation.addEventListener("change", function () {
+if (screen.orientation) screen.orientation.addEventListener("change", function () {
   updateNav();
 });
 
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  $btn.attr('aria-expanded', !$hlinks.hasClass('hidden'));
+  $hlinks.attr('aria-hidden', $hlinks.hasClass('hidden'));
 });
 
 updateNav();
+$nav.on('keydown', function (event) {
+  if (event.key === 'Escape') {
+    $hlinks.addClass('hidden').attr('aria-hidden', 'true');
+    $btn.removeClass('close').attr('aria-expanded', 'false').trigger('focus');
+  }
+});
+
+$(window).on("load", updateNav);
+if (document.fonts) document.fonts.addEventListener("loadingdone", updateNav);

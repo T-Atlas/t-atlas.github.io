@@ -1,0 +1,26 @@
+{% assign resource = include.publication %}
+{% assign resource_lang = page.lang | default: site.default_locale | default: 'en' %}
+{% assign resource_labels = site.data.ui-text[resource_lang] %}
+{% if resource.citation or resource.paperurl or resource.bibtex_key %}
+<div class="publication-resources">
+  {% if resource.citation %}<p>{{ resource_labels.citation_label | default: 'Recommended citation:' }} {{ resource.citation }}</p>{% endif %}
+  <div class="resource-links">
+    {% if resource.paperurl %}<a href="{{ resource.paperurl | relative_url }}">{{ resource_labels.download_paper_label | default: 'Download Paper' }}</a>{% endif %}
+    {% if resource.slidesurl %}<a href="{{ resource.slidesurl | relative_url }}">{{ resource_labels.download_slides_label | default: 'Download Slides' }}</a>{% endif %}
+    {% if resource.posterurl %}<a href="{{ resource.posterurl | relative_url }}">{{ resource_labels.download_poster_label | default: 'Download Poster' }}</a>{% endif %}
+    {% if resource.doi %}<a href="https://doi.org/{{ resource.doi }}">DOI</a>{% endif %}
+    {% if resource.arxivurl %}<a href="{{ resource.arxivurl }}">arXiv</a>{% endif %}
+    {% if resource.codeurl %}<a href="{{ resource.codeurl }}">{% if resource_lang == 'zh' %}代码{% else %}Code{% endif %}</a>{% endif %}
+    {% if resource.projecturl %}<a href="{{ resource.projecturl }}">{% if resource_lang == 'zh' %}项目主页{% else %}Project{% endif %}</a>{% endif %}
+    {% if resource.bibtexurl %}<a href="{{ resource.bibtexurl | relative_url }}" download>{{ resource_labels.download_bibtex_label | default: 'Download BibTeX' }}</a>{% endif %}
+    {% if resource.bibtex_key %}<button type="button" data-copy-citation>{% if resource_lang == 'zh' %}复制 BibTeX{% else %}Copy BibTeX{% endif %}</button>{% endif %}
+  </div>
+  {% if resource.bibtex_key %}
+  <details><summary>{% if resource_lang == 'zh' %}查看引用{% else %}Show citation{% endif %}</summary>
+    {% capture bibtex_text %}{% include citation-bibtex.html publication=resource %}{% endcapture %}
+    <pre><code class="citation-bibtex">{{ bibtex_text | strip | escape }}</code></pre>
+  </details>
+  <span class="citation-status" role="status" aria-live="polite"></span>
+  {% endif %}
+</div>
+{% endif %}

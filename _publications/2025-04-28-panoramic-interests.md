@@ -10,6 +10,18 @@ slidesurl: '/files/WWW2025_slides.pdf'
 posterurl: '/files/WWW2025_poster.pdf'
 paperurl: '/files/WWW2025_paper.pdf'
 citation: 'Lian, Junhong, et al. "Panoramic Interests: Stylistic-Content Aware Personalized Headline Generation." <i>Companion Proceedings of the ACM Web Conference 2025.</i> 2025.'
+authors: ["Junhong Lian", "Xiang Ao", "Xinyu Liu", "Yang Liu", "Qing He"]
+publication_date: "2025/05/08"
+publication_year: "2025"
+doi: "10.1145/3701716.3715539"
+citation_venue: "Companion Proceedings of the ACM on Web Conference 2025"
+pages: "1109-1112"
+publisher: "ACM"
+bibtex_type: "inproceedings"
+bibtex_key: "lian2025panoramic"
+bibtexurl: "/files/bibtex/lian2025panoramic.bib"
+arxivurl: "https://arxiv.org/abs/2501.11900"
+metadata_sources: ["https://api.crossref.org/works/10.1145/3701716.3715539", "https://arxiv.org/abs/2501.11900"]
 ---
 
 `TL;DR` This paper proposes a novel Stylistic-Content Aware Personalized Headline Generation (SCAPE) framework that reflects users\' stylistic-content preferences during the generation process by incorporating panoramic interests into the headline generator.

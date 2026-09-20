@@ -10,6 +10,19 @@ slidesurl: '/files/CIKM2025_slides.pdf'
 posterurl: '/files/CIKM2025_poster.pdf'
 paperurl: '/files/CIKM2025_paper.pdf'
 citation: 'Liu, Kejin, et al. "Improved Personalized Headline Generation via Denoising Fake Interests from Implicit Feedback." <i>Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM 2025).</i> 2025.'
+authors: ["Kejin Liu", "Junhong Lian", "Xiang Ao", "Ningtao Wang", "Xing Fu", "Yu Cheng", "Weiqiang Wang", "Xinyu Liu"]
+publication_date: "2025/11/10"
+publication_year: "2025"
+doi: "10.1145/3746252.3761210"
+citation_venue: "Proceedings of the 34th ACM International Conference on Information and Knowledge Management"
+pages: "1872-1881"
+publisher: "ACM"
+bibtex_type: "inproceedings"
+bibtex_key: "liu2025improved"
+bibtexurl: "/files/bibtex/liu2025improved.bib"
+arxivurl: "https://arxiv.org/abs/2508.07178"
+metadata_sources: ["https://api.crossref.org/works/10.1145/3746252.3761210", "https://arxiv.org/abs/2508.07178"]
+codeurl: "https://github.com/liukejin-up/PHG-DIF"
 ---
 
 `TL;DR` This paper proposes PHG-DIF, a personalized headline generator that denoises clickstream noise with dual filtering and models instant, evolving, and stable interests via dynamic aggregation. We also release DT-PENS with dwell-time logs. Experiments show state-of-the-art results.

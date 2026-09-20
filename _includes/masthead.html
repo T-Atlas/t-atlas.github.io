@@ -1,13 +1,14 @@
 {% include base_path %}
+{% include language-context.html %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
+        <button class="nav-toggle" type="button" aria-controls="overflow-navigation" aria-expanded="false" aria-label="{% if page_lang == 'zh' %}打开导航菜单{% else %}Toggle navigation menu{% endif %}"><span class="navicon" aria-hidden="true"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% assign current_lang = page.lang | default: site.default_locale %}
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ language_home | relative_url }}">{{ site.title }}</a></li>
+          {% assign current_lang = page_lang %}
           {% if current_lang == 'zh' %}
             {% assign nav_items = site.data.navigation.zh %}
           {% else %}
@@ -19,14 +20,23 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% include normalized-url.html url=link.url %}
+            {% assign nav_key = normalized_url %}
+            {% include normalized-url.html url=page.url %}
+            {% assign nav_active = false %}
+            {% if normalized_url == nav_key %}{% assign nav_active = true %}{% endif %}
+            {% if page.collection == 'publications' and link.url contains 'publications' %}{% assign nav_active = true %}{% endif %}
+            {% if page.collection == 'posts' and link.url contains 'year-archive' %}{% assign nav_active = true %}{% endif %}
+            {% if page.collection == 'news' and link.url contains 'news' %}{% assign nav_active = true %}{% endif %}
+            {% if page.url contains 'cv-json' and link.url contains '/cv/' %}{% assign nav_active = true %}{% endif %}
+            <li class="masthead__menu-item{% if nav_active %} selected{% endif %}"><a href="{{ domain }}{{ link.url }}"{% if nav_active %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
           <li class="masthead__menu-item persist">{% include language-switcher.html %}</li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+            <button type="button" class="theme-toggle" aria-label="{% if page_lang == 'zh' %}切换明暗主题{% else %}Toggle color theme{% endif %}" aria-pressed="false"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></button>
           </li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul id="overflow-navigation" class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>

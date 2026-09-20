@@ -1,0 +1,11 @@
+---
+---
+
+// Vendor SCSS compile to reduce main.scss weight
+
+@import
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/regular",
+    "vendor/font-awesome/brands"
+;

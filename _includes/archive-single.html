@@ -56,29 +56,7 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% assign download_links = "" %}
-    {% if post.paperurl %}
-      {% capture paper_link %}<a href="{{ post.paperurl }}">{{ site.data.ui-text[ui_locale].download_paper_label | default: "Download Paper" }}</a>{% endcapture %}
-      {% assign download_links = download_links | append: paper_link %}
-    {% endif %}
-    {% if post.slidesurl %}
-      {% capture slides_link %}<a href="{{ post.slidesurl }}">{{ site.data.ui-text[ui_locale].download_slides_label | default: "Download Slides" }}</a>{% endcapture %}
-      {% if download_links != "" %}{% assign download_links = download_links | append: " | " %}{% endif %}
-      {% assign download_links = download_links | append: slides_link %}
-    {% endif %}
-    {% if post.posterurl %}
-      {% capture poster_link %}<a href="{{ post.posterurl }}">{{ site.data.ui-text[ui_locale].download_poster_label | default: "Download Poster" }}</a>{% endcapture %}
-      {% if download_links != "" %}{% assign download_links = download_links | append: " | " %}{% endif %}
-      {% assign download_links = download_links | append: poster_link %}
-    {% endif %}
-    {% if post.bibtexurl %}
-      {% capture bibtex_link %}<a href="{{ post.bibtexurl }}">{{ site.data.ui-text[ui_locale].download_bibtex_label | default: "Download Bibtex" }}</a>{% endcapture %}
-      {% if download_links != "" %}{% assign download_links = download_links | append: " | " %}{% endif %}
-      {% assign download_links = download_links | append: bibtex_link %}
-    {% endif %}
-    {% if post.citation or download_links != "" %}
-      <p>{% if post.citation %}{{ site.data.ui-text[ui_locale].citation_label | default: "Recommended citation:" }} {{ post.citation }}{% endif %}{% if post.citation and download_links != "" %}<br />{% endif %}{{ download_links }}</p>
-    {% endif %}
+    {% include publication-resources.html publication=post %}
 
   </article>
 </div>

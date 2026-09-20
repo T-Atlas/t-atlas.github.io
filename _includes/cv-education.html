@@ -1,0 +1,12 @@
+<ul class="cv-list">
+{% for education in site.data.cv.education %}
+  <li class="cv-item">
+    <div class="cv-item-header">
+      <strong>{% if page.lang == 'zh' %}{{ education.institution_zh }}{% else %}{{ education.institution }}{% endif %}</strong>
+      <span class="cv-item-date">{{ education.startDate | replace: '-', '.' }} – {{ education.endDate | replace: '-', '.' }}{% if education.expected %} ({% if page.lang == 'zh' %}预计{% else %}expected{% endif %}){% endif %}</span>
+    </div>
+    <div>{% if page.lang == 'zh' %}{{ education.studyType_zh }} · {{ education.area_zh }}{% else %}{{ education.studyType }} · {{ education.area }}{% endif %}</div>
+    {% if education.honors %}<div>{% if page.lang == 'zh' %}{{ education.honors_zh }}{% else %}{{ education.honors }}{% endif %}</div>{% endif %}
+  </li>
+{% endfor %}
+</ul>

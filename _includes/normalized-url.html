@@ -1,0 +1,6 @@
+{%- assign normalized_url = include.url | default: '/' | split: '#' | first | split: '?' | first | replace: 'index.html', '' | remove: '.html' -%}
+{%- assign last_character = normalized_url | slice: -1, 1 -%}
+{%- if last_character == '/' and normalized_url != '/' -%}
+  {%- assign url_length = normalized_url.size | minus: 1 -%}
+  {%- assign normalized_url = normalized_url | slice: 0, url_length -%}
+{%- endif -%}

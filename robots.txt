@@ -18,4 +18,4 @@ Disallow: /llms-full.txt
 Allow: /
 
 # 指定站点地图
-Sitemap: https://t-atlas.github.io/sitemap.xml
+Sitemap: https://home.lianjh.online/sitemap.xml

@@ -8,7 +8,7 @@
 # Basic Site Settings
 locale                   : "en"
 default_locale           : "en"
-site_theme               : "default"
+site_theme               : "default" # default, air, contrast, dirt, mint, sunrise
 
 # Multi-language support
 languages: ["en", "zh"]
@@ -198,6 +198,10 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - tests
+  - docs
+  - scripts
+  - markdown_generator
   - vendor
 keep_files:
   - .git
@@ -319,8 +323,6 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
 timezone: Asia/Shanghai
 
 
@@ -328,7 +330,6 @@ timezone: Asia/Shanghai
 plugins:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
@@ -337,7 +338,6 @@ plugins:
 whitelist:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji

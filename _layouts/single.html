@@ -47,32 +47,16 @@ layout: default
         </header>
       {% endunless %}
 
+      {% if page.toc %}
+      <details class="page-toc" data-auto-toc open>
+        <summary>{% if page.lang == 'zh' %}文章目录{% else %}On this page{% endif %}</summary>
+        <nav aria-label="{% if page.lang == 'zh' %}文章目录{% else %}Table of contents{% endif %}"><ol></ol></nav>
+      </details>
+      {% endif %}
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% assign download_links = "" %}
-        {% if page.paperurl %}
-          {% capture paper_link %}<a href="{{ page.paperurl }}">{{ site.data.ui-text[ui_locale].download_paper_label | default: "Download Paper" }}</a>{% endcapture %}
-          {% assign download_links = download_links | append: paper_link %}
-        {% endif %}
-        {% if page.slidesurl %}
-          {% capture slides_link %}<a href="{{ page.slidesurl }}">{{ site.data.ui-text[ui_locale].download_slides_label | default: "Download Slides" }}</a>{% endcapture %}
-          {% if download_links != "" %}{% assign download_links = download_links | append: " | " %}{% endif %}
-          {% assign download_links = download_links | append: slides_link %}
-        {% endif %}
-        {% if page.posterurl %}
-          {% capture poster_link %}<a href="{{ page.posterurl }}">{{ site.data.ui-text[ui_locale].download_poster_label | default: "Download Poster" }}</a>{% endcapture %}
-          {% if download_links != "" %}{% assign download_links = download_links | append: " | " %}{% endif %}
-          {% assign download_links = download_links | append: poster_link %}
-        {% endif %}
-        {% if page.bibtexurl %}
-          {% capture bibtex_link %}<a href="{{ page.bibtexurl }}">{{ site.data.ui-text[ui_locale].download_bibtex_label | default: "Download Bibtex" }}</a>{% endcapture %}
-          {% if download_links != "" %}{% assign download_links = download_links | append: " | " %}{% endif %}
-          {% assign download_links = download_links | append: bibtex_link %}
-        {% endif %}
-        {% if page.citation or download_links != "" %}
-          <p style="font-size: smaller">{% if page.citation %}{{ site.data.ui-text[ui_locale].citation_label | default: "Recommended citation:" }} {{ page.citation }}{% endif %}{% if page.citation and download_links != "" %}<br />{% endif %}{{ download_links }}</p>
-        {% endif %}
+    {% include publication-resources.html publication=page %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[ui_locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

@@ -18,3 +18,7 @@ package-lock.json
 /vendor/
 .bundle/
 .DS_Store
+
+# Python generator/test caches
+__pycache__/
+*.py[cod]

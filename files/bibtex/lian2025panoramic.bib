@@ -1,0 +1,6 @@
+---
+layout: null
+sitemap: false
+bibtex_key: lian2025panoramic
+---
+{% assign publication = site.publications | where: "bibtex_key", page.bibtex_key | first %}{% include citation-bibtex.html publication=publication %}

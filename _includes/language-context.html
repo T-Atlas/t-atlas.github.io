@@ -1,0 +1,25 @@
+{%- assign page_lang = page.lang | default: site.default_locale | default: site.locale | slice: 0, 2 -%}
+{%- assign ui_locale = page_lang -%}
+{%- assign alternate_page = nil -%}
+{%- if page_lang == 'zh' -%}
+  {%- assign alternate_lang = 'en' -%}
+  {%- assign default_alternate = page.url | remove_first: '/zh' -%}
+  {%- assign language_home = '/zh/' -%}
+{%- else -%}
+  {%- assign alternate_lang = 'zh' -%}
+  {%- assign default_alternate = page.url | prepend: '/zh' -%}
+  {%- assign language_home = '/' -%}
+{%- endif -%}
+{%- assign alternate_target = page.alternate_url | default: default_alternate -%}
+{%- include normalized-url.html url=alternate_target -%}
+{%- assign alternate_key = normalized_url -%}
+{%- assign language_documents = site.pages | concat: site.documents -%}
+{%- for candidate in language_documents -%}
+  {%- assign candidate_lang = candidate.lang | default: site.default_locale | default: site.locale | slice: 0, 2 -%}
+  {%- if candidate_lang != alternate_lang or candidate.published == false -%}{%- continue -%}{%- endif -%}
+  {%- include normalized-url.html url=candidate.url -%}
+  {%- if normalized_url == alternate_key -%}
+    {%- assign alternate_page = candidate -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}

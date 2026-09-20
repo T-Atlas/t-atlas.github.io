@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /cv.json
+sitemap: false
+---
+{
+  "basics": {
+    "name": {{ site.author.name | jsonify }},
+    "label": {{ site.author.bio | jsonify }},
+    "email": {{ site.author.email | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "education": {{ site.data.cv.education | jsonify }},
+  "publications": [{% for publication in site.publications reversed %}
+    {"name": {{ publication.title | jsonify }}, "publisher": {{ publication.venue | jsonify }}, "releaseDate": {{ publication.publication_date | replace: '/', '-' | jsonify }}, "url": {{ publication.url | absolute_url | jsonify }}, "authors": {{ publication.authors | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}

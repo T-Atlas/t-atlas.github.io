@@ -1,0 +1,64 @@
+/* Shared content tools and accessibility refinements. */
+.greedy-nav .theme-toggle {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: var(--global-masthead-link-color);
+  cursor: pointer;
+}
+.greedy-nav .selected > a {
+  color: var(--global-link-color);
+  box-shadow: inset 0 -3px var(--global-link-color);
+  font-weight: 700;
+}
+button:focus-visible, a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 3px;
+}
+.page-toc, .toc {
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  summary { cursor: pointer; font-weight: 700; }
+  a { color: var(--global-link-color); }
+  ol, .toc__menu { padding-left: 1.5em; font-size: 0.9em; }
+  .toc-subheading { margin-left: 1em; }
+  .nav__title { color: var(--global-text-color); background: transparent; }
+}
+.page__content h2[id], .page__content h3[id] { scroll-margin-top: 6rem; }
+.publication-resources {
+  margin: 1em 0;
+  font-size: 0.85em;
+  .resource-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6em 1em; }
+  button { font: inherit; color: var(--global-link-color); background: transparent; border: 1px solid var(--global-border-color); border-radius: 4px; padding: 0.25em 0.6em; cursor: pointer; }
+  details { margin-top: 0.6em; }
+  summary { cursor: pointer; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .citation-status { display: block; color: var(--global-text-color-light); }
+}
+.cv-page { float: none; margin: 0 auto; width: 100%; max-width: 1000px; }
+.cv-item-header { flex-wrap: wrap; gap: 0.5em; }
+@media print {
+  html {
+    --global-bg-color: #fff !important;
+    --global-text-color: #000 !important;
+    --global-text-color-light: #333 !important;
+    --global-link-color: #000 !important;
+    --global-border-color: #ccc !important;
+    --global-thead-color: #ddd !important;
+  }
+  .masthead, .page__footer, .page__comments, .cv-download-links, .sidebar, .page-toc, .publication-resources button { display: none !important; }
+  html, body, .cv-container { background: white !important; color: black !important; }
+  body { padding: 0 !important; margin: 0 !important; }
+  #main, .archive { width: 100%; max-width: none; margin: 0; padding: 0; }
+}

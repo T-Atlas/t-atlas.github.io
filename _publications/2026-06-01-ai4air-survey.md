@@ -8,6 +8,16 @@ date: 2026-06-01
 venue: 'Preprint, under review'
 paperurl: 'https://ict-find-lab.github.io/Awesome-LLMs-for-AI-Research/assets/AI4AIR_Survey_v260601.pdf'
 citation: 'Ao, Xiang, Junhong Lian, Hanyang Li, Siyi Wang, Yiran Qiao, Yi Qiao, Jiaqi Xu, Qing He, and Xueqi Cheng. "AI4AIR: A Comprehensive Survey on Large Language Models for AI Research." <i>Preprint, under review.</i> 2026.'
+authors: ["Xiang Ao", "Junhong Lian", "Hanyang Li", "Siyi Wang", "Yiran Qiao", "Yi Qiao", "Jiaqi Xu", "Qing He", "Xueqi Cheng"]
+publication_date: "2026"
+publication_year: "2026"
+bibtex_type: "article"
+bibtex_key: "ao2026ai4air"
+bibtexurl: "/files/bibtex/ao2026ai4air.bib"
+bibtex_note: "Preprint, under review"
+projecturl: "https://ict-find-lab.github.io/Awesome-LLMs-for-AI-Research/"
+codeurl: "https://github.com/ICT-FinD-Lab/Awesome-LLMs-for-AI-Research"
+metadata_sources: ["https://ict-find-lab.github.io/Awesome-LLMs-for-AI-Research/"]
 ---
 
 `TL;DR` This survey introduces AI4AIR, a comprehensive review of large language models as pivotal components within machine learning research pipelines, covering data engineering, model design and optimization, model evaluation, and closed-loop AI research automation.

@@ -1,0 +1,12 @@
+{% if page.collection == 'publications' and page.authors and page.publication_date %}
+<meta name="citation_title" content="{{ page.title | escape }}">
+{% for author in page.authors %}<meta name="citation_author" content="{{ author | escape }}">
+{% endfor %}<meta name="citation_publication_date" content="{{ page.publication_date | escape }}">
+{% if page.citation_venue %}<meta name="citation_conference_title" content="{{ page.citation_venue | escape }}">{% endif %}
+{% if page.doi %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
+{% if page.pages %}{% assign page_numbers = page.pages | split: '-' %}
+<meta name="citation_firstpage" content="{{ page_numbers | first }}">
+<meta name="citation_lastpage" content="{{ page_numbers | last }}">{% endif %}
+{% comment %}Only set scholar_pdf_url after checking the abstract/PDF directory relationship. Existing /files/ downloads remain available to readers.{% endcomment %}
+{% if page.scholar_pdf_url %}<meta name="citation_pdf_url" content="{{ page.scholar_pdf_url | absolute_url | escape }}">{% endif %}
+{% endif %}

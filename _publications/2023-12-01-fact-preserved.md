@@ -9,6 +9,18 @@ venue: '2023 IEEE International Conference on Data Mining (ICDM2023)'
 slidesurl: '/files/ICDM2023_slides.pdf'
 paperurl: '/files/ICDM2023_paper.pdf'
 citation: 'Yang, Zhao, Junhong Lian, and Xiang Ao. "Fact-Preserved Personalized News Headline Generation." <i>2023 IEEE International Conference on Data Mining (ICDM).</i> IEEE, 2023.'
+authors: ["Zhao Yang", "Junhong Lian", "Xiang Ao"]
+publication_date: "2023/12/01"
+publication_year: "2023"
+doi: "10.1109/icdm58522.2023.00197"
+citation_venue: "2023 IEEE International Conference on Data Mining (ICDM)"
+pages: "1493-1498"
+publisher: "IEEE"
+bibtex_type: "inproceedings"
+bibtex_key: "yang2023fact"
+bibtexurl: "/files/bibtex/yang2023fact.bib"
+arxivurl: "https://arxiv.org/abs/2501.11828"
+metadata_sources: ["https://api.crossref.org/works/10.1109/icdm58522.2023.00197", "https://arxiv.org/abs/2501.11828"]
 ---
 
 `TL;DR` This paper proposes a framework called Fact-Preserved Personalized News Headline Generation (FPG), which aims to balance the trade-off between personalization and factual consistency. We also devise an additional training procedure based on contrastive learning to further enhance the factual consistency of generated headlines.

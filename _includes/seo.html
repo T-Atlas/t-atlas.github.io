@@ -1,9 +1,12 @@
 {% include base_path %}
-{% assign ui_locale = page.lang | default: site.default_locale | default: site.locale | slice: 0, 2 %}
-{% assign og_locale = site.locale | default: "en" %}
-{% if ui_locale == 'zh' %}
-  {% assign og_locale = 'zh_CN' %}
+{% include language-context.html %}
+{% assign og_locale = 'en_US' %}
+{% if page_lang == 'zh' %}{% assign og_locale = 'zh_CN' %}{% endif %}
+{% if alternate_page %}
+<link rel="alternate" hreflang="{{ page_lang }}" href="{{ page.url | absolute_url }}">
+<link rel="alternate" hreflang="{{ alternate_lang }}" href="{{ alternate_page.url | absolute_url }}">
 {% endif %}
+{% include publication-meta.html %}
 
 <!-- begin SEO -->
 {% if site.url %}

@@ -1,0 +1,12 @@
+{%- assign publication = include.publication -%}
+@{{ publication.bibtex_type | default: 'misc' }}{ {{- publication.bibtex_key -}},
+  title = { {{- publication.title -}} },
+  author = { {{- publication.authors | join: ' and ' -}} },
+  year = { {{- publication.publication_year -}} }{% if publication.citation_venue %},
+  booktitle = { {{- publication.citation_venue -}} }{% endif %}{% if publication.publisher %},
+  publisher = { {{- publication.publisher -}} }{% endif %}{% if publication.pages %},
+  pages = { {{- publication.pages | replace: '-', '--' -}} }{% endif %}{% if publication.doi %},
+  doi = { {{- publication.doi -}} }{% endif %}{% if publication.bibtex_note %},
+  note = { {{- publication.bibtex_note -}} }{% endif %},
+  url = { {% if publication.doi %}https://doi.org/{{ publication.doi }}{% else %}{{ publication.projecturl | default: publication.paperurl | absolute_url }}{% endif %} }
+}

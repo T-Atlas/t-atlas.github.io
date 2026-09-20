@@ -2,6 +2,7 @@
 title: "金融智能与数据科学研究组（FinD Lab）微信公众号开通啦！"
 date: 2026-04-20
 permalink: /zh/posts/2026/04/find-lab-wechat/
+toc: true
 lang: zh
 alternate_url: /posts/2026/04/find-lab-wechat/
 excerpt: "金融智能与数据科学研究组（FinD Lab @ ICT）隶属于中国科学院计算技术研究所机器学习与数据挖掘课题组（ICT-MLDM）。本研究组聚焦金融场景下的数据挖掘以及衍生场景的模型内生安全等核心方向，开展系统性基础研究与前沿应用探索。"
