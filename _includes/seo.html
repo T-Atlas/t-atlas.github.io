@@ -30,6 +30,7 @@
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
 {% endif %}
+<meta name="description" content="{{ seo_description }}">
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
 {% if seo_author %}
@@ -125,9 +126,9 @@
   <meta property="og:type" content="article">
 {% endif %}
 {% if page.excerpt %}
-  <meta property="og:description" name="description" content="{{ seo_description }}">
+  <meta property="og:description" content="{{ seo_description }}">
 {% elsif site.og_description %}
-  <meta property="og:description" name="description" content="{{ site.og_description }}">
+  <meta property="og:description" content="{{ site.og_description }}">
 {% endif %}
 {% if seo_url %}
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">

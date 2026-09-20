@@ -1,0 +1,30 @@
+/* Optional diagrams and interactive research figures. */
+.academic-figure {
+  width: 100%;
+  min-width: 0;
+  margin: 1.5em 0;
+}
+
+.academic-diagram {
+  overflow-x: auto;
+  text-align: center;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.academic-plot {
+  min-height: 350px;
+}
+
+.academic-figure-error {
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+}
+
+/* Ensure successful charts hide Rouge's source wrapper as well as plain pre. */
+.academic-source[hidden] {
+  display: none !important;
+}

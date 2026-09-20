@@ -50,7 +50,7 @@ redirect_from:
 
 ## MathJax
 
-Support for MathJax Version 3.0 is included in the template:
+MathJax 4.0.0 renders mathematics and loads only on pages that contain formulas. Set `mathjax: true` in a page's YAML front matter to force loading, or `mathjax: false` to disable it for that page.
 
 $$
 \displaylines{
@@ -64,6 +64,88 @@ $$
 The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
 
 **Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772). In some cases, such as when you are including MathJax in a `citation` field for publications, it may be necessary to use `\(...\)` for inline delineation.
+
+## Mermaid diagrams
+
+Use a fenced code block with the language `mermaid` to draw a flowchart. Mermaid loads only when a page contains a Mermaid block, and the diagram follows the site's light or dark theme.
+
+````markdown
+```mermaid
+flowchart LR
+    A[研究问题] --> B[收集数据]
+    B --> C[分析结果]
+    C --> D[验证结论]
+```
+````
+
+The block renders as:
+
+```mermaid
+flowchart LR
+    A[研究问题] --> B[收集数据]
+    B --> C[分析结果]
+    C --> D[验证结论]
+```
+
+## Plotly charts
+
+Use a `plotly` code block containing valid JSON with `data`, `layout`, and optional `config` fields. Plotly 4.0.0 loads only on pages with these blocks. Charts follow the site's light or dark theme while retaining the title and chart settings you provide.
+
+This scatter plot includes a custom title, configuration, and a mathematical axis label rendered by MathJax 4:
+
+````markdown
+```plotly
+{
+  "data": [
+    {
+      "x": [1, 2, 3, 4, 5],
+      "y": [1, 4, 9, 16, 25],
+      "type": "scatter",
+      "mode": "markers",
+      "name": "Observations",
+      "marker": { "size": 10 }
+    }
+  ],
+  "layout": {
+    "title": { "text": "Quadratic observations" },
+    "xaxis": { "title": { "text": "x" } },
+    "yaxis": { "title": { "text": "$x^2$" } }
+  },
+  "config": {
+    "responsive": true,
+    "displaylogo": false,
+    "scrollZoom": true
+  }
+}
+```
+````
+
+The block renders as:
+
+```plotly
+{
+  "data": [
+    {
+      "x": [1, 2, 3, 4, 5],
+      "y": [1, 4, 9, 16, 25],
+      "type": "scatter",
+      "mode": "markers",
+      "name": "Observations",
+      "marker": { "size": 10 }
+    }
+  ],
+  "layout": {
+    "title": { "text": "Quadratic observations" },
+    "xaxis": { "title": { "text": "x" } },
+    "yaxis": { "title": { "text": "$x^2$" } }
+  },
+  "config": {
+    "responsive": true,
+    "displaylogo": false,
+    "scrollZoom": true
+  }
+}
+```
 
 ## Markdown guide
 
