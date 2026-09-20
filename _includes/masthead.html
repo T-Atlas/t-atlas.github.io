@@ -33,7 +33,14 @@
           {% endfor %}
           <li class="masthead__menu-item persist">{% include language-switcher.html %}</li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <button type="button" class="theme-toggle" aria-label="{% if page_lang == 'zh' %}切换明暗主题{% else %}Toggle color theme{% endif %}" aria-pressed="false"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></button>
+            <label class="theme-control">
+              <i id="theme-icon" class="fa-solid fa-desktop" aria-hidden="true"></i>
+              <select id="theme-preference" aria-label="{% if page_lang == 'zh' %}颜色主题{% else %}Color theme{% endif %}" disabled>
+                <option value="system">{% if page_lang == 'zh' %}跟随系统{% else %}System{% endif %}</option>
+                <option value="light">{% if page_lang == 'zh' %}浅色{% else %}Light{% endif %}</option>
+                <option value="dark">{% if page_lang == 'zh' %}深色{% else %}Dark{% endif %}</option>
+              </select>
+            </label>
           </li>
         </ul>
         <ul id="overflow-navigation" class="hidden-links hidden"></ul>

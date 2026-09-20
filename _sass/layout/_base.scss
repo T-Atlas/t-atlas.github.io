@@ -2,7 +2,8 @@
    BASE ELEMENTS
    ========================================================================== */
 html {
-  /* removed sticky footer fix - using natural flow instead */
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--masthead-height, 70px) + 1rem);
 }
 
 body {

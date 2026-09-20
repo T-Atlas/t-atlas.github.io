@@ -5,9 +5,6 @@
 $(document).ready(function () {
   const scssLarge = 925; // Match the responsive sidebar breakpoint.
 
-  // FitVids init
-  fitvids();
-
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function () {
     $(".author__urls").fadeToggle("fast", function () { });
@@ -20,12 +17,6 @@ $(document).ready(function () {
       $(".author__urls").css('display', 'block')
     }
   });
-
-  // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({ 
-    offset: -75, // needs to match $masthead-height
-    preventDefault: false,
-  }); 
 
   // add lightbox class to all image links
   // Add "image-popup" to links ending in image extensions,

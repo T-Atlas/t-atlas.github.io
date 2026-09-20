@@ -1,0 +1,30 @@
+{%- comment -%}
+Build from Kramdown's rendered headings, so links work without JavaScript.
+Only h2/h3 with IDs are included; headings inside fenced code are HTML-escaped.
+{%- endcomment -%}
+{%- assign heading_fragments = include.html | split: '<h' -%}
+{%- capture toc_items -%}
+  {%- for fragment in heading_fragments offset: 1 -%}
+    {%- assign level = fragment | slice: 0, 1 -%}
+    {%- unless level == '2' or level == '3' -%}{%- continue -%}{%- endunless -%}
+    {%- assign attributes = fragment | split: '>' | first -%}
+    {%- assign heading_id = '' -%}
+    {%- if attributes contains ' id="' -%}
+      {%- assign heading_id = attributes | split: ' id="' | last | split: '"' | first -%}
+    {%- elsif attributes contains " id='" -%}
+      {%- assign heading_id = attributes | split: " id='" | last | split: "'" | first -%}
+    {%- endif -%}
+    {%- if heading_id == '' -%}{%- continue -%}{%- endif -%}
+    {%- assign opening = attributes | append: '>' -%}
+    {%- assign closing = '</h' | append: level | append: '>' -%}
+    {%- assign heading_title = fragment | remove_first: opening | split: closing | first | strip_html | strip -%}
+    <li{% if level == '3' %} class="toc-subheading"{% endif %}><a href="#{{ heading_id | escape_once }}">{{ heading_title | escape_once }}</a></li>
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign toc_items = toc_items | strip -%}
+{%- unless toc_items == '' -%}
+<details class="page-toc" data-static-toc open>
+  <summary>{% if page.lang == 'zh' %}文章目录{% else %}On this page{% endif %}</summary>
+  <nav aria-label="{% if page.lang == 'zh' %}文章目录{% else %}Table of contents{% endif %}"><ol>{{ toc_items }}</ol></nav>
+</details>
+{%- endunless -%}

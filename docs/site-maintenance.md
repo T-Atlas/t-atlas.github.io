@@ -6,9 +6,9 @@
 
 在 `_config.yml` 设置 `site_theme`：`default`、`air`、`contrast`、`dirt`、`mint`、`sunrise`。每套均有明暗模式，修改后重建。
 
-`assets/js/site-theme.js` 是唯一主题状态入口，在 CSS 前设置页面主题。它兼容原来的 localStorage `theme` 值、系统主题变化以及存储不可用的浏览器。`SiteTheme.subscribe` 供图表、导航图标、Giscus 使用；需要恢复系统跟随时调用 `SiteTheme.set('system')`。
+`assets/js/site-theme.js` 是唯一主题状态入口，在 CSS 前设置页面主题。它兼容原来的 localStorage `theme` 值、系统主题变化以及存储不可用的浏览器。`SiteTheme.subscribe` 供图表、导航图标、Giscus 使用；访客可在导航栏选择“浅色／深色／跟随系统”；移动端点击主题图标打开同样的三项选择。
 
-Font Awesome 6.7.2 的字体和 SCSS 成套同步；样式编译到 `assets/css/fontawesome.css`，与本地 Academicons 分别预加载并异步应用，提供 noscript 回退。图片放大和 FitVids 继续保留。
+Font Awesome 6.7.2 的字体和 SCSS 成套同步；样式编译到 `assets/css/fontawesome.css`，与本地 Academicons 分别预加载并异步应用，提供 noscript 回退。图片放大继续保留。FitVids 和 jquery-smooth-scroll 已移除：锚点使用原生 CSS 滚动并跟随导航实际高度；减少动效偏好下禁用平滑滚动。视频使用原生 aspect-ratio；YouTube/Vimeo 嵌入自动适配，其他嵌入可添加 `responsive-video` 类。
 
 自定义 SCSS 已拆到 `_sass/custom/`。专题文章正文和强调色跟随主题变量；不要再用系统暗色媒体查询覆盖手动选择的主题。
 
@@ -20,7 +20,7 @@ Font Awesome 6.7.2 的字体和 SCSS 成套同步；样式编译到 `assets/css/
 
 ## 文章目录
 
-在长文章 front matter 设置 `toc: true`。目录从正文 h2/h3 标题生成，手机默认折叠，桌面默认展开。FinD 中英文章和 AI4AIR 中文文章已启用。短新闻默认不变。
+在长文章 front matter 设置 `toc: true`。目录在 Jekyll 构建时从正文 h2/h3 标题生成，关闭 JavaScript 时仍有完整链接。JavaScript 仅增强初始折叠状态：手机默认折叠，桌面默认展开。FinD 中英文章和 AI4AIR 中文文章已启用。短新闻默认不变。
 
 ## 简历：一份教育数据，多种呈现
 
@@ -76,6 +76,31 @@ bundle exec jekyll build --strict_front_matter
 bundle exec ruby scripts/validate_site.rb _site
 python3 -S -m unittest discover -s tests -p 'test_*.py'
 node tests/site-theme.test.cjs
+bundle exec ruby tests/content_templates_test.rb
 ```
 
-站点检查覆盖重复 permalink、双语互链、论文资源、元数据、BibTeX 和真实简历数据。浏览器应另查手机导航、目录、明暗主题、评论 iframe、图表公式与图片放大。
+站点检查从源文件读取实际论文和教育数据，不固定数量或姓名；逐项比较页面、元数据、引用文件及导出简历，并检查重复 permalink、双语互链与目录链接。浏览器应另查手机导航、目录、明暗主题、评论 iframe、图表公式与图片放大。
+
+
+## 首页精选论文（默认关闭）
+
+`homepage.show_featured_publications` 当前为 `false`，没有自动选择任何论文。以后启用时：
+
+1. 将 `_config.yml` 的 `homepage.show_featured_publications` 改为 `true`。
+2. 在需要展示的论文 front matter 中设置 `featured: true`。
+3. `homepage.featured_limit` 控制数量，默认 3；两种语言首页复用现有论文卡片与资源链接。
+
+没有标记论文时，即使开关开启也不显示空标题。
+
+## 学术服务、获奖与项目（有真实数据才显示）
+
+`_data/academic.yml` 的 `services`、`awards`、`projects` 当前均为空，不显示标题或占位条目。填写核实过的记录后，首页和两种简历视图会共用这些栏目。支持字段：
+
+- `title`：真实名称；`title_zh`：可选中文名。
+- `organization`、`organization_zh`：机构或主办方。
+- `date`：年份或日期，建议使用带引号的字符串。
+- `description`、`description_zh`：可选说明。
+- `url`：可选详情链接。
+- `published: false`：保持该条目隐藏。
+
+不要用示例经历填充线上数据。测试用例的虚构数据只在临时目录中构建。

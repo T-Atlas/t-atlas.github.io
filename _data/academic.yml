@@ -1,0 +1,6 @@
+# Add verified entries only. Empty groups render no headings or placeholders.
+# Entry fields: title, title_zh, organization, organization_zh, date,
+# description, description_zh, url. Set published: false to keep an entry hidden.
+services: []
+awards: []
+projects: []

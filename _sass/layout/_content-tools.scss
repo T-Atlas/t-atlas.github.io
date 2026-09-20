@@ -1,17 +1,35 @@
 /* Shared content tools and accessibility refinements. */
-.greedy-nav .theme-toggle {
-  position: static;
+.greedy-nav .theme-control {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  padding: 0;
+  gap: 0.3rem;
   margin: 0;
-  border: 0;
-  background: transparent;
   color: var(--global-masthead-link-color);
-  cursor: pointer;
+  select {
+    width: auto;
+    max-width: 7rem;
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px solid var(--global-border-color);
+    border-radius: 4px;
+    font: inherit;
+    font-size: 0.8em;
+    background: var(--global-bg-color);
+    color: inherit;
+    cursor: pointer;
+  }
+  i { pointer-events: none; }
+}
+.no-js .theme-control { display: none; }
+@media (max-width: 767px) {
+  .greedy-nav .theme-control {
+    width: 2.25rem;
+    height: 2.25rem;
+    justify-content: center;
+    select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+    &:focus-within { outline: 2px solid var(--global-link-color); outline-offset: 2px; }
+  }
 }
 .greedy-nav .selected > a {
   color: var(--global-link-color);
@@ -35,7 +53,6 @@ button:focus-visible, a:focus-visible, summary:focus-visible {
   .toc-subheading { margin-left: 1em; }
   .nav__title { color: var(--global-text-color); background: transparent; }
 }
-.page__content h2[id], .page__content h3[id] { scroll-margin-top: 6rem; }
 .publication-resources {
   margin: 1em 0;
   font-size: 0.85em;
@@ -62,3 +79,25 @@ button:focus-visible, a:focus-visible, summary:focus-visible {
   body { padding: 0 !important; margin: 0 !important; }
   #main, .archive { width: 100%; max-width: none; margin: 0; padding: 0; }
 }
+
+/* Native responsive media; maps and comments are deliberately not video embeds. */
+.page__content {
+  video { max-width: 100%; height: auto; }
+  iframe[src*="youtube.com/embed/"],
+  iframe[src*="youtube-nocookie.com/embed/"],
+  iframe[src*="player.vimeo.com/video/"],
+  iframe.responsive-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: var(--video-aspect, 16 / 9);
+    border: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+.academic-section { margin-top: 2em; }
+.academic-entry { margin-bottom: 1em; }
+.academic-entry-date { color: var(--global-text-color-light); font-size: 0.9em; }

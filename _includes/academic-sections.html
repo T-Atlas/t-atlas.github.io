@@ -1,0 +1,25 @@
+{% assign academic_groups = 'services,awards,projects' | split: ',' %}
+{% for group in academic_groups %}
+  {% assign entries = site.data.academic[group] | where_exp: 'entry', 'entry.published != false' | where_exp: 'entry', 'entry.title != nil' | where_exp: 'entry', 'entry.title != empty' %}
+  {% if entries.size > 0 %}
+  <section class="academic-section" id="{{ group }}">
+    <h2>{% case group %}{% when 'services' %}{% if page.lang == 'zh' %}学术服务{% else %}Academic Service{% endif %}{% when 'awards' %}{% if page.lang == 'zh' %}荣誉与获奖{% else %}Honors and Awards{% endif %}{% when 'projects' %}{% if page.lang == 'zh' %}研究项目{% else %}Research Projects{% endif %}{% endcase %}</h2>
+    <ul>
+    {% for entry in entries %}
+      {% assign entry_title = entry.title %}{% assign entry_org = entry.organization %}{% assign entry_description = entry.description %}
+      {% if page.lang == 'zh' %}
+        {% assign entry_title = entry.title_zh | default: entry.title %}
+        {% assign entry_org = entry.organization_zh | default: entry.organization %}
+        {% assign entry_description = entry.description_zh | default: entry.description %}
+      {% endif %}
+      <li class="academic-entry">
+        {% if entry.url %}<a href="{{ entry.url | relative_url }}"><strong>{{ entry_title | escape }}</strong></a>{% else %}<strong>{{ entry_title | escape }}</strong>{% endif %}
+        {% if entry_org %}<span> · {{ entry_org | escape }}</span>{% endif %}
+        {% if entry.date %}<span class="academic-entry-date"> ({{ entry.date | escape }})</span>{% endif %}
+        {% if entry_description %}<div>{{ entry_description | markdownify }}</div>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+{% endfor %}

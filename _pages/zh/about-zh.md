@@ -16,6 +16,8 @@ redirect_from:
 
 <span style="color:green">如果您对我的工作有任何疑问或感兴趣与我合作，请通过邮件联系我。</span>
 
+{% include featured-publications.html %}
+
 ## 🔥 最新动态 {#news}
 
 {% assign chinese_news = site.news | where: 'lang', 'zh' %}
@@ -24,3 +26,5 @@ redirect_from:
 
 * **[{{ news_item.date | date: '%Y-%m' }}]** {% if news_item.excerpt_zh %}{{ news_item.excerpt_zh | strip_html | strip_newlines }}{% else %}{{ news_item.excerpt | strip_html | strip_newlines }}{% endif %}
 {% endfor %}
+
+{% include academic-sections.html %}

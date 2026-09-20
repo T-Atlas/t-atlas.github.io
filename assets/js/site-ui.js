@@ -2,12 +2,18 @@
 (function () {
   "use strict";
   const zh = document.documentElement.lang === "zh";
-  const themeButton = document.querySelector("#theme-toggle button");
-  if (themeButton) themeButton.addEventListener("click", window.SiteTheme.toggle);
-  window.SiteTheme.subscribe(theme => {
-    if (themeButton) themeButton.setAttribute("aria-pressed", String(theme === "dark"));
+  const themeSelect = document.getElementById("theme-preference");
+  if (themeSelect) {
+    themeSelect.disabled = false;
+    themeSelect.addEventListener("change", () => window.SiteTheme.set(themeSelect.value));
+  }
+  window.SiteTheme.subscribe((theme, preference) => {
+    if (themeSelect) {
+      themeSelect.value = preference;
+      themeSelect.parentElement.title = themeSelect.selectedOptions[0].textContent;
+    }
     const icon = document.getElementById("theme-icon");
-    if (icon) icon.className = `fa-solid fa-${theme === "dark" ? "moon" : "sun"}`;
+    if (icon) icon.className = `fa-solid fa-${preference === "system" ? "desktop" : theme === "dark" ? "moon" : "sun"}`;
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.content = getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color").trim();
   });
@@ -38,20 +44,18 @@
     comments.append(script);
   }
 
-  document.querySelectorAll("[data-auto-toc]").forEach(toc => {
-    const links = toc.querySelector("ol");
-    const headings = document.querySelectorAll(".page__content h2[id], .page__content h3[id]");
-    headings.forEach(heading => {
-      const item = document.createElement("li");
-      item.className = heading.tagName === "H3" ? "toc-subheading" : "toc-heading";
-      const link = document.createElement("a");
-      link.href = `#${heading.id}`;
-      link.textContent = heading.textContent;
-      item.append(link);
-      links.append(item);
-    });
-    if (!headings.length) toc.hidden = true;
-    else toc.open = window.matchMedia("(min-width: 768px)").matches;
+  // HTML already contains the TOC. JavaScript only enhances its initial state.
+  document.querySelectorAll("[data-static-toc]").forEach(toc => {
+    toc.open = window.matchMedia("(min-width: 768px)").matches;
+  });
+
+  // Preserve non-16:9 dimensions when upgrading traditional video embeds.
+  document.querySelectorAll('iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"], iframe[src*="player.vimeo.com/video/"], iframe.responsive-video').forEach(frame => {
+    const width = Number(frame.getAttribute("width"));
+    const height = Number(frame.getAttribute("height"));
+    if (width > 0 && height > 0 && !frame.style.getPropertyValue("--video-aspect")) {
+      frame.style.setProperty("--video-aspect", `${width} / ${height}`);
+    }
   });
 
   document.querySelectorAll("button[data-copy-citation]").forEach(button => {

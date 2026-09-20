@@ -17,6 +17,8 @@ During my master's stage, I was fortunate to be co-supervised with Dr. [Xinyu Li
 
 <span style="color:green">If you have any questions regarding my work or are interested in collaborating with me, please contact me via email. </span>
 
+{% include featured-publications.html %}
+
 ## 🔥 Recent News {#news}
 
 {% assign english_news = site.news | where_exp: 'item', 'item.lang != "zh"' %}
@@ -25,3 +27,5 @@ During my master's stage, I was fortunate to be co-supervised with Dr. [Xinyu Li
 
 * **[{{ news_item.date | date: '%Y-%m' }}]** {% if news_item.excerpt_zh and page.lang == 'zh' %}{{ news_item.excerpt_zh | strip_html | strip_newlines }}{% else %}{{ news_item.excerpt | strip_html | strip_newlines }}{% endif %}
 {% endfor %}
+
+{% include academic-sections.html %}

@@ -1,0 +1,12 @@
+{% if site.homepage.show_featured_publications == true %}
+  {% assign featured_papers = site.publications | where: 'featured', true | sort: 'date' | reverse %}
+  {% assign featured_limit = site.homepage.featured_limit | default: 3 %}
+  {% if featured_papers.size > 0 and featured_limit > 0 %}
+  <section class="featured-publications" id="selected-publications">
+    <h2>{% if page.lang == 'zh' %}精选论文{% else %}Selected Publications{% endif %}</h2>
+    {% for post in featured_papers limit: featured_limit %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </section>
+  {% endif %}
+{% endif %}

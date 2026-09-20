@@ -47,12 +47,7 @@ layout: default
         </header>
       {% endunless %}
 
-      {% if page.toc %}
-      <details class="page-toc" data-auto-toc open>
-        <summary>{% if page.lang == 'zh' %}文章目录{% else %}On this page{% endif %}</summary>
-        <nav aria-label="{% if page.lang == 'zh' %}文章目录{% else %}Table of contents{% endif %}"><ol></ol></nav>
-      </details>
-      {% endif %}
+      {% if page.toc %}{% include content-toc.html html=content %}{% endif %}
       <section class="page__content" itemprop="text">
         {{ content }}
 
