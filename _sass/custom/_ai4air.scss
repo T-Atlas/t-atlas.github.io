@@ -1,8 +1,8 @@
 /* AI4AIR Chinese blog styles */
 .ai4air-article {
-  --ai4air-accent: var(--global-link-color);
+  --ai4air-accent: var(--article-accent-color);
   --ai4air-text: var(--global-text-color);
-  --ai4air-caption: var(--global-text-color-light);
+  --ai4air-caption: var(--article-muted-color);
 
   max-width: 760px;
   margin: 0 auto;
@@ -51,7 +51,7 @@
     max-width: 980px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--article-border-color);
     border-radius: 8px;
     background: #fff;
   }
@@ -59,7 +59,7 @@
   .ai4air-figure figcaption {
     max-width: 920px;
     margin: 0.8em auto 0;
-    color: var(--global-text-color-light);
+    color: var(--ai4air-caption);
     font-size: 0.8em;
     line-height: 1.65;
     text-align: center;
@@ -71,14 +71,14 @@
     max-width: 760px;
     height: auto;
     margin: 1.5em auto;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--article-border-color);
     border-radius: 8px;
     background: #fff;
   }
 
   .ai4air-editor-note {
     margin: 1.5em 8px;
-    color: var(--global-text-color-light);
+    color: var(--ai4air-caption);
     font-size: 0.88em;
     line-height: 1.75;
     text-align: right;
@@ -105,11 +105,11 @@
   .ai4air-info-card {
     margin: 2em 8px;
     padding: 1.1em 1.2em;
-    border: 1px solid var(--global-border-color);
+    border: 1px solid var(--article-border-color);
     border-left: 4px solid var(--ai4air-accent);
     border-radius: 8px;
-    background: var(--global-bg-color);
-    box-shadow: 0 8px 24px var(--global-border-color);
+    background: var(--article-panel-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
   .ai4air-info-card p {
@@ -146,7 +146,7 @@
     border-left: 4px solid var(--ai4air-accent);
     border-bottom: 0;
     border-radius: 4px;
-    background: var(--global-border-color);
+    background: var(--article-panel-color);
     color: var(--ai4air-accent);
     font-size: 1.05em;
     font-weight: 800;

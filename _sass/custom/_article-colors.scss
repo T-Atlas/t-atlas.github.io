@@ -1,0 +1,27 @@
+/* Keep article accents and panels readable with the active site palette. */
+.page__inner-wrap {
+  // Older browsers keep readable text even without color-mix support.
+  --article-accent-color: var(--global-text-color);
+  --article-muted-color: var(--global-text-color);
+  --article-panel-color: var(--global-bg-color);
+  --article-border-color: var(--global-border-color);
+
+  @supports (color: color-mix(in srgb, black, white)) {
+    --article-accent-color: color-mix(in srgb, var(--global-link-color) 40%, var(--global-text-color));
+    --article-muted-color: color-mix(in srgb, var(--global-text-color) 80%, var(--global-bg-color));
+    --article-panel-color: color-mix(in srgb, var(--global-text-color) 6%, var(--global-bg-color));
+    --article-border-color: color-mix(in srgb, var(--global-text-color) 24%, var(--global-bg-color));
+  }
+
+  .ai4air-article,
+  .findlab-article,
+  .page-toc {
+    a,
+    a:visited,
+    a:hover,
+    a:focus-visible {
+      color: var(--article-accent-color);
+      overflow-wrap: anywhere;
+    }
+  }
+}
