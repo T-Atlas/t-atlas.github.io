@@ -1,5 +1,3 @@
-.omc/
-.omx/
 .vscode/
 
 # Ignore the contents of the _site directory and other cache directories
