@@ -133,7 +133,7 @@
 .sidebar .author__desktop {
   display: none;
   @media screen and (min-width: 1024px) {
-    display: block;
+    display: flex;
   }
 }
 
@@ -225,12 +225,16 @@
     }
   }
 
+  .author__desktop,
   a {
-    display: flex;
     align-items: center;
     min-height: 36px;
     margin-bottom: 2px;
     padding: 6px 8px;
+  }
+
+  a {
+    display: flex;
     border-radius: 8px;
     color: inherit;
     font-size: $type-size-5;

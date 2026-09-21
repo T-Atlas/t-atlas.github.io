@@ -4,6 +4,7 @@ title: "连俊宏 的 个人主页"
 lang: zh
 alternate_url: /
 author_profile: true
+wide: true
 redirect_from:
   - /zh/about/
   - /zh/about.html

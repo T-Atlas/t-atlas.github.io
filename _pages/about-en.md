@@ -4,6 +4,7 @@ title: "Junhong Lian's Homepage"
 lang: en
 alternate_url: /zh/
 author_profile: true
+wide: true
 redirect_from:
   - /about/
   - /about.html

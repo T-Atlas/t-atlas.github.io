@@ -141,12 +141,15 @@ button:focus-visible, a:focus-visible, summary:focus-visible {
     + .news-list__item { border-top: 0; }
   }
   .news-list__date {
-    display: inline;
+    display: inline-block;
     margin-right: 6px;
-    padding: 0;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: var(--global-thead-color);
+    color: var(--global-link-color);
     font-size: 0.9em;
     font-weight: 600;
-    line-height: inherit;
+    line-height: 1.4;
     white-space: nowrap;
   }
   .news-list__body {
