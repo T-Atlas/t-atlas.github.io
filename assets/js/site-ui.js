@@ -2,18 +2,28 @@
 (function () {
   "use strict";
   const zh = document.documentElement.lang === "zh";
-  const themeSelect = document.getElementById("theme-preference");
-  if (themeSelect) {
-    themeSelect.disabled = false;
-    themeSelect.addEventListener("change", () => window.SiteTheme.set(themeSelect.value));
+  const themeButton = document.querySelector("#theme-toggle button");
+  const nextPreference = { system: "light", light: "dark", dark: "system" };
+  const themeNames = zh
+    ? { system: "跟随系统", light: "浅色", dark: "深色" }
+    : { system: "System", light: "Light", dark: "Dark" };
+  if (themeButton) {
+    themeButton.addEventListener("click", () => {
+      window.SiteTheme.set(nextPreference[window.SiteTheme.getPreference()]);
+    });
   }
   window.SiteTheme.subscribe((theme, preference) => {
-    if (themeSelect) {
-      themeSelect.value = preference;
-      themeSelect.parentElement.title = themeSelect.selectedOptions[0].textContent;
+    if (themeButton) {
+      const currentName = themeNames[preference];
+      const nextName = themeNames[nextPreference[preference]];
+      const label = zh
+        ? `当前主题：${currentName}；点击切换为${nextName}`
+        : `Current theme: ${currentName}; click to switch to ${nextName}`;
+      themeButton.dataset.preference = preference;
+      themeButton.setAttribute("aria-label", label);
+      themeButton.title = label;
+      themeButton.disabled = false;
     }
-    const icon = document.getElementById("theme-icon");
-    if (icon) icon.className = `fa-solid fa-${preference === "system" ? "desktop" : theme === "dark" ? "moon" : "sun"}`;
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.content = getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color").trim();
   });

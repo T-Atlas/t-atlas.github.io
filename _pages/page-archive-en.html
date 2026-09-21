@@ -4,9 +4,8 @@ title: "Page Archive"
 permalink: /page-archive/
 lang: en
 author_profile: false
+sitemap: false
 ---
 
 {% include base_path %}
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include indexed-pages.html %}

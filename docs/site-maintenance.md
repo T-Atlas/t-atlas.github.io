@@ -6,7 +6,9 @@
 
 在 `_config.yml` 设置 `site_theme`：`default`、`air`、`contrast`、`dirt`、`mint`、`sunrise`。每套均有明暗模式，修改后重建。
 
-`assets/js/site-theme.js` 是唯一主题状态入口，在 CSS 前设置页面主题。它兼容原来的 localStorage `theme` 值、系统主题变化以及存储不可用的浏览器。`SiteTheme.subscribe` 供图表、导航图标、Giscus 使用；访客可在导航栏选择“浅色／深色／跟随系统”；移动端点击主题图标打开同样的三项选择。
+`assets/js/site-theme.js` 是唯一主题状态入口，在 CSS 前设置页面主题。它兼容原来的 localStorage `theme` 值、系统主题变化以及存储不可用的浏览器。`SiteTheme.subscribe` 供图表、导航图标、Giscus 使用。
+
+桌面和移动端共用导航栏中的主题图标按钮，点击按“跟随系统 → 浅色 → 深色 → 跟随系统”循环。无已保存偏好时默认跟随系统；手动选择浅色或深色后保存偏好，回到系统模式时清除手动偏好并实时跟随系统。显示器、太阳、月亮三个内联 SVG 图标表示当前模式；悬停提示和无障碍名称使用页面语言说明当前模式与下一模式。按钮支持 Tab、Enter 和空格操作，保持 44px 点击区域；减少动态效果偏好下禁用过渡。主题状态继续使用现有 `SiteTheme` 接口。
 
 Font Awesome 6.7.2 的字体和 SCSS 成套同步；样式编译到 `assets/css/fontawesome.css`，与本地 Academicons 分别预加载并异步应用，提供 noscript 回退。图片放大继续保留。FitVids 和 jquery-smooth-scroll 已移除：锚点使用原生 CSS 滚动并跟随导航实际高度；减少动效偏好下禁用平滑滚动。视频使用原生 aspect-ratio；YouTube/Vimeo 嵌入自动适配，其他嵌入可添加 `responsive-video` 类。
 
@@ -17,6 +19,22 @@ Font Awesome 6.7.2 的字体和 SCSS 成套同步；样式编译到 `assets/css/
 页面使用 `lang: en` / `lang: zh`，成对页面优先填写互相对应的 `alternate_url`。`language-context.html` 集中识别存在的译文，语言按钮与 `hreflang` 共用同一结果。没有译文时不会生成虚假的对应网址。
 
 栏目高亮匹配实际页面、所属 collection 和中英文菜单，保持链接可点击。导航按钮提供名称、展开状态和 Escape 收起行为。修改网址应同时检查原 permalink、译文链接与已有 Giscus pathname 映射。
+
+导航的公共配色、悬停反馈、圆角和焦点框集中在 `_sass/layout/_navigation.scss`。工具入口统一为 44px 高、12px 圆角，主题和菜单使用 20px 细线 SVG；语言入口保留彩色地球及 300ms 的旋转、翻字动画，文字区域固定宽度。公共底色和颜色过渡为 180ms，当前栏目使用 2px 下划线，移动端展开菜单使用同样的圆角和轻边框。减少动态效果时仍遵循系统偏好。
+
+## 页面索引入口
+
+HTML 站点地图和 Page Archive 共用 `indexed-pages.html`：只列出有有效标题的 HTML 页面，排除 `sitemap: false`、未发布页面和重定向。CSS、JSON、BibTeX 等资源不作为内容页面列出。站点地图延续以英文主页面为入口的行为，Page Archive 保留中英文有效页面。
+
+演示布局、通用集合归档、Page Archive 自身，以及当前为空的中英文分类页均设置 `sitemap: false`，同时从 HTML 和插件生成的 XML 站点地图移除。原始文件和直达 URL 保留。将来启用分类内容时，移除对应分类页的 `sitemap: false` 即可恢复入口。标题和简历页面本身的内容不受这一筛选影响。
+
+静态地图工具与百度验证文件也通过 front matter defaults 从 XML 站点地图排除；论文 PDF 仍正常保留。地图直达页的 iframe 限制为容器宽度，避免窄屏横向溢出。
+
+## 共用控件与正文
+
+default 皮肤分别设置正文、辅助文字、链接和表层颜色。BibTeX 展开面板使用成对的前景/背景，普通代码高亮继续使用原有代码配色。`content-control` 混入统一论文资源操作、个人资料按钮、标签和翻页控件的边框、圆角、悬停反馈；固定界面文案沿用原内容。
+
+主页和新闻页共用 `news-list.html`，保留日期、原有链接和详情开关。主页传入 `compact=true`，将日期与内容同行排列，减少条目间距；完整新闻页仍使用独立日期列，手机端将日期放在正文上方。普通文章与 FinD / AI4AIR 正文使用相同基础字体和 1.7 行高；AI4AIR 的调整限定在正文、列表和图注，标题样式保持原有设置。页脚采用紧凑的名字与说明同行排列，说明文字、署名内容和改善后的对比度保留。
 
 ## 文章目录
 

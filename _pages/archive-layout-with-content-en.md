@@ -3,6 +3,7 @@ title: "Archive Layout with Content"
 layout: archive
 permalink: /archive-layout-with-content/
 lang: en
+sitemap: false
 ---
 
 A variety of common markup showing how the theme styles them.

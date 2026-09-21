@@ -11,13 +11,7 @@ author_profile: true
 A list of main pages and content found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
 
 <h2>Main Pages</h2>
-{% assign sorted_pages = site.pages | where_exp: "post", "post.sitemap != false" | sort: "title" %}
-{% for post in sorted_pages %}
-  {% if post.lang == 'zh' %}
-    {% continue %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include indexed-pages.html exclude_lang='zh' %}
 
 <hr>
 

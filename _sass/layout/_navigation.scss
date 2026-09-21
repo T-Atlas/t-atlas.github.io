@@ -122,33 +122,14 @@
 
   /* next/previous buttons */
   &--pager {
-    display: block;
-    padding: 1em 2em;
+    @include content-control(44px);
     float: left;
-    width: 50%;
+    width: calc(50% - 4px);
     font-family: $sans-serif;
     font-size: $type-size-5;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
-    text-decoration: none;
-    color: var(--global-text-color-light);
-    border: 1px solid var(--global-border-color);
-    border-radius: $border-radius;
-
-    &:hover {
-      color: var(--global-link-color-hover);
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:last-child {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
+    + .pagination--pager { margin-left: 8px; }
 
     &.disabled {
       color: var(--global-text-color-light);
@@ -173,33 +154,81 @@
    ========================================================================== */
 
 .greedy-nav {
+  --nav-hover-background: rgba(127, 127, 127, 0.1);
+  --nav-accent-color: var(--global-masthead-link-color);
+  --nav-border-color: var(--global-border-color);
+
+  @supports (color: color-mix(in srgb, black, white)) {
+    --nav-hover-background: color-mix(in srgb, var(--global-link-color) 10%, transparent);
+    --nav-accent-color: color-mix(in srgb, var(--global-link-color) 65%, var(--global-text-color));
+    --nav-border-color: color-mix(in srgb, var(--global-text-color) 16%, var(--global-bg-color));
+  }
+
   position: relative;
   min-width: 250px;
   background: var(--global-bg-color);
 
-  a {
-    display: block;
-    margin: 0 1rem;
-    padding: 0.5rem 0;
+  a,
+  .theme-toggle,
+  > .nav-toggle {
     color: var(--global-masthead-link-color);
+    border-radius: 12px;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 180ms ease, color 180ms ease;
 
-    &:hover {
-      color: var(--global-masthead-link-color-hover);
+    &:hover,
+    &:focus-visible {
+      background: var(--nav-hover-background);
+      color: var(--nav-accent-color);
     }
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--nav-accent-color);
+    outline-offset: 3px;
+  }
+
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    margin: 0 6px;
+    padding: 8px 12px;
+  }
+
+  .theme-toggle,
+  > .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 8px;
+    vertical-align: middle;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
   }
 
   > .nav-toggle {
     position: absolute;
-    height: 2.5rem;
+    top: 50%;
     right: 0;
-    padding: 0 0.5rem;
-    border: 0;
-    outline: none;
-    background-color: var(--global-bg-color);
-    color: var(--global-text-color);
-    cursor: pointer;
+    transform: translateY(-50%);
     z-index: 100;
+
+    &.hidden { display: none; }
+    .nav-toggle__icon { width: 20px; height: 20px; pointer-events: none; }
+    .nav-toggle__icon--close { display: none; }
+
+    &[aria-expanded="true"] {
+      .nav-toggle__icon--menu { display: none; }
+      .nav-toggle__icon--close { display: block; }
+    }
   }
 
   .visible-links {
@@ -215,6 +244,9 @@
 
         a {
           margin-left: 0;
+          padding-left: 0;
+
+          &:hover { background: transparent; }
         }
       }
 
@@ -225,38 +257,21 @@
       }
     }
 
-    #theme-toggle {
-      a {
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-      }
-    }
+  }
 
-    a {
-      position: relative;
+  .selected > a {
+    color: var(--nav-accent-color);
+    font-weight: 700;
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: var(--global-border-color);
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
-      }
-
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 4px;
+      height: 2px;
+      border-radius: 2px;
+      background: currentColor;
     }
   }
 
@@ -264,57 +279,36 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 15px;
-    padding: 5px;
-    border: 1px solid var(--global-border-color);
-    border-radius: $border-radius;
+    min-width: 160px;
+    max-width: calc(100vw - 32px);
+    margin-top: 8px;
+    padding: 6px;
+    border: 1px solid var(--nav-border-color);
+    border-radius: 12px;
     background: var(--global-bg-color);
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    box-shadow: 0 8px 24px rgba(#000, 0.08);
 
     a {
       margin: 0;
-      padding: 10px 20px;
+      padding: 10px 12px;
       font-size: $type-size-5;
-
-      &:hover {
-        color: var(--global-masthead-link-color-hover);
-        background: var(--global-border-color);
-      }
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -11px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: var(--global-border-color) transparent;
-      display: block;
-      z-index: 0;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: -10px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: var(--global-bg-color) transparent;
-      display: block;
-      z-index: 1;
     }
 
     li {
       display: block;
-      border-bottom: 1px solid var(--global-border-color);
+      + li { margin-top: 2px; }
+    }
+  }
+}
 
-      &:last-child {
-        border-bottom: none;
-      }
+@media (max-width: 767px) {
+  // Leave room for all three tools while allowing the brand to wrap.
+  .greedy-nav .visible-links > .masthead__menu-item--lg {
+    padding-right: 0;
+
+    > a {
+      max-width: calc(100vw - 216px);
+      padding-right: 0;
     }
   }
 }

@@ -1,0 +1,11 @@
+{% assign indexed_pages = site.html_pages | sort: 'title' %}
+<div class="page-index">
+{% for indexed_page in indexed_pages %}
+  {% assign indexed_title = indexed_page.title | default: '' | strip_html | strip %}
+  {% if indexed_title == empty or indexed_page.sitemap == false or indexed_page.published == false %}{% continue %}{% endif %}
+  {% if indexed_page.redirect or indexed_page.redirect_to %}{% continue %}{% endif %}
+  {% if include.exclude_lang and indexed_page.lang == include.exclude_lang %}{% continue %}{% endif %}
+  {% assign post = indexed_page %}
+  {% include archive-single.html %}
+{% endfor %}
+</div>

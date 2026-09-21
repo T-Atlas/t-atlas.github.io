@@ -15,7 +15,7 @@ My research interests include natural language processing (NLP), personalized ge
 
 During my master's stage, I was fortunate to be co-supervised with Dr. [Xinyu Liu](https://ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496680.html).
 
-<span style="color:green">If you have any questions regarding my work or are interested in collaborating with me, please contact me via email. </span>
+<span class="homepage-contact">If you have any questions regarding my work or are interested in collaborating with me, please contact me via email.</span>
 
 {% include featured-publications.html %}
 
@@ -23,9 +23,6 @@ During my master's stage, I was fortunate to be co-supervised with Dr. [Xinyu Li
 
 {% assign english_news = site.news | where_exp: 'item', 'item.lang != "zh"' %}
 {% assign recent_news = english_news | sort: 'date' | reverse | slice: 0, site.recent_news_count %}
-{% for news_item in recent_news %}
-
-* **[{{ news_item.date | date: '%Y-%m' }}]** {% if news_item.excerpt_zh and page.lang == 'zh' %}{{ news_item.excerpt_zh | strip_html | strip_newlines }}{% else %}{{ news_item.excerpt | strip_html | strip_newlines }}{% endif %}
-{% endfor %}
+{% include news-list.html items=recent_news compact=true %}
 
 {% include academic-sections.html %}

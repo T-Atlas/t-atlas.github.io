@@ -5,12 +5,12 @@
   --findlab-border: var(--article-border-color);
 
   color: var(--findlab-text);
-  font-family: Optima-Regular, Optima, "PingFang SC", "Microsoft YaHei", Cambria, Georgia, serif;
-  line-height: 1.85;
+  font-family: $global-font-family;
+  line-height: 1.7;
 
   p,
   li {
-    line-height: 1.85;
+    line-height: 1.7;
   }
 
   hr {

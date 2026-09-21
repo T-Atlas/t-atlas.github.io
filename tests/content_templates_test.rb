@@ -4,6 +4,8 @@ require 'nokogiri'
 require 'tmpdir'
 require 'fileutils'
 require 'json'
+require 'uri'
+require 'yaml'
 
 class ContentTemplatesTest < Minitest::Test
   ROOT = File.expand_path('..', __dir__)
@@ -64,6 +66,79 @@ class ContentTemplatesTest < Minitest::Test
       assert_equal 1, doc.css('.academic-entry').size
       assert_includes doc.text, '测试项目'
       refute_includes doc.text, 'Hidden'
+    end
+  end
+
+  def test_page_indexes_exclude_resources_redirects_and_hidden_pages
+    with_site do |source|
+      FileUtils.mkdir_p(File.join(source, '_pages'))
+      File.write(File.join(source, '_layouts/archive.html'), '{{ content }}')
+      %w[sitemap-en.md page-archive-en.html archive-layout-with-content-en.md category-archive-en.html collection-archive-en.html].each do |name|
+        FileUtils.cp(File.join(ROOT, '_pages', name), File.join(source, '_pages', name))
+      end
+      File.write(File.join(source, 'index.html'), "---\ntitle: Home\nlang: en\n---\nHome")
+      File.write(File.join(source, 'public.html'), "---\ntitle: Public page\nlang: en\n---\nPublic content")
+      File.write(File.join(source, 'chinese.html'), "---\ntitle: 中文页面\nlang: zh\n---\n正文")
+      File.write(File.join(source, 'hidden.html'), "---\ntitle: Hidden\nsitemap: false\n---\nHidden content")
+      File.write(File.join(source, 'untitled.html'), "---\ntitle: '   '\n---\nUntitled content")
+      File.write(File.join(source, 'data.json'), "---\ntitle: Named JSON resource\n---\n{}")
+      File.write(File.join(source, 'style.css'), "---\ntitle: Named stylesheet\n---\nbody {}")
+      File.write(File.join(source, 'redirect.html'), "---\ntitle: Named redirect\nredirect_to: /public.html\n---\n")
+      FileUtils.mkdir_p(File.join(source, 'talkmap'))
+      File.write(File.join(source, 'talkmap/map.html'), '<html><body>Tool map</body></html>')
+      File.write(File.join(source, 'baidu_verify_fixture.html'), 'Verification token')
+      File.write(File.join(source, 'paper.pdf'), '%PDF-1.4 fixture')
+      plugins = %w[jekyll-sitemap jekyll-redirect-from]
+      config = YAML.safe_load(File.read(File.join(ROOT, '_config.yml')), aliases: true)
+      resource_defaults = config.fetch('defaults').select { |entry| %w[talkmap baidu_verify_*.html].include?(entry.dig('scope', 'path')) }
+      render(source, 'include'=>['_pages'], 'plugins'=>plugins, 'whitelist'=>plugins, 'defaults'=>resource_defaults)
+      %w[sitemap page-archive].each do |route|
+        doc = Nokogiri::HTML(File.read(File.join(source, '_site', route, 'index.html')))
+        links = doc.css('.page-index .archive__item-title a')
+        paths = links.map { |link| URI(link['href']).path }
+        assert_includes paths, '/public.html'
+        assert links.all? { |link| !link.text.strip.empty? }
+        %w[/hidden.html /untitled.html /data.json /style.css /redirect.html /archive-layout-with-content/ /categories/ /collection-archive/ /page-archive/].each do |path|
+          refute_includes paths, path
+        end
+        if route == 'sitemap'
+          refute_includes paths, '/chinese.html'
+        else
+          assert_includes paths, '/chinese.html'
+        end
+      end
+      xml = Nokogiri::XML(File.read(File.join(source, '_site/sitemap.xml')))
+      paths = xml.xpath('//*[local-name()="loc"]').map { |node| URI(node.text).path }
+      assert_includes paths, '/public.html'
+      assert_includes paths, '/paper.pdf'
+      %w[/hidden.html /redirect.html /archive-layout-with-content/ /categories/ /collection-archive/ /page-archive/ /talkmap/map.html /baidu_verify_fixture.html].each do |path|
+        refute_includes paths, path
+      end
+      assert File.file?(File.join(source, '_site/archive-layout-with-content/index.html')), 'Index cleanup preserves direct URLs'
+    end
+  end
+
+  def test_news_rows_preserve_links_and_only_show_requested_details
+    with_site do |source|
+      File.write(File.join(source, '_data/updates.json'), JSON.generate([
+        {'date'=>'2026-09-21', 'excerpt'=>'Read the [paper](/publication/paper).',
+         'excerpt_zh'=>'阅读[论文](/publication/paper)。', 'has_detail'=>true, 'url'=>'/news/fixture/'},
+        {'date'=>'2026-09-20', 'excerpt'=>'A short update.', 'has_detail'=>false, 'url'=>'/news/short/'}
+      ]))
+      %w[en zh].each do |lang|
+        File.write(File.join(source, 'index.html'), "---\nlang: #{lang}\n---\n{% include news-list.html items=site.data.updates show_details=true %}")
+        doc = render(source)
+        assert_equal 2, doc.css('.news-list__item').size
+        assert_equal '2026-09-21', doc.at_css('time')['datetime']
+        assert_equal '/publication/paper', doc.at_css('.news-list__body a')['href']
+        detail = lang == 'zh' ? '/zh/news/fixture/' : '/news/fixture/'
+        assert doc.css('.news-list__body a').any? { |link| link['href'] == detail }
+        refute doc.css('.news-list__body a').any? { |link| link['href'].include?('/news/short/') }
+        assert_includes doc.at_css('.news-list__body').text, lang == 'zh' ? '阅读论文' : 'Read the paper'
+      end
+      File.write(File.join(source, 'index.html'), "---\nlang: en\n---\n{% include news-list.html items=site.data.updates %}")
+      doc = render(source)
+      assert_equal ['/publication/paper'], doc.css('.news-list__body a').map { |link| link['href'] }
     end
   end
 end

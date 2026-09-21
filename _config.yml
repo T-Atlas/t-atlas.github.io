@@ -320,6 +320,16 @@ defaults:
   #     share: false
 
 
+  # Static tool and verification files are not visitor-facing content indexes.
+  - scope:
+      path: "talkmap"
+    values:
+      sitemap: false
+  - scope:
+      path: "baidu_verify_*.html"
+    values:
+      sitemap: false
+
 # Sass/SCSS
 sass:
   sass_dir: _sass

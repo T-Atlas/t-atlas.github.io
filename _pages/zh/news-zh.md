@@ -15,10 +15,6 @@ author_profile: true
 
 ## {{ year_group.name }}
 
-{% for news_item in year_group.items %}
-
-* **[{{ news_item.date | date: '%Y-%m' }}]** {% assign excerpt = news_item.excerpt_zh | default: news_item.excerpt %}{{ excerpt | strip_html | strip_newlines }}{% if news_item.has_detail %}{% assign zh_url = news_item.url %}{% unless news_item.url contains '/zh/' %}{% assign zh_url = news_item.url | replace: '/news/', '/zh/news/' %}{% endunless %} [查看详情]({{ zh_url | relative_url }}){% endif %}
-
-{% endfor %}
+{% include news-list.html items=year_group.items show_details=true %}
 
 {% endfor %}

@@ -57,6 +57,7 @@
 
   p, li, dl {
     font-size: 1em;
+    line-height: 1.7;
   }
 
   /* paragraph indents */
@@ -262,18 +263,10 @@
 }
 
 .page__taxonomy-item {
-  display: inline-block;
-  margin-right: 5px;
+  @include content-control(28px, 8px);
+  margin-right: 6px;
   margin-bottom: 8px;
-  padding: 5px 10px;
-  text-decoration: none;
-  border: 1px solid var(--global-border-color);
-  border-radius: $border-radius;
-
-  &:hover {
-    text-decoration: none;
-    color: var(--global-link-color-hover);
-  }
+  padding: 4px 8px;
 }
 
 

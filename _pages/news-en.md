@@ -15,9 +15,6 @@ author_profile: true
 
 ## {{ year_group.name }}
 
-{% for news_item in year_group.items %}
-
-* **[{{ news_item.date | date: '%Y-%m' }}]** {% assign excerpt = news_item.excerpt | default: news_item.excerpt %}{{ excerpt | strip_html | strip_newlines }}{% if news_item.has_detail %} [Read More]({{ news_item.url | relative_url }}){% endif %}
-{% endfor %}
+{% include news-list.html items=year_group.items show_details=true %}
 
 {% endfor %}

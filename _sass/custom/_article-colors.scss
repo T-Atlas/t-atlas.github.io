@@ -25,3 +25,11 @@
     }
   }
 }
+
+.homepage-contact {
+  color: #008000;
+}
+
+html[data-theme="dark"] .homepage-contact {
+  color: #8fd3ac;
+}

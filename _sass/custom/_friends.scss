@@ -1,8 +1,20 @@
-/* 友情链接样式 - 垂直布局 */
+/* Shared footer layout and friend links. */
+.footer-custom-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+.clustrmaps-widget { flex-shrink: 0; max-width: 200px; align-self: center; text-align: center; }
 .friends-links {
+  flex: 1;
+  min-width: 0;
   margin: 1em 0;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6; /* 匹配页脚版权文字大小 */
+  font-size: 13px;
+  line-height: 1.5;
   color: var(--global-text-color-light);
 }
 
@@ -26,7 +38,8 @@
 }
 
 .friends-list li a {
-  color: var(--global-link-color); /* 低饱和度蓝色 */
+  color: var(--global-link-color);
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -36,44 +49,25 @@
 }
 
 .friends-list .friend-description {
-  /* 描述文本颜色与列表项一致，无需额外设置 */
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
-  .friends-links .friends-list {
+@media (max-width: 767px) {
+  .footer-custom-wrapper {
     flex-direction: column;
-    gap: 0.5em;
+    align-items: stretch;
+    gap: 0;
   }
-}
 
-// 暗色主题支持
-html[data-theme="dark"] {
-  .friends-links {
-    border-top-color: #444;
+  .friends-links { margin-bottom: 8px; }
 
-    h4 {
-      color: var(--global-text-color);
-    }
+  .friends-list li {
+    margin-bottom: 0.5em;
 
-    h5 {
-      color: var(--global-text-color);
-    }
-
-    .friends-list {
-      li {
-        a {
-          color: var(--global-link-color);
-
-          &:hover {
-            color: var(--global-link-color-hover);
-          }
-        }
-
-        .friend-description {
-          color: var(--global-text-color-light);
-        }
-      }
-    }
+    &:last-child { margin-bottom: 0; }
   }
+
+  .clustrmaps-widget { margin: 0 auto; }
 }

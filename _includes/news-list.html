@@ -1,0 +1,24 @@
+<ul class="news-list{% if include.compact %} news-list--compact{% endif %}">
+{% for news_item in include.items %}
+  <li class="news-list__item">
+    <time class="news-list__date" datetime="{{ news_item.date | date: '%Y-%m-%d' }}">{{ news_item.date | date: '%Y-%m' }}</time>
+    <div class="news-list__body">
+      {% if page.lang == 'zh' %}
+        {% assign news_excerpt = news_item.excerpt_zh | default: news_item.excerpt %}
+      {% else %}
+        {% assign news_excerpt = news_item.excerpt %}
+      {% endif %}
+      {{ news_excerpt | strip_html | strip_newlines | markdownify }}
+      {% if include.show_details and news_item.has_detail %}
+        {% assign news_url = news_item.url %}
+        {% if page.lang == 'zh' %}
+          {% unless news_url contains '/zh/' %}{% assign news_url = news_url | replace: '/news/', '/zh/news/' %}{% endunless %}
+          <a href="{{ news_url | relative_url }}">查看详情</a>
+        {% else %}
+          <a href="{{ news_url | relative_url }}">Read More</a>
+        {% endif %}
+      {% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ul>

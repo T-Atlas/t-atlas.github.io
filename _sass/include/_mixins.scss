@@ -51,3 +51,32 @@
     display: table;
   }
 }
+
+/* Shared feedback for content actions; navigation keeps its existing sizing. */
+@mixin content-control($height: 36px, $radius: 12px) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: $height;
+  padding: 6px 12px;
+  border: 1px solid var(--global-border-color);
+  border-radius: $radius;
+  background: transparent;
+  color: var(--global-link-color);
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-link-color-hover);
+    background: var(--global-footer-bg-color);
+    border-color: var(--global-link-color);
+    text-decoration: none;
+
+    @supports (background: color-mix(in srgb, black, transparent)) {
+      background: color-mix(in srgb, var(--global-link-color) 10%, var(--global-bg-color));
+    }
+  }
+}

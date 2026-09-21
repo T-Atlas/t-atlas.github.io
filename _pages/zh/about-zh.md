@@ -14,7 +14,7 @@ redirect_from:
 
 在硕士阶段，我有幸得到[刘新宇](https://ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496680.html)副研究员的联合指导。
 
-<span style="color:green">如果您对我的工作有任何疑问或感兴趣与我合作，请通过邮件联系我。</span>
+<span class="homepage-contact">如果您对我的工作有任何疑问或感兴趣与我合作，请通过邮件联系我。</span>
 
 {% include featured-publications.html %}
 
@@ -22,9 +22,6 @@ redirect_from:
 
 {% assign chinese_news = site.news | where: 'lang', 'zh' %}
 {% assign recent_news = chinese_news | sort: 'date' | reverse | slice: 0, site.recent_news_count %}
-{% for news_item in recent_news %}
-
-* **[{{ news_item.date | date: '%Y-%m' }}]** {% if news_item.excerpt_zh %}{{ news_item.excerpt_zh | strip_html | strip_newlines }}{% else %}{{ news_item.excerpt | strip_html | strip_newlines }}{% endif %}
-{% endfor %}
+{% include news-list.html items=recent_news compact=true %}
 
 {% include academic-sections.html %}

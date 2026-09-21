@@ -7,20 +7,21 @@
   max-width: 760px;
   margin: 0 auto;
   color: var(--ai4air-text);
-  font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif;
+  font-family: $global-font-family;
   font-size: 16px;
   line-height: 1.75;
   text-align: left;
 
   p,
   li {
-    line-height: 1.75;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   p {
     margin: 1.5em 8px;
     color: var(--ai4air-text);
-    letter-spacing: 0.1em;
+    letter-spacing: normal;
   }
 
   strong {
@@ -38,7 +39,7 @@
     margin: 1.5em 8px;
     padding-left: 1.4em;
     color: var(--ai4air-text);
-    letter-spacing: 0.1em;
+    letter-spacing: normal;
   }
 
   .ai4air-figure {
@@ -60,7 +61,7 @@
     max-width: 920px;
     margin: 0.8em auto 0;
     color: var(--ai4air-caption);
-    font-size: 0.8em;
+    font-size: 0.85rem;
     line-height: 1.65;
     text-align: center;
   }

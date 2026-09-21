@@ -6,41 +6,6 @@
 {%- endif -%}
 {%- assign friends_data = site.data.friends[lang_code] -%}
 
-<style>
-.footer-custom-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 5px;
-}
-.friends-links {
-  flex: 1;
-  min-width: 280px;
-}
-.clustrmaps-widget {
-  flex-shrink: 0;
-  text-align: center;
-}
-/* 桌面版：地图在右侧 */
-@media (min-width: 768px) {
-  .clustrmaps-widget {
-    align-self: center;
-  }
-}
-/* 手机版：堆叠布局，地图居中 */
-@media (max-width: 767px) {
-  .footer-custom-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .clustrmaps-widget {
-    margin: 10px auto 0;
-  }
-}
-</style>
-
 <div class="footer-custom-wrapper">
   {% if friends_data and friends_data.links.size > 0 %}
   <div class="friends-links">
