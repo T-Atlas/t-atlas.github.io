@@ -7,13 +7,10 @@
   background-color: var(--global-footer-bg-color);
   color: var(--global-text-color-light);
 
-  float: left;
+  flex-shrink: 0;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  clear: both;
-
-  /* sticky footer - use relative positioning instead */
   position: relative;
   height: auto;
 

@@ -78,7 +78,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible {
   }
   .masthead, .page__footer, .page__comments, .cv-download-links, .sidebar, .page-toc, .publication-resources button { display: none !important; }
   html, body, .cv-container { background: white !important; color: black !important; }
-  body { padding: 0 !important; margin: 0 !important; }
+  body { display: block; min-height: 0; padding: 0 !important; margin: 0 !important; }
   #main, .archive { width: 100%; max-width: none; margin: 0; padding: 0; }
 }
 

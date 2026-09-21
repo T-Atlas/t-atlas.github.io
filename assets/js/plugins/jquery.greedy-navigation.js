@@ -66,15 +66,10 @@ function updateNav() {
   $btn.attr("aria-expanded", !$hlinks.hasClass("hidden"));
   $hlinks.attr("aria-hidden", $hlinks.hasClass("hidden"));
 
-  // update masthead height and the body/sidebar top padding
+  // Share the actual header height with the body offset and sticky sidebar.
   var mastheadHeight = $('.masthead').height();
   $('body').css('padding-top', mastheadHeight + 'px');
   document.documentElement.style.setProperty('--masthead-height', mastheadHeight + 'px');
-  if ($(".author__urls-wrapper button").is(":visible")) {
-    $(".sidebar").css("padding-top", "");
-  } else {
-    $(".sidebar").css("padding-top", mastheadHeight + "px");
-  }
 
 }
 
